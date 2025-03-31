@@ -1,0 +1,86 @@
+{
+	"Set Menu Options": {
+		"menus": [
+			{
+				"name": "Menu A",
+				"price": 475,
+				"starter": [
+					"Chicken Livers Peri-Peri",
+					"Smoked Snoek in Phyllo Pastry with Moskonfyt",
+					"Deep fried Camembert Cheese with cranberry jelly",
+					"Smoked Springbok Carpaccio with honey vinaigrette",
+					"Greek Salad with avocado"
+				],
+				"mainCourse": [
+					"Sole Belle Meuniere - grilled, with lemon butter",
+					"Chicken Schnitzel - cheese or mushroom sauce",
+					"Fillet haloumi - red wine berry reduction",
+					"Sirloin - with a mustard brandy cream sauce",
+					"Butter Chicken Curry"
+				],
+				"dessert": [
+					"Vanilla Ice cream and Bar One sauce",
+					"Cheesecake",
+					"Lemon Meringue",
+					"Mango and Strawberry Sorbet"
+				]
+			},
+			{
+				"name": "Menu B",
+				"price": 525,
+				"starter": [
+					"Avocado and Shrimp - with piquant cocktail sauce",
+					"Deep fried Camembert Cheese with cranberry jelly",
+					"Duck Springroll with strawberry reduction",
+					"Traditional Garlic Snails",
+					"Parma Ham with melon and feta",
+					"Kudu Carpaccio"
+				],
+				"mainCourse": [
+					"Fresh linefish of the day - topped with lemon butter sauce",
+					"Beef Shortrib",
+					"Sirloin - with a brandy mustard sauce",
+					"Fillet haloumi - red wine berry reduction",
+					"Duck Fuji - lychees, cherries and orange segments",
+					"Chicken Schnitzel - cheese or mushroom sauce"
+				],
+				"dessert": [
+					"Apple Crumble with Amarula ice cream",
+					"Vanilla Ice cream and Bar One sauce",
+					"Cheesecake",
+					"Lemon Meringue",
+					"Caramel Crème Brulee"
+				]
+			},
+			{
+				"name": "Menu C",
+				"price": 575,
+				"starter": [
+					"Prawn Tempura",
+					"Creamy Garlic Snails",
+					"Mushroom and Biltong Soup",
+					"Deep fried Camembert Cheese with cranberry jelly",
+					"Smoked Snoek in Phyllo Pastry with Moskonfyt",
+					"Kudu / Springbok Carpaccio"
+				],
+				"mainCourse": [
+					"Fresh linefish of the day - with lemon butter sauce",
+					"Grilled Calamari",
+					"Fillet Rossini - Topped with chicken liver and red wine",
+					"Sirloin Jack Daniels - with bacon marmalade",
+					"Between the Sheets - fillet topped with shrimps, asparagus and mushrooms in a pepper and cheese sauce",
+					"Duck Fuji - lychees, cherries and orange segments",
+					"Lamb of the Day"
+				],
+				"dessert": [
+					"Caramel Crème Brulee",
+					"Cheesecake",
+					"Lemon Meringue",
+					"Chocolate Fondant",
+					"Apple Crumble with Amarula ice cream",
+					"Chocolate Brownie with Oreo ice cream"
+				]
+			}
+		]
+	}
+}

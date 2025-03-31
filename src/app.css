@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+@import 'tailwindcss';
+
+* {
+	@apply box-border max-sm:text-center;
+	font-family: 'Baskervville', serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-image: url('/wooden texture.png');
+	background-repeat: repeat-y;
+	background-size: cover;
+	background-position: center top;
+	background-attachment: fixed;
+}
+
+header {
+	@apply z-50 bg-slate-50;
+}
+
+a {
+	@apply underline transition hover:text-rose-500;
+}
+
+h1 {
+	@apply text-center text-5xl font-bold text-slate-50 max-md:text-3xl;
+}
+
+h2 {
+	@apply text-center text-5xl font-bold max-md:text-3xl;
+}
+
+h3 {
+	@apply mb-3 text-center text-3xl max-md:text-2xl;
+}
+
+section {
+	@apply mb-4 w-full bg-slate-50;
+}
+
+.not-wide {
+	@apply px-2;
+}
+
+ul {
+	@apply list-inside;
+}

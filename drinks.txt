@@ -1,0 +1,7 @@
+public/images/drinks/anothercocktail.JPG
+public/images/drinks/chamonix.JPG
+public/images/drinks/daquiry.jpg
+public/images/drinks/lavenir.JPG
+public/images/drinks/lebonheur.JPG
+public/images/drinks/margherita.JPG
+public/images/drinks/milkshake.jpg

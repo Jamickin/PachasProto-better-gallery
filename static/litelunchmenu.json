@@ -1,0 +1,51 @@
+{
+	"Hake": {
+		"items": [
+			"With Tartare Sauce - Tender, flaky hake fillet served with a classic tangy tartare sauce, offering a light and refreshing seafood option."
+		]
+	},
+	"Calamari": {
+		"items": [
+			"Lemon Butter / Garlic Butter or Portuguese - Succulent calamari prepared in your choice of three delightful styles: zesty lemon butter, rich garlic butter, or spicy Portuguese-style seasoning."
+		]
+	},
+	"Salmon Salad": {
+		"items": [
+			"Salmon, Feta and Avocado - A vibrant salad featuring fresh, flaky salmon, creamy feta cheese, and buttery avocado, creating a perfect balance of flavors and textures."
+		]
+	},
+	"Biltong Salad": {
+		"items": [
+			"With Figs and Blue Cheese or Feta Cheese - A quintessentially South African salad combining traditional biltong with sweet figs and your choice of tangy blue cheese or creamy feta, offering a unique culinary experience."
+		]
+	},
+	"Sirloin 200g Steak": {
+		"items": [
+			"With a Sauce of Your Choice - A perfectly grilled 200g sirloin steak accompanied by a sauce tailored to your preference, ensuring a personalized dining experience."
+		]
+	},
+	"Chicken Schnitzel": {
+		"items": [
+			"Cheese or Mushroom Sauce - Crispy crumbed chicken schnitzel served with either a rich cheese sauce or a savory mushroom sauce, a classic comfort food option."
+		]
+	},
+	"Trinchado": {
+		"items": [
+			"Cubes of Beef with Hot Peri-Peri - Tender beef cubes simmered in a fiery peri-peri sauce, delivering a bold and spicy South African-inspired dish."
+		]
+	},
+	"Vegan/Vegetarian (Served with Rice)": {
+		"items": [
+			"Potato Curry - A hearty vegetarian curry featuring tender potatoes in a rich, aromatic sauce, providing a comforting and flavorful meal.",
+			"Toor Palak Dahl - A nutritious and flavorful curry combining lentils, spinach, and split peas, showcasing the depth of Indian vegetarian cuisine.",
+			"Mushroom Stroganoff - A creamy vegetarian dish with exotic mushrooms simmered in coconut cream, offering a luxurious plant-based option."
+		]
+	},
+	"Included Drink": {
+		"items": [
+			"330ml Draught Stella/Jack Black/Castle Light - A refreshing draft beer from a selection of popular local and craft breweries.",
+			"300ml Softdrink - Your choice of chilled soft drink to complement your meal.",
+			"Glass Red/White Wine - A carefully selected glass of red or white wine to enhance your dining experience."
+		]
+	}
+}

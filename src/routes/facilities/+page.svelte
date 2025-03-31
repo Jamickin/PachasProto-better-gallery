@@ -1,0 +1,213 @@
+<script>
+	import { onMount } from 'svelte';
+
+	let setMenuData = {};
+
+	onMount(async () => {
+		try {
+			const response = await fetch('/setmenu.json');
+			setMenuData = await response.json();
+		} catch (error) {
+			console.error('Error loading set menu data', error);
+		}
+	});
+</script>
+
+<section class="bg-gray-100 py-16">
+	<div class="container mx-auto px-4">
+		<div class="mb-12 text-center">
+			<h2
+				class="relative mb-4 inline-block text-3xl font-semibold text-gray-800 after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500"
+			>
+				Set Menus
+			</h2>
+			<p class="text-gray-600">Explore our curated set menu options.</p>
+		</div>
+
+		<div class="px-4 md:px-12 lg:px-24 xl:px-36">
+			{#if setMenuData['Set Menu Options']}
+				<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+					{#each setMenuData['Set Menu Options'].menus as menu}
+						<section class="rounded-lg bg-white p-6 shadow-md transition-transform hover:scale-105">
+							<h3
+								class="relative mb-4 inline-block text-2xl font-semibold text-gray-800 after:absolute after:bottom-[-8px] after:left-0 after:h-[3px] after:w-12 after:bg-rose-500"
+							>
+								{menu.name}
+							</h3>
+
+							<div class="mt-4 text-2xl font-bold text-rose-500">R{menu.price}</div>
+
+							<div class="mt-8 space-y-6">
+								<div>
+									<h4 class="mb-3 text-xl font-semibold text-gray-800">Starter</h4>
+									<ul class="mt-2 space-y-2 text-gray-700">
+										{#each menu.starter as item}
+											<li class="border-l-2 border-rose-300 pl-2">{item}</li>
+										{/each}
+									</ul>
+								</div>
+
+								<div>
+									<h4 class="mb-3 text-xl font-semibold text-gray-800">Main Course</h4>
+									<ul class="mt-2 space-y-2 text-gray-700">
+										{#each menu.mainCourse as item}
+											<li class="border-l-2 border-rose-300 pl-2">{item}</li>
+										{/each}
+									</ul>
+								</div>
+
+								<div>
+									<h4 class="mb-3 text-xl font-semibold text-gray-800">Dessert</h4>
+									<ul class="mt-2 space-y-2 text-gray-700">
+										{#each menu.dessert as item}
+											<li class="border-l-2 border-rose-300 pl-2">{item}</li>
+										{/each}
+									</ul>
+								</div>
+							</div>
+						</section>
+					{/each}
+				</div>
+			{/if}
+		</div>
+
+		<div
+			class="my-20 h-px w-full bg-gradient-to-r from-transparent via-rose-500 to-transparent"
+		></div>
+
+		<div class="px-4 md:px-12 lg:px-24 xl:px-36">
+			<section class="rounded-lg bg-white p-8 shadow-md">
+				<h3
+					class="relative mb-6 inline-block text-2xl font-semibold text-gray-800 after:absolute after:bottom-[-8px] after:left-0 after:h-[3px] after:w-12 after:bg-rose-500"
+				>
+					Function Rooms
+				</h3>
+
+				<p class="mb-6 text-gray-700">
+					Our restaurant features 5 spacious private rooms. Perfect for meetings, parties, and
+					corporate events.
+				</p>
+
+				<div class="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+					<div class="rounded-lg border border-gray-100 bg-gray-50 p-4">
+						<span class="font-semibold text-rose-500">F1 & F2</span>
+						<p class="mt-1 text-gray-700">Can be combined to seat 34 people</p>
+					</div>
+
+					<div class="rounded-lg border border-gray-100 bg-gray-50 p-4">
+						<span class="font-semibold text-rose-500">F3</span>
+						<p class="mt-1 text-gray-700">Seats 12 people</p>
+					</div>
+
+					<div class="rounded-lg border border-gray-100 bg-gray-50 p-4">
+						<span class="font-semibold text-rose-500">F4</span>
+						<p class="mt-1 text-gray-700">Seats 10 people</p>
+					</div>
+
+					<div class="rounded-lg border border-gray-100 bg-gray-50 p-4">
+						<span class="font-semibold text-rose-500">F5</span>
+						<p class="mt-1 text-gray-700">Seats 8 people</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="mt-8 rounded-lg bg-white p-8 shadow-md">
+				<h3
+					class="relative mb-6 inline-block text-2xl font-semibold text-gray-800 after:absolute after:bottom-[-8px] after:left-0 after:h-[3px] after:w-12 after:bg-rose-500"
+				>
+					Additional Information
+				</h3>
+
+				<ul class="space-y-3 text-gray-700">
+					<li class="flex items-start">
+						<svg
+							class="mt-1 mr-2 h-5 w-5 text-rose-500"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 13l4 4L19 7"
+							></path></svg
+						>
+						<span>Prices are per person</span>
+					</li>
+
+					<li class="flex items-start">
+						<svg
+							class="mt-1 mr-2 h-5 w-5 text-rose-500"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 13l4 4L19 7"
+							></path></svg
+						>
+						<span>Drinks and Service Fee Excluded</span>
+					</li>
+
+					<li class="flex items-start">
+						<svg
+							class="mt-1 mr-2 h-5 w-5 text-rose-500"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 13l4 4L19 7"
+							></path></svg
+						>
+						<span>All meals served with vegetables</span>
+					</li>
+
+					<li class="flex items-start">
+						<svg
+							class="mt-1 mr-2 h-5 w-5 text-rose-500"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 13l4 4L19 7"
+							></path></svg
+						>
+						<span>Table salad to be ordered separately</span>
+					</li>
+
+					<li class="mt-4 flex items-start rounded-lg border border-rose-100 bg-rose-50 p-3">
+						<svg
+							class="mt-1 mr-2 h-5 w-5 text-rose-500"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+							></path></svg
+						>
+						<span class="font-semibold"
+							>Please note that, during the festive season, these menus are not available for take
+							away, group bookings or office parties</span
+						>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+</section>
