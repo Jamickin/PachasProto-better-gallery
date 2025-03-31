@@ -8,17 +8,17 @@
 			class="h-full rounded-t-lg object-cover transition-transform duration-300 hover:scale-105"
 		/>
 		<img
-			src="/images/food/Dessert_Top.jpg"
+			src="/images/food/resized/Dessert_Top.jpg"
 			alt="Dessert"
 			class="h-full rounded-t-lg object-cover transition-transform duration-300 hover:scale-105 max-md:hidden"
 		/>
 		<img
-			src="/images/food/steak.JPG"
+			src="/images/food/resized/steak.JPG"
 			alt="Steak"
 			class="h-full rounded-t-lg object-cover transition-transform duration-300 hover:scale-105"
 		/>
 		<img
-			src="/images/food/Biltong_Filo.jpg"
+			src="/images/food/resized/Biltong_Filo.jpg"
 			alt="Biltong Filo"
 			class="h-full rounded-t-lg object-cover transition-transform duration-300 hover:scale-105 max-md:hidden"
 		/>
