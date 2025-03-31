@@ -1,36 +1,36 @@
 <script>
 	// Drink images
 	let drinks = [
-		'/images/drinks/anothercocktail.JPG',
-		'/images/drinks/chamonix.JPG',
-		'/images/drinks/daquiry.jpg',
-		'/images/drinks/lavenir.JPG',
-		'/images/drinks/lebonheur.JPG',
-		'/images/drinks/margherita.JPG',
-		'/images/drinks/milkshake.jpg'
+		'/images/drinks/resized/anothercocktail.JPG',
+		'/images/drinks/resized/chamonix.JPG',
+		'/images/drinks/resized/daquiry.jpg',
+		'/images/drinks/resized/lavenir.JPG',
+		'/images/drinks/resized/lebonheur.JPG',
+		'/images/drinks/resized/margherita.JPG',
+		'/images/drinks/resized/milkshake.jpg'
 	];
 
 	// Food images
 	let food = [
-		'/images/food/beautifulsoup.jpg',
-		'/images/food/Biltong_Filo.jpg',
-		'/images/food/biltongmushroom.jpg',
-		'/images/food/blmeringue.jpg',
-		'/images/food/brownie.JPG',
-		'/images/food/carpaccio.jpg',
-		'/images/food/Citrus.jpg',
-		'/images/food/crumble.JPG',
-		'/images/food/cupcake.JPG',
-		'/images/food/Dessert_Top.jpg',
-		'/images/food/filostarter2.JPG',
-		'/images/food/fondant.jpg',
-		'/images/food/greensoup.jpg',
-		'/images/food/IMG_3245.jpg',
-		'/images/food/IMG_5381.JPG',
-		'/images/food/meringue.JPG',
-		'/images/food/pretty.jpg',
-		'/images/food/steak.JPG',
-		'/images/food/tempuraprawn.jpg'
+		'/images/food/resized/beautifulsoup.jpg',
+		'/images/food/resized/Biltong_Filo.jpg',
+		'/images/food/resized/biltongmushroom.jpg',
+		'/images/food/resized/blmeringue.jpg',
+		'/images/food/resized/brownie.JPG',
+		'/images/food/resized/carpaccio.jpg',
+		'/images/food/resized/Citrus.jpg',
+		'/images/food/resized/crumble.JPG',
+		'/images/food/resized/cupcake.JPG',
+		'/images/food/resized/Dessert_Top.jpg',
+		'/images/food/resized/filostarter2.JPG',
+		'/images/food/resized/fondant.jpg',
+		'/images/food/resized/greensoup.jpg',
+		'/images/food/resized/IMG_3245.jpg',
+		'/images/food/resized/IMG_5381.JPG',
+		'/images/food/resized/meringue.JPG',
+		'/images/food/resized/pretty.jpg',
+		'/images/food/resized/steak.JPG',
+		'/images/food/resized/tempuraprawn.jpg'
 	];
 </script>
 

@@ -16,7 +16,7 @@
 	<Sidebar></Sidebar>
 </header>
 
-<main class="mt-68 max-md:{'mt-12'} max-md:{'px-6'} px-8">
+<main class="mt-68 mb-24 max-md:{'mt-12'} max-md:{'px-6'} px-8">
 	{@render children()}
 </main>
 
