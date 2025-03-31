@@ -1,7 +1,8 @@
 <script>
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 	import { fetchMenu } from '$lib/menu.js';
 	import { fetchLiteMenu } from '$lib/litelunch.js';
+	import { browser } from '$app/environment';
 
 	let litemenuData = {};
 	let menuData = {};
@@ -31,33 +32,35 @@
 			return top;
 		}
 
-		// Override default scroll behavior for anchor links
+		// Override default scroll behavior for in-page anchor links
 		const handleAnchorClick = (event) => {
-			const targetId = event.target.getAttribute('href');
-			if (targetId) {
-				event.preventDefault();
+			const target = event.target; // Get the clicked element
+			if (target.classList.contains('in-page-link')) {
+				// Check for the class
+				const targetId = target.getAttribute('href');
+				if (targetId) {
+					event.preventDefault();
 
-				// Use requestAnimationFrame to ensure layout is complete
-				requestAnimationFrame(() => {
-					const targetElement = document.querySelector(targetId);
-					if (targetElement) {
-						// Recalculate navHeight *and* document offsets *right before* scrolling
-						const navHeight = document.querySelector('nav').offsetHeight;
-						const extraOffset = 500;
-						const targetPosition = getDocumentOffset(targetElement) - navHeight - extraOffset;
+					requestAnimationFrame(() => {
+						const targetElement = document.querySelector(targetId);
+						if (targetElement) {
+							const navHeight = document.querySelector('nav').offsetHeight;
+							const extraOffset = 400;
+							const targetPosition = getDocumentOffset(targetElement) - navHeight - extraOffset;
 
-						window.scrollTo({
-							top: Math.max(0, targetPosition),
-							behavior: 'smooth'
-						});
-					}
-				});
+							window.scrollTo({
+								top: Math.max(0, targetPosition),
+								behavior: 'smooth'
+							});
+						}
+					});
+				}
 			}
 		};
 
-		// Add event listeners to anchor links (ensure this happens *after* initial render)
+		// Add event listeners to in-page anchor links (ensure this happens *after* initial render)
 		requestAnimationFrame(() => {
-			const anchorLinks = document.querySelectorAll('nav a');
+			const anchorLinks = document.querySelectorAll('nav .in-page-link'); // Select by class
 			anchorLinks.forEach((link) => {
 				link.addEventListener('click', handleAnchorClick);
 			});
@@ -65,10 +68,12 @@
 
 		// Clean up event listeners on unmount (optional but good practice)
 		return () => {
-			const anchorLinks = document.querySelectorAll('nav a');
-			anchorLinks.forEach((link) => {
-				link.removeEventListener('click', handleAnchorClick);
-			});
+			if (browser) {
+				const anchorLinks = document.querySelectorAll('nav .in-page-link'); // Select by class
+				anchorLinks.forEach((link) => {
+					link.removeEventListener('click', handleAnchorClick);
+				});
+			}
 		};
 	});
 </script>
@@ -77,15 +82,19 @@
 	<div
 		class="container mx-auto flex flex-wrap justify-center space-x-2 px-4 pt-8 md:space-x-6 md:pt-20"
 	>
-		<a href="#a-la-carte" class="py-2 font-medium transition-colors duration-200">A La Carte</a>
+		<a href="#a-la-carte" class="in-page-link py-2 font-medium transition-colors duration-200"
+			>A La Carte</a
+		>
 		{#each aLaCarteCategories as category}
 			<a
 				href="#{category.toLowerCase().replace(/ /g, '-')}"
-				class="py-2 font-medium transition-colors duration-200">{category}</a
+				class="in-page-link py-2 font-medium transition-colors duration-200">{category}</a
 			>
 		{/each}
-		<a href="#light-lunch" class="py-2 font-medium transition-colors duration-200">Light Lunch</a>
-		<a href="#additional-info" class="py-2 font-medium transition-colors duration-200"
+		<a href="#light-lunch" class="in-page-link py-2 font-medium transition-colors duration-200"
+			>Light Lunch</a
+		>
+		<a href="#additional-info" class="in-page-link py-2 font-medium transition-colors duration-200"
 			>Additional Info</a
 		>
 	</div>
@@ -259,4 +268,12 @@
 </section>
 
 <style>
+	nav > div > a::after {
+		content: '|';
+		padding: 0 0.5rem;
+	}
+
+	nav > div > a:last-child::after {
+		content: '';
+	}
 </style>

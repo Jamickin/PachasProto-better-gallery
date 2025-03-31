@@ -3,7 +3,7 @@
 >
 	<div class="flex h-72 justify-center gap-4 overflow-hidden rounded-t-lg">
 		<img
-			src="/johny.jpg"
+			src="/resized/johny.jpg"
 			alt="Johnny"
 			class="h-full rounded-t-lg object-cover transition-transform duration-300 hover:scale-105"
 		/>
