@@ -43,15 +43,19 @@
 
 	<nav class="mt-2 flex flex-wrap items-center justify-center">
 		<div class="flex gap-2 py-3 text-sm font-medium uppercase md:gap-4 md:text-base lg:gap-6">
-			<a href="/menu" class="border-b-2 border-transparent px-2 py-1 transition-all"
-				>Menu & Light Lunch</a
-			>
+			<a href="/menu" class="border-b-2 border-transparent px-2 py-1 transition-all">A La Carte</a>
 			<a href="/facilities" class="border-b-2 border-transparent px-2 py-1 transition-all"
 				>Facilities & Functions</a
 			>
 			<a href="/gallery" class="border-b-2 border-transparent px-2 py-1 transition-all">Gallery</a>
 			<a href="/contact" class="border-b-2 border-transparent px-2 py-1 transition-all"
 				>Contact & Location</a
+			>
+			<a href="/wine-menu" class="border-b-2 border-transparent px-2 py-1 transition-all"
+				>Wine Menu</a
+			>
+			<a href="/lite-lunch" class="border-b-2 border-transparent px-2 py-1 transition-all"
+				>Lunch Special</a
 			>
 		</div>
 	</nav>

@@ -3,11 +3,13 @@
 		"items": [
 			{
 				"name": "Biltong and Mushroom Soup",
-				"description": "A hearty South African-inspired soup featuring tender biltong (dried, cured meat) and earthy mushrooms, blended to create a rich and comforting starter."
+				"description": "A hearty South African-inspired soup featuring tender biltong (dried, cured meat) and earthy mushrooms, blended to create a rich and comforting starter.",
+				"price": "R105"
 			},
 			{
 				"name": "Soup of the Day*",
-				"description": "Chef's daily special soup, crafted using fresh, seasonal ingredients and served piping hot."
+				"description": "Chef's daily special soup, crafted using fresh, seasonal ingredients and served piping hot.",
+				"price": "SQ"
 			}
 		]
 	},
@@ -15,27 +17,33 @@
 		"items": [
 			{
 				"name": "Greek Salad",
-				"description": "A classic Mediterranean salad with crisp cucumbers, juicy tomatoes, red onions, Kalamata olives, and crumbled feta cheese, dressed in a zesty olive oil and herb vinaigrette."
+				"description": "A classic Mediterranean salad with crisp cucumbers, juicy tomatoes, red onions, Kalamata olives, and crumbled feta cheese, dressed in a zesty olive oil and herb vinaigrette.",
+				"price": "R130"
 			},
 			{
 				"name": "Salmon Salad",
-				"description": "Fresh, flaky salmon served atop a bed of mixed greens, garnished with citrus segments and a light, tangy dressing."
+				"description": "Fresh, flaky salmon served atop a bed of mixed greens, garnished with citrus segments and a light, tangy dressing.",
+				"price": "R170"
 			},
 			{
 				"name": "Biltong Salad with Fig and Blue Cheese",
-				"description": "A gourmet salad combining traditional South African biltong with sweet figs and tangy blue cheese, creating a perfect balance of flavors."
+				"description": "A gourmet salad combining traditional South African biltong with sweet figs and tangy blue cheese, creating a perfect balance of flavors.",
+				"price": "R165"
 			},
 			{
 				"name": "Biltong Salad with Fig and Feta Cheese",
-				"description": "A delightful salad featuring biltong, sweet figs, and creamy feta cheese, offering a unique blend of textures and tastes."
+				"description": "A delightful salad featuring biltong, sweet figs, and creamy feta cheese, offering a unique blend of textures and tastes.",
+				"price": "R165"
 			},
 			{
 				"name": "Medium Salad (Serves 3)",
-				"description": "A generous sharing salad perfect for a group, packed with fresh ingredients and vibrant flavors."
+				"description": "A generous sharing salad perfect for a group, packed with fresh ingredients and vibrant flavors.",
+				"price": "R250"
 			},
 			{
 				"name": "Avocado (Optional)*",
-				"description": "Creamy, ripe avocado that can be added to any dish to enhance its richness and nutritional value."
+				"description": "Creamy, ripe avocado that can be added to any dish to enhance its richness and nutritional value.",
+				"price": "SQ"
 			}
 		]
 	},
@@ -43,27 +51,33 @@
 		"items": [
 			{
 				"name": "Parma Ham with Melon and Feta",
-				"description": "A classic Italian-inspired appetizer featuring delicate Parma ham, sweet melon, and crumbled feta cheese for a refreshing start to your meal."
+				"description": "A classic Italian-inspired appetizer featuring delicate Parma ham, sweet melon, and crumbled feta cheese for a refreshing start to your meal.",
+				"price": "R110"
 			},
 			{
 				"name": "Beef Carpaccio with Capers and Parmesan",
-				"description": "Thinly sliced raw beef fillet, dressed with capers, shaved Parmesan, and a drizzle of olive oil, creating a delicate and sophisticated starter."
+				"description": "Thinly sliced raw beef fillet, dressed with capers, shaved Parmesan, and a drizzle of olive oil, creating a delicate and sophisticated starter.",
+				"price": "R120"
 			},
 			{
 				"name": "Beetroot Carpaccio*",
-				"description": "Thinly sliced beetroot arranged artfully, dressed with a light vinaigrette and garnished with herbs, offering a vibrant and earthy appetizer."
+				"description": "Thinly sliced beetroot arranged artfully, dressed with a light vinaigrette and garnished with herbs, offering a vibrant and earthy appetizer.",
+				"price": "R90"
 			},
 			{
 				"name": "Mandarin and Pecan Nut Praline",
-				"description": "A delightful combination of sweet mandarin segments and crunchy pecan nut praline, providing a perfect balance of flavors and textures."
+				"description": "A delightful combination of sweet mandarin segments and crunchy pecan nut praline, providing a perfect balance of flavors and textures.",
+				"price": "SQ"
 			},
 			{
 				"name": "Avocado and Shrimp with Piquant Cocktail Sauce",
-				"description": "Creamy avocado paired with succulent shrimp, served with a zesty and tangy cocktail sauce for an exciting flavor profile."
+				"description": "Creamy avocado paired with succulent shrimp, served with a zesty and tangy cocktail sauce for an exciting flavor profile.",
+				"price": "R145"
 			},
 			{
 				"name": "Steak Tartare",
-				"description": "Classic raw beef fillet prepared with capers, onions, Dijon mustard, black pepper, and olive oil, offering a bold and traditional appetizer for adventurous diners."
+				"description": "Classic raw beef fillet prepared with capers, onions, Dijon mustard, black pepper, and olive oil, offering a bold and traditional appetizer for adventurous diners.",
+				"price": "R140"
 			}
 		]
 	},
@@ -71,43 +85,53 @@
 		"items": [
 			{
 				"name": "Duck Springroll with Berry Confit",
-				"description": "Crispy springroll filled with tender duck meat, served with a sweet and tangy berry confit for a delightful combination of textures."
+				"description": "Crispy springroll filled with tender duck meat, served with a sweet and tangy berry confit for a delightful combination of textures.",
+				"price": "R115"
 			},
 			{
 				"name": "Fried Haloumi Cheese and Chorizo",
-				"description": "Crispy fried haloumi cheese paired with spicy chorizo, creating a rich and indulgent starter with Mediterranean flair."
+				"description": "Crispy fried haloumi cheese paired with spicy chorizo, creating a rich and indulgent starter with Mediterranean flair.",
+				"price": "R120"
 			},
 			{
 				"name": "Snails Sizzling in Creamy Garlic Butter",
-				"description": "Traditional escargot prepared in a rich, aromatic garlic butter sauce, served sizzling hot."
+				"description": "Traditional escargot prepared in a rich, aromatic garlic butter sauce, served sizzling hot.",
+				"price": "R120"
 			},
 			{
 				"name": "Chicken Livers with Separate Peri-Peri",
-				"description": "Tender chicken livers cooked to perfection, served with a side of spicy peri-peri sauce for those who enjoy a bit of heat."
+				"description": "Tender chicken livers cooked to perfection, served with a side of spicy peri-peri sauce for those who enjoy a bit of heat.",
+				"price": "R105"
 			},
 			{
 				"name": "Winelands Camembert with Cranberry Sauce",
-				"description": "Creamy Camembert cheese from the wine region, served with a sweet and tart cranberry sauce."
+				"description": "Creamy Camembert cheese from the wine region, served with a sweet and tart cranberry sauce.",
+				"price": "R110"
 			},
 			{
 				"name": "Brie Cheese Wrapped in Phyllo Pastry with Fig Preserve",
-				"description": "Soft Brie cheese encased in crispy phyllo pastry, accompanied by sweet fig preserve for a luxurious appetizer."
+				"description": "Soft Brie cheese encased in crispy phyllo pastry, accompanied by sweet fig preserve for a luxurious appetizer.",
+				"price": "R110"
 			},
 			{
 				"name": "Crumbed Mushrooms Stuffed with Feta and Peppadew",
-				"description": "Crispy crumbed mushrooms filled with creamy feta and tangy peppadew peppers, offering a delightful vegetarian starter."
+				"description": "Crispy crumbed mushrooms filled with creamy feta and tangy peppadew peppers, offering a delightful vegetarian starter.",
+				"price": "R110"
 			},
 			{
 				"name": "Smoked Snoek Wrapped in Phyllo with Maroela Reduction",
-				"description": "Traditional South African smoked snoek fish wrapped in crispy phyllo pastry, served with a unique Maroela (Marula) fruit reduction."
+				"description": "Traditional South African smoked snoek fish wrapped in crispy phyllo pastry, served with a unique Maroela (Marula) fruit reduction.",
+				"price": "R110"
 			},
 			{
 				"name": "Calamari Starter",
-				"description": "Tender calamari prepared in your choice of lemon butter, garlic butter, or spicy peri-peri sauce."
+				"description": "Tender calamari prepared in your choice of lemon butter, garlic butter, or spicy peri-peri sauce.",
+				"price": "R120"
 			},
 			{
 				"name": "Calamari Portuguesa",
-				"description": "Calamari grilled with garlic, chilli, and olive oil in the traditional Portuguese style, offering a zesty and flavorful seafood starter."
+				"description": "Calamari grilled with garlic, chilli, and olive oil in the traditional Portuguese style, offering a zesty and flavorful seafood starter.",
+				"price": "R120"
 			}
 		]
 	},
@@ -115,31 +139,43 @@
 		"items": [
 			{
 				"name": "Rump (300g)",
-				"description": "A classic cut of beef, known for its robust flavor and tender texture, perfectly grilled to your preference."
+				"description": "A classic cut of beef, known for its robust flavor and tender texture, perfectly grilled to your preference.",
+				"price": "R250"
 			},
 			{
 				"name": "Sirloin (300g)",
-				"description": "A premium beef cut that offers a balance of tenderness and rich, meaty flavor, expertly prepared on the grill."
+				"description": "A premium beef cut that offers a balance of tenderness and rich, meaty flavor, expertly prepared on the grill.",
+				"price": "R250"
 			},
 			{
 				"name": "Sirloin on the Bone (500g)",
-				"description": "A substantial sirloin steak cooked with the bone in, enhancing its natural flavors and juiciness."
+				"description": "A substantial sirloin steak cooked with the bone in, enhancing its natural flavors and juiciness.",
+				"price": "R350"
 			},
 			{
 				"name": "Fillet (200g)",
-				"description": "The most tender cut of beef, known for its buttery texture and mild flavor, carefully grilled to preserve its delicate nature."
+				"description": "The most tender cut of beef, known for its buttery texture and mild flavor, carefully grilled to preserve its delicate nature.",
+				"price": "R240"
 			},
 			{
 				"name": "Fillet (250g)",
-				"description": "A slightly larger portion of the most tender beef cut, perfect for those with a heartier appetite."
+				"description": "A slightly larger portion of the most tender beef cut, perfect for those with a heartier appetite.",
+				"price": "R280"
 			},
 			{
-				"name": "T-Bone (700g)",
-				"description": "A substantial steak featuring both tenderloin and strip steak, offering two distinct textures and flavors in one impressive cut."
+				"name": "T-Bone (800g)",
+				"description": "A substantial steak featuring both tenderloin and strip steak, offering two distinct textures and flavors in one impressive cut.",
+				"price": "R395"
 			},
 			{
-				"name": "Spare Ribs / Ladies Spare Ribs",
-				"description": "Succulent pork spare ribs, available in a full portion or a smaller 'ladies' cut, slow-cooked to fall-off-the-bone tenderness."
+				"name": "Spare Ribs",
+				"description": "Succulent pork spare ribs, slow-cooked to fall-off-the-bone tenderness.",
+				"price": "R310"
+			},
+			{
+				"name": "Ladies Spare Ribs",
+				"description": "A smaller portion of our succulent pork spare ribs, slow-cooked to fall-off-the-bone tenderness.",
+				"price": "R270"
 			}
 		]
 	},
@@ -147,31 +183,43 @@
 		"items": [
 			{
 				"name": "Madagascar Green Peppercorn",
-				"description": "A creamy sauce featuring aromatic green peppercorns from Madagascar, adding a sophisticated and slightly spicy complement to grilled meats."
+				"description": "A creamy sauce featuring aromatic green peppercorns from Madagascar, adding a sophisticated and slightly spicy complement to grilled meats.",
+				"price": "R40"
 			},
 			{
 				"name": "Mushroom",
-				"description": "A rich, earthy sauce made with a variety of mushrooms, providing a deep, umami flavor to enhance your grilled dish."
+				"description": "A rich, earthy sauce made with a variety of mushrooms, providing a deep, umami flavor to enhance your grilled dish.",
+				"price": "R40"
 			},
 			{
 				"name": "The Original Monkey Gland",
-				"description": "A classic South African sauce with a tangy, slightly sweet flavor, featuring a unique blend of ingredients that perfectly complements grilled meats."
+				"description": "A classic South African sauce with a tangy, slightly sweet flavor, featuring a unique blend of ingredients that perfectly complements grilled meats.",
+				"price": "R40"
 			},
 			{
 				"name": "Red Wine, Bacon, and Mushroom",
-				"description": "A luxurious sauce combining the depth of red wine, the smokiness of bacon, and the earthiness of mushrooms."
+				"description": "A luxurious sauce combining the depth of red wine, the smokiness of bacon, and the earthiness of mushrooms.",
+				"price": "R40"
 			},
 			{
 				"name": "Blue Cheese",
-				"description": "A bold, creamy sauce made with tangy blue cheese, offering a strong and distinctive flavor for cheese lovers."
+				"description": "A bold, creamy sauce made with tangy blue cheese, offering a strong and distinctive flavor for cheese lovers.",
+				"price": "R40"
 			},
 			{
 				"name": "Wholegrain Mustard and Brandy",
-				"description": "A sophisticated sauce combining the spicy kick of wholegrain mustard with the warmth of brandy, creating a complex and rich accompaniment."
+				"description": "A sophisticated sauce combining the spicy kick of wholegrain mustard with the warmth of brandy, creating a complex and rich accompaniment.",
+				"price": "R40"
 			},
 			{
 				"name": "Café de Paris – Herb Butter Cheese",
-				"description": "A classic French-style sauce featuring a blend of herbs and butter, creating a rich and aromatic complement to grilled meats."
+				"description": "A classic French-style sauce featuring a blend of herbs and butter, creating a rich and aromatic complement to grilled meats.",
+				"price": "R40"
+			},
+			{
+				"name": "Cheese",
+				"description": "A creamy, rich cheese sauce that adds a velvety texture and savory flavor to your dish.",
+				"price": "R40"
 			}
 		]
 	},
@@ -179,19 +227,23 @@
 		"items": [
 			{
 				"name": "Venison Fillet with Black Cherry and Red Wine Reduction",
-				"description": "Tender venison fillet served with a luxurious sauce combining the sweetness of black cherries and the depth of red wine."
+				"description": "Tender venison fillet served with a luxurious sauce combining the sweetness of black cherries and the depth of red wine.",
+				"price": "SQ"
 			},
 			{
 				"name": "European Wild Boar with Wholegrain Mustard Cream Sauce",
-				"description": "Succulent wild boar meat paired with a creamy wholegrain mustard sauce, offering a rustic and flavorful dining experience."
+				"description": "Succulent wild boar meat paired with a creamy wholegrain mustard sauce, offering a rustic and flavorful dining experience.",
+				"price": "R280"
 			},
 			{
 				"name": "Gemsbok Schnitzel",
-				"description": "Crumbed loin of gemsbok (oryx) served with a rich red wine, bacon, and mushroom sauce, showcasing a unique South African game meat."
+				"description": "Crumbed loin of gemsbok (oryx) served with a rich red wine, bacon, and mushroom sauce, showcasing a unique South African game meat.",
+				"price": "R260"
 			},
 			{
 				"name": "Eland Stew",
-				"description": "A hearty stew featuring tender eland meat, slow-cooked to perfection with a blend of herbs and spices."
+				"description": "A hearty stew featuring tender eland meat, slow-cooked to perfection with a blend of herbs and spices.",
+				"price": "R260"
 			}
 		]
 	},
@@ -199,39 +251,53 @@
 		"items": [
 			{
 				"name": "Sirloin Togetherness",
-				"description": "A well-matured sirloin served with a creamy red wine, bacon, and mushroom sauce, perfect for sharing."
+				"description": "A well-matured sirloin served with a creamy red wine, bacon, and mushroom sauce, perfect for sharing.",
+				"price": "R285"
 			},
 			{
 				"name": "Sirloin Jack Daniels",
-				"description": "Sirloin steak prepared with a distinctive Jack Daniels whiskey-infused bacon marmalade, offering a bold and unique flavor profile."
+				"description": "Sirloin steak prepared with a distinctive Jack Daniels whiskey-infused bacon marmalade, offering a bold and unique flavor profile.",
+				"price": "R285"
 			},
 			{
 				"name": "Fillet Atlantis",
-				"description": "Tender fillet topped with succulent crayfish and a delicate sherry sauce, creating an indulgent seafood and meat combination."
+				"description": "Tender fillet topped with succulent crayfish and a delicate sherry sauce, creating an indulgent seafood and meat combination.",
+				"price": "SQ"
 			},
 			{
 				"name": "Fillet Rossini",
-				"description": "Classic fillet topped with rich chicken liver and red wine sauce, inspired by the famous French culinary tradition."
+				"description": "Classic fillet topped with rich chicken liver and red wine sauce, inspired by the famous French culinary tradition.",
+				"price": "R320"
 			},
 			{
 				"name": "Between the Sheets",
-				"description": "A decadent fillet topped with shrimps, asparagus, mushrooms, and a creamy pepper and Fontina cheese sauce."
+				"description": "A decadent fillet topped with shrimps, asparagus, mushrooms, and a creamy pepper and Fontina cheese sauce.",
+				"price": "R340"
 			},
 			{
 				"name": "Fillet Haloumi",
-				"description": "Fillet served with haloumi cheese and a mixed berry and red wine reduction, offering a perfect balance of flavors."
+				"description": "Fillet served with haloumi cheese and a mixed berry and red wine reduction, offering a perfect balance of flavors.",
+				"price": "R295"
 			},
 			{
 				"name": "Lamb of the Day",
-				"description": "Daily special lamb dish prepared by the chef, ask your host for today's unique preparation."
+				"description": "Daily special lamb dish prepared by the chef, ask your host for today's unique preparation.",
+				"price": "SQ"
 			},
 			{
 				"name": "Lamb Curry",
-				"description": "A mild and fragrant lamb curry, featuring tender meat in a well-balanced, aromatic sauce."
+				"description": "A mild and fragrant lamb curry, featuring tender meat in a well-balanced, aromatic sauce.",
+				"price": "R295"
 			},
 			{
 				"name": "Oxtail",
-				"description": "Slow-cooked oxtail braised in red wine, flavored with herbs and gremolata, offering a rich and comforting dish."
+				"description": "Slow-cooked oxtail braised in red wine, flavored with herbs and gremolata, offering a rich and comforting dish.",
+				"price": "R295"
+			},
+			{
+				"name": "Veal Schnitzel",
+				"description": "Tender veal coated in crispy breadcrumbs, served with your choice of cheese or mushroom sauce for a classic European dish.",
+				"price": "R270"
 			}
 		]
 	},
@@ -239,15 +305,18 @@
 		"items": [
 			{
 				"name": "Spring Chicken",
-				"description": "Tender spring chicken available in two classic preparations: delicate lemon butter or spicy peri-peri."
+				"description": "Tender spring chicken available in two classic preparations: delicate lemon butter or spicy peri-peri.",
+				"price": "R230"
 			},
 			{
 				"name": "Chicken Schnitzel",
-				"description": "Crispy crumbed chicken served with your choice of cheese or mushroom sauce, a classic comfort food."
+				"description": "Crispy crumbed chicken served with your choice of cheese or mushroom sauce, a classic comfort food.",
+				"price": "R215"
 			},
 			{
 				"name": "Duck Fuji",
-				"description": "Elegant duck dish featuring a delightful combination of lychees, cherries, and mandarin orange slices, creating a sweet and savory experience."
+				"description": "Elegant duck dish featuring a delightful combination of lychees, cherries, and mandarin orange slices, creating a sweet and savory experience.",
+				"price": "R275"
 			}
 		]
 	},
@@ -255,19 +324,23 @@
 		"items": [
 			{
 				"name": "Potato Curry",
-				"description": "A hearty vegetarian curry featuring tender potatoes in a rich, aromatic sauce."
+				"description": "A hearty vegetarian curry featuring tender potatoes in a rich, aromatic sauce.",
+				"price": "R200"
 			},
 			{
 				"name": "Mushroom Stroganoff",
-				"description": "A creamy vegetarian dish with exotic mushrooms simmered in coconut cream, offering a luxurious plant-based option."
+				"description": "A creamy vegetarian dish with exotic mushrooms simmered in coconut cream, offering a luxurious plant-based option.",
+				"price": "R225"
 			},
 			{
 				"name": "Toor Palak Dahl",
-				"description": "A nutritious and flavorful curry combining lentils, spinach, and split peas, showcasing the depth of Indian vegetarian cuisine."
+				"description": "A nutritious and flavorful curry combining lentils, spinach, and split peas, showcasing the depth of Indian vegetarian cuisine.",
+				"price": "R200"
 			},
 			{
 				"name": "Paneer Curry",
-				"description": "A dairy-free curry featuring plant-based cheese, sundried tomatoes, and chickpeas, providing a protein-rich vegetarian meal."
+				"description": "A dairy-free curry featuring plant-based cheese, sundried tomatoes, and chickpeas, providing a protein-rich vegetarian meal.",
+				"price": "R200"
 			}
 		]
 	},
@@ -275,35 +348,53 @@
 		"items": [
 			{
 				"name": "Kingklip Belle Meuniere",
-				"description": "Grilled kingklip fish served with classic lemon butter, highlighting the delicate flavor of this South African favorite."
+				"description": "Grilled kingklip fish served with classic lemon butter, highlighting the delicate flavor of this South African favorite.",
+				"price": "R315"
 			},
 			{
 				"name": "Kingklip Pachas",
-				"description": "Kingklip accompanied by shrimps, mushrooms, and asparagus in a creamy white wine sauce, offering a luxurious seafood experience."
+				"description": "Kingklip accompanied by shrimps, mushrooms, and asparagus in a creamy white wine sauce, offering a luxurious seafood experience.",
+				"price": "R365"
 			},
 			{
 				"name": "Kingklip Curry Shrimp",
-				"description": "A mild coconut cream curry featuring kingklip and shrimp, providing a gentle and flavorful seafood dish."
+				"description": "A mild coconut cream curry featuring kingklip and shrimp, providing a gentle and flavorful seafood dish.",
+				"price": "R365"
 			},
 			{
 				"name": "Norwegian Salmon",
-				"description": "Fresh Norwegian salmon prepared to perfection, showcasing the fish's rich, buttery flavor."
+				"description": "Fresh Norwegian salmon prepared to perfection, showcasing the fish's rich, buttery flavor.",
+				"price": "SQ"
 			},
 			{
 				"name": "Calamari",
-				"description": "Tender calamari available in lemon butter, garlic butter, or spicy peri-peri preparations."
+				"description": "Tender calamari available in lemon butter, garlic butter, or spicy peri-peri preparations.",
+				"price": "R245"
 			},
 			{
 				"name": "Calamari Portuguesa",
-				"description": "Calamari grilled in garlic, chilli, and olive oil, prepared in the traditional Portuguese style."
+				"description": "Calamari grilled in garlic, chilli, and olive oil, prepared in the traditional Portuguese style.",
+				"price": "R245"
 			},
 			{
 				"name": "Prawns",
-				"description": "Succulent prawns served with basmati rice and a choice of lemon butter, garlic butter, or peri-peri sauce."
+				"description": "Succulent prawns served with basmati rice and a choice of lemon butter, garlic butter, or peri-peri sauce.",
+				"price": "SQ"
 			},
 			{
 				"name": "Seafood Combo",
-				"description": "A customizable seafood platter – ask your host to create a combination of seafood delights tailored to your preferences."
+				"description": "A customizable seafood platter – ask your host to create a combination of seafood delights tailored to your preferences.",
+				"price": "SQ"
+			},
+			{
+				"name": "Sole Belle Meuniere",
+				"description": "Delicate sole fish grilled to perfection and served with a classic lemon butter sauce.",
+				"price": "SQ"
+			},
+			{
+				"name": "Sole Pachas",
+				"description": "Sole fish served with shrimps, asparagus and mushroom in a creamy white wine sauce.",
+				"price": "SQ"
 			}
 		]
 	},
@@ -311,39 +402,53 @@
 		"items": [
 			{
 				"name": "Apple Crumble",
-				"description": "A classic dessert featuring warm, spiced apples topped with a crispy, buttery crumble, served with a scoop of vanilla ice cream."
+				"description": "A classic dessert featuring warm, spiced apples topped with a crispy, buttery crumble, served with a scoop of vanilla ice cream.",
+				"price": "R105"
 			},
 			{
 				"name": "Amarula Ice-Cream",
-				"description": "Creamy ice cream infused with the rich, caramel-like flavor of Amarula liqueur, a South African specialty."
+				"description": "Creamy ice cream infused with the rich, caramel-like flavor of Amarula liqueur, a South African specialty.",
+				"price": "SQ"
 			},
 			{
 				"name": "Chocolate Brownie",
-				"description": "A decadent, fudgy chocolate brownie that's crisp on the outside and delightfully gooey on the inside."
+				"description": "A decadent, fudgy chocolate brownie that's crisp on the outside and delightfully gooey on the inside.",
+				"price": "R105"
 			},
 			{
 				"name": "Oreo Ice-Cream",
-				"description": "Creamy vanilla ice cream loaded with chunks of classic Oreo cookies, perfect for chocolate lovers."
+				"description": "Creamy vanilla ice cream loaded with chunks of classic Oreo cookies, perfect for chocolate lovers.",
+				"price": "SQ"
 			},
 			{
 				"name": "Caramel Crème Brûlée",
-				"description": "A classic French dessert with a silky smooth caramel custard and a perfectly caramelized sugar crust."
+				"description": "A classic French dessert with a silky smooth caramel custard and a perfectly caramelized sugar crust.",
+				"price": "R99"
 			},
 			{
 				"name": "Baked Cheesecake",
-				"description": "A rich and creamy cheesecake served with a vibrant fresh fruit coulis, offering a perfect balance of flavors."
+				"description": "A rich and creamy cheesecake served with a vibrant fresh fruit coulis, offering a perfect balance of flavors.",
+				"price": "R105"
 			},
 			{
 				"name": "Lemon Meringue",
-				"description": "A tangy lemon custard topped with fluffy, toasted meringue, creating a delightful contrast of flavors and textures."
+				"description": "A tangy lemon custard topped with fluffy, toasted meringue, creating a delightful contrast of flavors and textures.",
+				"price": "R105"
 			},
 			{
 				"name": "Italian Kisses",
-				"description": "Delicate Italian-style dessert cookies, light and sweet, perfect for ending your meal on a delicate note."
+				"description": "Delicate Italian-style dessert cookies, light and sweet, perfect for ending your meal on a delicate note.",
+				"price": "R100"
 			},
 			{
 				"name": "Ice-Cream and Bar One Sauce",
-				"description": "Creamy ice cream drizzled with rich Bar One chocolate sauce, a indulgent treat for chocolate enthusiasts."
+				"description": "Creamy ice cream drizzled with rich Bar One chocolate sauce, a indulgent treat for chocolate enthusiasts.",
+				"price": "R95"
+			},
+			{
+				"name": "Dessert of the Day",
+				"description": "Ask your server about our special dessert selection for the day.",
+				"price": "SQ"
 			}
 		]
 	}
