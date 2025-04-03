@@ -89,7 +89,7 @@
 		<p class="text-gray-600">Enjoy our delightful light lunch options.</p>
 	</div>
 
-	<section class="grid grid-cols-1 gap-4 text-center md:grid-cols-2 lg:grid-cols-3">
+	<section class="grid grid-cols-1 gap-4 text-center md:grid-cols-2">
 		{#each Object.keys(litemenuData || {}) as cuisine}
 			<div class="rounded-lg bg-white p-5 shadow-md">
 				<h3

@@ -119,6 +119,12 @@
 				</h3>
 
 				<ul class="space-y-3 text-gray-700">
+					<li class="mt-4 flex items-start p-3">
+						<span class="font-semibold"
+							>Nothing is set in stone at Pachas. Feel free to call in and adjust the menu to your
+							requirements!</span
+						>
+					</li>
 					<li class="flex items-start">
 						<svg
 							class="mt-1 mr-2 h-5 w-5 text-rose-500"

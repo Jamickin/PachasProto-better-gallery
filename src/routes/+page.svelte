@@ -41,7 +41,7 @@
 		<h2
 			class="relative mb-6 inline-block text-2xl font-semibold text-gray-800 after:absolute after:bottom-[-8px] after:left-0 after:h-[3px] after:w-12 after:bg-rose-500"
 		>
-			Our Offerings
+			What We Offer
 		</h2>
 		<ul class="space-y-3 text-gray-700">
 			<li class="flex items-start">
@@ -71,6 +71,18 @@
 				<span
 					><strong class="font-medium">Venues:</strong> Private options for functions & business meals.</span
 				>
+			</li>
+			<li class="flex items-start">
+				<svg
+					class="mt-1 mr-2 h-5 w-5 text-rose-500"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg"
+					><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"
+					></path></svg
+				>
+				<span><strong class="font-medium">We are wheelchair-friendly</strong></span>
 			</li>
 		</ul>
 	</section>
