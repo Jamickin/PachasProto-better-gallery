@@ -73,56 +73,28 @@
 	});
 </script>
 
-<!-- 
-<nav class="fixed top-0 left-0 z-10 w-screen bg-slate-50 py-4 shadow-md">
-	<div
-		class="container mx-auto flex flex-wrap justify-center space-x-2 px-4 pt-8 md:space-x-6 md:pt-20"
-	>
-		<a href="#a-la-carte" class="in-page-link py-2 font-medium transition-colors duration-200"
-			>A La Carte</a
-		>
-		{#each aLaCarteCategories as category}
-			<a
-				href="#{category.toLowerCase().replace(/ /g, '-')}"
-				class="in-page-link py-2 font-medium transition-colors duration-200">{category}</a
-			>
-		{/each}
-		<a href="#light-lunch" class="in-page-link py-2 font-medium transition-colors duration-200"
-			>Light Lunch</a
-		>
-		<a href="#additional-info" class="in-page-link py-2 font-medium transition-colors duration-200"
-			>Additional Info</a
-		>
-	</div>
-</nav> -->
-
 <section class="py-16">
 	<div class="container mx-auto px-4">
 		<div class="mb-12 text-center">
-			<h2
-				id="a-la-carte"
-				class="relative mb-4 inline-block text-3xl font-semibold after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500"
-			>
-				A La Carte
-			</h2>
-			<p class="text-gray-600">Explore our exquisite selection of dishes.</p>
+			<h2 id="a-la-carte" class="section-title">A La Carte</h2>
+			<p class="section-subtitle">Explore our exquisite selection of dishes.</p>
 		</div>
 
 		{#each Object.keys(menuData || {}) as category}
 			<section id={category.toLowerCase().replace(/ /g, '-')} class="my-8">
 				<h3
-					class="relative mb-6 text-center text-2xl font-semibold after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500"
+					class="relative mb-6 text-center text-2xl font-semibold text-gray-800 after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500"
 				>
 					{category}
 				</h3>
-				<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+				<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 					{#each menuData[category]?.items || [] as item}
-						<div class="rounded-lg p-5 shadow-md transition-all hover:scale-105">
-							<div class="text-lg font-semibold text-gray-900">
+						<div class="card hover-card">
+							<div class="text-lg font-semibold text-gray-800">
 								{typeof item === 'string' ? item : item.name || item}
 							</div>
 							{#if typeof item === 'object' && item.description}
-								<p class="mt-2 text-sm text-gray-600">{item.description}</p>
+								<p class="mt-2 text-gray-600">{item.description}</p>
 							{/if}
 							{#if typeof item === 'object' && item.price}
 								<p class="mt-2 font-semibold text-rose-500">{item.price}</p>
@@ -134,6 +106,3 @@
 		{/each}
 	</div>
 </section>
-
-<style>
-</style>

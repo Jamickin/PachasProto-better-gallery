@@ -50,5 +50,6 @@
 		<a onclick={toggleSidebar} href="/facilities">Facilities & Functions</a>
 		<a onclick={toggleSidebar} href="/gallery">Gallery</a>
 		<a onclick={toggleSidebar} href="/contact">Contact & Location</a>
+		<a onclick={toggleSidebar} href="/wine-menu">Wine Menu</a>
 	</nav>
 </aside>

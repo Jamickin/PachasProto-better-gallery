@@ -29,7 +29,7 @@
 	class:bg-white={isScrolled}
 	class:bg-opacity-95={isScrolled}
 	class:-translate-y-36={hideTitle}
-	class="fixed top-0 left-0 z-[99] flex w-full flex-col items-center justify-between px-6 py-3 transition-all duration-300 max-md:hidden md:px-12 lg:px-24"
+	class="fixed top-0 left-0 z-[99] flex w-full flex-col items-center justify-between px-6 py-3 transition-all duration-300 max-md:hidden md:px-12 lg:px-20"
 >
 	<div class="flex justify-center">
 		<a href="/" class="block transform transition-transform duration-300 hover:scale-105">

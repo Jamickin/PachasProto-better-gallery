@@ -6,12 +6,8 @@
 <section class="bg-gray-100 py-16">
 	<div class="container mx-auto px-4">
 		<div class="mb-12 text-center">
-			<h2
-				class="relative mb-4 inline-block text-3xl font-semibold text-gray-800 after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500"
-			>
-				Visit Pachas Restaurant
-			</h2>
-			<p class="text-gray-600">Find us and plan your visit.</p>
+			<h2 class="section-heading">Visit Pachas Restaurant</h2>
+			<p class="text-gray-700">Find us and plan your visit.</p>
 		</div>
 
 		<div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -28,17 +24,17 @@
 				</div>
 
 				<div class="mb-4">
-					<h3 class="mb-2 text-lg font-semibold text-gray-700">Address:</h3>
-					<p class="text-gray-600">
+					<h3 class="mb-2 text-lg font-semibold text-gray-800">Address:</h3>
+					<p class="text-gray-700">
 						Pachas Restaurant, The Club Retail, <br />
 						22 Dely Road, Hazelwood, <br />
 						Pretoria, 0181
 					</p>
-					<p class="mt-1 text-sm text-gray-500 italic">Just a short drive from Lynnwood Ridge!</p>
+					<p class="mt-1 text-sm text-gray-700 italic">Just a short drive from Lynnwood Ridge!</p>
 				</div>
 
 				<div>
-					<h3 class="mb-3 text-lg font-semibold text-gray-700">Parking & Access:</h3>
+					<h3 class="mb-3 text-lg font-semibold text-gray-800">Parking & Access:</h3>
 					<ul class="space-y-3 text-gray-700">
 						<li class="flex items-start">
 							<svg
@@ -78,11 +74,7 @@
 
 			<div class="space-y-6">
 				<section class="rounded-lg bg-white p-6 shadow-md">
-					<h2
-						class="relative mb-6 inline-block text-2xl font-semibold text-gray-800 after:absolute after:bottom-[-8px] after:left-0 after:h-[3px] after:w-12 after:bg-rose-500"
-					>
-						Contact & Bookings
-					</h2>
+					<h2 class="section-subheading">Contact & Bookings</h2>
 					<ul class="mb-6 space-y-3 text-gray-700">
 						<li class="flex items-start">
 							<svg

@@ -71,25 +71,13 @@
 	});
 </script>
 
-<!-- <nav class="fixed top-0 left-0 z-10 w-screen bg-slate-50 py-4 shadow-md">
+<section class="py-16">
 	<div class="container mx-auto px-4">
-		<h1 class="mb-4 text-center text-2xl font-bold text-rose-600">Wine Menu</h1>
-		<div class="flex flex-wrap justify-center space-x-2 overflow-x-auto py-2 md:space-x-4">
-			{#each wineCategories as category}
-				<a
-					href="#{category.toLowerCase().replace(/ /g, '-')}"
-					class="in-page-link py-2 font-medium whitespace-nowrap transition-colors duration-200 hover:text-rose-600"
-					>{category}</a
-				>
-			{/each}
+		<div class="mb-12 text-center">
+			<h2 class="section-title">Wine Menu</h2>
+			<p class="section-subtitle">Explore our exquisite selection of wines</p>
 		</div>
-	</div>
-</nav> -->
 
-<section class="">
-	<h1>Wine List</h1>
-
-	<div class="container mx-auto px-4">
 		{#if loading}
 			<div class="flex h-64 items-center justify-center">
 				<div class="text-xl text-gray-600">Loading wine menu...</div>
@@ -98,15 +86,15 @@
 			{#each wineCategories as category}
 				<section id={category.toLowerCase().replace(/ /g, '-')} class="mb-16">
 					<h3
-						class="relative mb-8 text-center text-2xl font-semibold after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500"
+						class="relative mb-8 text-center text-2xl font-semibold text-gray-800 after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500"
 					>
 						{category}
 					</h3>
 					<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 						{#each wineData[category]?.items || [] as wine}
-							<div class="rounded-lg bg-white p-5 shadow-md transition-transform hover:scale-105">
+							<div class="card hover-card">
 								<div class="flex items-start justify-between">
-									<div class="text-lg font-semibold text-gray-900">
+									<div class="text-lg font-semibold text-gray-800">
 										{typeof wine === 'string' ? wine : wine.name || wine}
 									</div>
 									{#if typeof wine === 'object' && wine.price}
@@ -124,6 +112,3 @@
 		{/if}
 	</div>
 </section>
-
-<style>
-</style>

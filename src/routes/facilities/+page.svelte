@@ -16,26 +16,18 @@
 <section class="bg-gray-100 py-16">
 	<div class="container mx-auto px-4">
 		<div class="mb-12 text-center">
-			<h2
-				class="relative mb-4 inline-block text-3xl font-semibold text-gray-800 after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500"
-			>
-				Set Menus
-			</h2>
-			<p class="text-gray-600">Explore our curated set menu options.</p>
+			<h2 class="section-heading">Set Menus</h2>
+			<p class="text-gray-700">Explore our curated set menu options.</p>
 		</div>
 
 		<div class="px-4 md:px-12 lg:px-24 xl:px-36">
 			{#if setMenuData['Set Menu Options']}
 				<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 					{#each setMenuData['Set Menu Options'].menus as menu}
-						<section class="rounded-lg bg-white p-6 shadow-md transition-transform hover:scale-105">
-							<h3
-								class="relative mb-4 inline-block text-2xl font-semibold text-gray-800 after:absolute after:bottom-[-8px] after:left-0 after:h-[3px] after:w-12 after:bg-rose-500"
-							>
-								{menu.name}
-							</h3>
+						<section class="card p-6">
+							<h3 class="section-subheading">{menu.name}</h3>
 
-							<div class="mt-4 text-2xl font-bold text-rose-500">R{menu.price}</div>
+							<div class="mt-4 text-2xl font-bold text-rose-600">R{menu.price}</div>
 
 							<div class="mt-8 space-y-6">
 								<div>
@@ -77,11 +69,7 @@
 
 		<div class="px-4 md:px-12 lg:px-24 xl:px-36">
 			<section class="rounded-lg bg-white p-8 shadow-md">
-				<h3
-					class="relative mb-6 inline-block text-2xl font-semibold text-gray-800 after:absolute after:bottom-[-8px] after:left-0 after:h-[3px] after:w-12 after:bg-rose-500"
-				>
-					Function Rooms
-				</h3>
+				<h3 class="section-subheading">Function Rooms</h3>
 
 				<p class="mb-6 text-gray-700">
 					Our restaurant features 5 spacious private rooms. Perfect for meetings, parties, and
@@ -112,11 +100,7 @@
 			</section>
 
 			<section class="mt-8 rounded-lg bg-white p-8 shadow-md">
-				<h3
-					class="relative mb-6 inline-block text-2xl font-semibold text-gray-800 after:absolute after:bottom-[-8px] after:left-0 after:h-[3px] after:w-12 after:bg-rose-500"
-				>
-					Additional Information
-				</h3>
+				<h3 class="section-subheading">Additional Information</h3>
 
 				<ul class="space-y-3 text-gray-700">
 					<li class="mt-4 flex items-start p-3">

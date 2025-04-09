@@ -1,0 +1,52 @@
+{
+	"testimonials": [
+		{
+			"id": 1,
+			"quote": "Excellent food and service. The ambiance is also great, making it a perfect spot for a special occasion or a business meeting.",
+			"author": "Jaco V.",
+			"location": "Pretoria",
+			"rating": 5,
+			"image": "/images/testimonials/generic.jpg"
+		},
+		{
+			"id": 2,
+			"quote": "Consistently high quality food and impeccable service. Pachas remains one of the top fine dining experiences in Pretoria.",
+			"author": "Samantha K.",
+			"location": "Pretoria East",
+			"rating": 5,
+			"image": "/images/testimonials/generic.jpg"
+		},
+		{
+			"id": 3,
+			"quote": "From the moment we arrived, the staff were attentive and friendly. The menu has a great selection, and every dish we ordered was beautifully presented and tasted fantastic.",
+			"author": "Pieter & Susan",
+			"location": "Lynnwood Ridge",
+			"rating": 5,
+			"image": "/images/testimonials/generic.jpg"
+		},
+		{
+			"id": 4,
+			"quote": "The Biltong soup the Best! Pachas is a great Restaurant with excellent service from Andre the waiter and the Chef Corne . The food is excellent from the starter till the end.",
+			"author": "74marilisev",
+			"location": "Pretoria",
+			"rating": 5,
+			"image": "/images/testimonials/generic.jpg"
+		},
+		{
+			"id": 5,
+			"quote": "Excellent menu and great food. The quality still is exceptional. Atmosphere is great and attention to detail is tops. Very special!",
+			"author": "05 Mar 2021",
+			"location": "Pretoria",
+			"rating": 5,
+			"image": "/images/testimonials/generic.jpg"
+		},
+		{
+			"id": 6,
+			"quote": "We celebrated my husband's 70th birthday at Pachas What an occasion!! We could not have chosen a better place anywhere. The food, attention to detail, the professionalism and service gets full marks.",
+			"author": "950weldah",
+			"location": "Pretoria",
+			"rating": 5,
+			"image": "/images/testimonials/generic.jpg"
+		}
+	]
+}
