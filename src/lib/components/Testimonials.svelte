@@ -20,15 +20,14 @@
 
 	// Enhanced transition with direction awareness
 	async function setTestimonial(index, immediate = false) {
-		if (transitioning && !immediate) return;
-
-		transitioning = true;
+		// Removed the transitioning check to fix the button not working
 		previousIndex = currentIndex;
 		currentIndex = index;
 
 		resetInterval();
 
 		if (!immediate) {
+			transitioning = true;
 			// Wait for transition to complete
 			await tick();
 			setTimeout(() => {
@@ -40,14 +39,16 @@
 	}
 
 	function nextTestimonial() {
-		if (testimonials.length > 0 && !transitioning) {
+		if (testimonials.length > 0) {
+			// Removed the transitioning check
 			const nextIndex = (currentIndex + 1) % testimonials.length;
 			setTestimonial(nextIndex);
 		}
 	}
 
 	function previousTestimonial() {
-		if (testimonials.length > 0 && !transitioning) {
+		if (testimonials.length > 0) {
+			// Removed the transitioning check
 			const prevIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
 			setTestimonial(prevIndex);
 		}
@@ -227,24 +228,7 @@
 									}}
 								>
 									<div class="md:w-1/3">
-										<!-- Elegant image container with decorative elements -->
-										<div class="group relative mb-6 hidden md:block">
-											<div
-												class="absolute -top-3 -left-3 h-32 w-32 rounded-full bg-gradient-to-br from-rose-200 to-rose-400 opacity-60 blur-lg transition-all duration-500 group-hover:opacity-80"
-											></div>
-											<div
-												class="absolute -right-1 -bottom-1 h-6 w-6 rounded-full bg-rose-500 opacity-60"
-											></div>
-											<div
-												class="absolute -bottom-3 -left-1 h-4 w-4 rounded-full bg-rose-300 opacity-60"
-											></div>
-											<img
-												src={testimonial.image}
-												alt={testimonial.author}
-												class="relative h-32 w-32 rounded-full object-cover ring-4 shadow-md ring-white transition-transform duration-500 group-hover:scale-105"
-											/>
-										</div>
-
+										<!-- Removed the image container -->
 										<!-- Star Rating display -->
 										<div class="mb-4 flex justify-center md:justify-start">
 											<div class="relative">
@@ -376,7 +360,7 @@
 
 				<!-- Enhanced Navigation Controls -->
 				<div class="mt-6 flex items-center justify-between">
-					<!-- Previous Button - Fixed -->
+					<!-- Previous Button -->
 					<button
 						on:click={previousTestimonial}
 						type="button"
@@ -404,11 +388,11 @@
 						<span>{testimonials.length}</span>
 					</div>
 
-					<!-- Next Button - Fixed -->
+					<!-- Next Button -->
 					<button
 						on:click={nextTestimonial}
 						type="button"
-						class="group flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-gray-600 shadow-md transition-all hover:bg-rose-50 hover:text-rose-600 focus:ring-2 focus:ring-rose-400 focus:ring-offset-2 focus:outline-none"
+						class="group z-50 flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-gray-600 shadow-md transition-all hover:bg-rose-50 hover:text-rose-600 focus:ring-2 focus:ring-rose-400 focus:ring-offset-2 focus:outline-none"
 						aria-label="Next testimonial"
 					>
 						<span class="hidden sm:inline">Next</span>
@@ -428,31 +412,20 @@
 					</button>
 				</div>
 
-				<!-- Google Reviews CTA -->
+				<!-- Google Reviews CTA - Simplified -->
 				<div class="mt-10 flex justify-center">
 					<a
-						href="https://g.page/r/YOUR_GOOGLE_BUSINESS_ID/review"
+						href="https://g.co/kgs/pachasrestaurant"
 						target="_blank"
 						rel="noopener noreferrer"
-						class="group relative inline-flex items-center overflow-hidden rounded-full bg-white px-6 py-3 text-sm font-medium text-gray-800 shadow-md transition-all hover:text-white focus:ring-2 focus:ring-rose-400 focus:ring-offset-2 focus:outline-none"
+						class="flex items-center gap-2 rounded-lg bg-rose-500 px-6 py-3 text-sm font-medium text-white shadow-md hover:bg-rose-600"
 					>
-						<!-- Hover background effect -->
-						<span
-							class="absolute inset-0 translate-y-full bg-gradient-to-r from-rose-500 to-rose-600 transition-transform duration-300 group-hover:translate-y-0"
-						></span>
-
-						<svg
-							class="relative mr-2 h-5 w-5 transition-colors duration-300 group-hover:text-white"
-							viewBox="0 0 24 24"
-							fill="currentColor"
-						>
+						<svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
 							<path
 								d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"
 							/>
 						</svg>
-						<span class="relative transition-colors duration-300 group-hover:text-white"
-							>Leave a review on Google</span
-						>
+						<span>Leave a review on Google</span>
 					</a>
 				</div>
 			</div>
