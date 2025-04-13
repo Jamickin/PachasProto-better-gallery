@@ -6,12 +6,12 @@
 <section class="bg-gray-100 py-16">
 	<div class="container mx-auto px-4">
 		<div class="mb-12 text-center">
-			<h2 class="section-heading">Visit Pachas Restaurant</h2>
-			<p class="text-gray-700">Find us and plan your visit.</p>
+			<h2 class="section-title">Visit Pachas Restaurant</h2>
+			<p class="section-subtitle">Find us and plan your visit.</p>
 		</div>
 
 		<div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-			<section class="rounded-lg bg-white p-6 shadow-md lg:col-span-2">
+			<section class="card lg:col-span-2">
 				<div class="mb-6">
 					<iframe
 						title="map"
@@ -35,10 +35,10 @@
 
 				<div>
 					<h3 class="mb-3 text-lg font-semibold text-gray-800">Parking & Access:</h3>
-					<ul class="space-y-3 text-gray-700">
-						<li class="flex items-start">
+					<ul class="space-y-4 text-gray-700">
+						<li class="list-item">
 							<svg
-								class="mt-1 mr-2 h-5 w-5 text-rose-500"
+								class="list-item-icon"
 								fill="none"
 								stroke="currentColor"
 								viewBox="0 0 24 24"
@@ -52,9 +52,9 @@
 							>
 							<span>Safe parking at The Club Centre (ground/underground).</span>
 						</li>
-						<li class="flex items-start">
+						<li class="list-item">
 							<svg
-								class="mt-1 mr-2 h-5 w-5 text-rose-500"
+								class="list-item-icon"
 								fill="none"
 								stroke="currentColor"
 								viewBox="0 0 24 24"
@@ -73,12 +73,12 @@
 			</section>
 
 			<div class="space-y-6">
-				<section class="rounded-lg bg-white p-6 shadow-md">
+				<section class="card">
 					<h2 class="section-subheading">Contact & Bookings</h2>
-					<ul class="mb-6 space-y-3 text-gray-700">
-						<li class="flex items-start">
+					<ul class="mb-6 space-y-4 text-gray-700">
+						<li class="list-item">
 							<svg
-								class="mt-1 mr-2 h-5 w-5 text-rose-500"
+								class="list-item-icon"
 								fill="none"
 								stroke="currentColor"
 								viewBox="0 0 24 24"
@@ -92,9 +92,9 @@
 							>
 							<span><strong>Tel:</strong> 012 460 5063 / 3220</span>
 						</li>
-						<li class="flex items-start">
+						<li class="list-item">
 							<svg
-								class="mt-1 mr-2 h-5 w-5 text-rose-500"
+								class="list-item-icon"
 								fill="none"
 								stroke="currentColor"
 								viewBox="0 0 24 24"
@@ -108,9 +108,9 @@
 							>
 							<span><strong>Fax:</strong> 086 695 8762</span>
 						</li>
-						<li class="flex items-start">
+						<li class="list-item">
 							<svg
-								class="mt-1 mr-2 h-5 w-5 text-rose-500"
+								class="list-item-icon"
 								fill="none"
 								stroke="currentColor"
 								viewBox="0 0 24 24"
@@ -124,16 +124,16 @@
 							>
 							<span>
 								<strong>Email:</strong>
-								<a href="mailto:mail@pachas.co.za">mail@pachas.co.za</a>
+								<a href="mailto:mail@pachas.co.za" class="text-rose-600 hover:text-rose-500"
+									>mail@pachas.co.za</a
+								>
 							</span>
 						</li>
 					</ul>
 
-					<div
-						class="mt-4 flex items-start rounded-lg border border-rose-100 bg-rose-50 p-3 text-sm text-rose-800"
-					>
+					<div class="alert alert-warning">
 						<svg
-							class="mt-1 mr-2 h-5 w-5"
+							class="list-item-icon"
 							fill="none"
 							stroke="currentColor"
 							viewBox="0 0 24 24"

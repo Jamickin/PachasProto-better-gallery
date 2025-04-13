@@ -81,9 +81,9 @@
 		</div>
 
 		{#each Object.keys(menuData || {}) as category}
-			<section id={category.toLowerCase().replace(/ /g, '-')} class="my-8">
+			<section id={category.toLowerCase().replace(/ /g, '-')} class="my-12">
 				<h3
-					class="relative mb-6 text-center text-2xl font-semibold text-gray-800 after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500"
+					class="relative mb-8 text-center text-2xl font-semibold text-gray-800 after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500"
 				>
 					{category}
 				</h3>
@@ -94,10 +94,10 @@
 								{typeof item === 'string' ? item : item.name || item}
 							</div>
 							{#if typeof item === 'object' && item.description}
-								<p class="mt-2 text-gray-600">{item.description}</p>
+								<p class="mt-3 text-gray-700">{item.description}</p>
 							{/if}
 							{#if typeof item === 'object' && item.price}
-								<p class="mt-2 font-semibold text-rose-500">{item.price}</p>
+								<p class="mt-3 font-semibold text-rose-600">{item.price}</p>
 							{/if}
 						</div>
 					{/each}

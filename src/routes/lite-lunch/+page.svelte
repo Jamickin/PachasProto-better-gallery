@@ -4,21 +4,21 @@
 	import { fetchLiteMenu } from '$lib/litelunch.js';
 	import { browser } from '$app/environment';
 
-	let litemenuData = {};
+	let lightMenuData = {};
 	let menuData = {};
 	let aLaCarteCategories = [];
 
 	onMount(async () => {
 		try {
 			const menuResult = await fetchMenu();
-			const litemenuResult = await fetchLiteMenu();
-			litemenuData = litemenuResult;
+			const lightMenuResult = await fetchLiteMenu();
+			lightMenuData = lightMenuResult;
 			menuData = menuResult;
 			aLaCarteCategories = Object.keys(menuData || {});
 		} catch (error) {
 			console.error('Error loading menu', error);
 			menuData = {};
-			litemenuData = {};
+			lightMenuData = {};
 		}
 
 		// Function to get the document-relative offset of an element (most robust)
@@ -86,16 +86,16 @@
 		</div>
 
 		<section class="grid grid-cols-1 gap-6 text-center md:grid-cols-2">
-			{#each Object.keys(litemenuData || {}) as cuisine}
+			{#each Object.keys(lightMenuData || {}) as cuisine}
 				<div class="card">
 					<h3
-						class="relative mb-4 text-xl font-semibold text-gray-800 after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500"
+						class="relative mb-6 text-xl font-semibold text-gray-800 after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500"
 					>
 						{cuisine}
 					</h3>
 					<ul class="mt-4 list-inside list-disc text-gray-700">
-						{#each litemenuData[cuisine]?.items || [] as item}
-							<li class="mb-1">{item}</li>
+						{#each lightMenuData[cuisine]?.items || [] as item}
+							<li class="mb-2">{item}</li>
 						{/each}
 					</ul>
 				</div>
@@ -104,11 +104,11 @@
 
 		<div class="mx-auto mt-16 max-w-3xl">
 			<section id="additional-info" class="card">
-				<h3 class="mb-4 text-center text-2xl font-semibold text-gray-800">Additional Info</h3>
-				<ul class="space-y-3 text-gray-700">
-					<li class="flex items-start">
+				<h3 class="mb-6 text-center text-2xl font-semibold text-gray-800">Additional Info</h3>
+				<ul class="space-y-4 text-gray-700">
+					<li class="list-item">
 						<svg
-							class="mt-1 mr-2 h-5 w-5 text-blue-500"
+							class="list-item-icon"
 							fill="none"
 							stroke="currentColor"
 							viewBox="0 0 24 24"
@@ -123,9 +123,9 @@
 						</svg>
 						<span>Light Lunch R220 p/p</span>
 					</li>
-					<li class="flex items-start">
+					<li class="list-item">
 						<svg
-							class="mt-1 mr-2 h-5 w-5 text-blue-500"
+							class="list-item-icon"
 							fill="none"
 							stroke="currentColor"
 							viewBox="0 0 24 24"
@@ -140,9 +140,9 @@
 						</svg>
 						<span>Available Monday to Saturday 12:00 – 14:30</span>
 					</li>
-					<li class="flex items-start">
+					<li class="list-item">
 						<svg
-							class="mt-1 mr-2 h-5 w-5 text-rose-500"
+							class="list-item-icon text-rose-500"
 							fill="none"
 							stroke="currentColor"
 							viewBox="0 0 24 24"
@@ -159,9 +159,9 @@
 							>Not available for take away / group bookings / office parties during festive season</span
 						>
 					</li>
-					<li class="flex items-start">
+					<li class="list-item">
 						<svg
-							class="mt-1 mr-2 h-5 w-5 text-rose-500"
+							class="list-item-icon text-rose-500"
 							fill="none"
 							stroke="currentColor"
 							viewBox="0 0 24 24"
@@ -176,9 +176,9 @@
 						</svg>
 						<span>The meals cannot be shared</span>
 					</li>
-					<li class="flex items-start">
+					<li class="list-item">
 						<svg
-							class="mt-1 mr-2 h-5 w-5 text-green-500"
+							class="list-item-icon text-green-500"
 							fill="none"
 							stroke="currentColor"
 							viewBox="0 0 24 24"
@@ -191,11 +191,11 @@
 								d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
 							></path>
 						</svg>
-						<span>All meals served with veggies and your choice of starch</span>
+						<span>All meals served with vegetables and your choice of starch</span>
 					</li>
-					<li class="flex items-start">
+					<li class="list-item">
 						<svg
-							class="mt-1 mr-2 h-5 w-5 text-green-500"
+							class="list-item-icon text-green-500"
 							fill="none"
 							stroke="currentColor"
 							viewBox="0 0 24 24"

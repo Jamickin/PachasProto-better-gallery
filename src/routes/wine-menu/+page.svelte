@@ -102,7 +102,7 @@
 									{/if}
 								</div>
 								{#if typeof wine === 'object' && wine.description}
-									<p class="mt-3 text-sm text-gray-600">{wine.description}</p>
+									<p class="mt-3 text-gray-700">{wine.description}</p>
 								{/if}
 							</div>
 						{/each}

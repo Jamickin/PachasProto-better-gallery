@@ -16,15 +16,15 @@
 <section class="bg-gray-100 py-16">
 	<div class="container mx-auto px-4">
 		<div class="mb-12 text-center">
-			<h2 class="section-heading">Set Menus</h2>
-			<p class="text-gray-700">Explore our curated set menu options.</p>
+			<h2 class="section-title">Set Menus</h2>
+			<p class="section-subtitle">Explore our curated set menu options.</p>
 		</div>
 
 		<div class="px-4 md:px-12 lg:px-24 xl:px-36">
 			{#if setMenuData['Set Menu Options']}
 				<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 					{#each setMenuData['Set Menu Options'].menus as menu}
-						<section class="card p-6">
+						<section class="card">
 							<h3 class="section-subheading">{menu.name}</h3>
 
 							<div class="mt-4 text-2xl font-bold text-rose-600">R{menu.price}</div>
@@ -68,7 +68,7 @@
 		></div>
 
 		<div class="px-4 md:px-12 lg:px-24 xl:px-36">
-			<section class="rounded-lg bg-white p-8 shadow-md">
+			<section class="card">
 				<h3 class="section-subheading">Function Rooms</h3>
 
 				<p class="mb-6 text-gray-700">
@@ -78,40 +78,40 @@
 
 				<div class="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 					<div class="rounded-lg border border-gray-100 bg-gray-50 p-4">
-						<span class="font-semibold text-rose-500">F1 & F2</span>
+						<span class="font-semibold text-rose-600">F1 & F2</span>
 						<p class="mt-1 text-gray-700">Can be combined to seat 34 people</p>
 					</div>
 
 					<div class="rounded-lg border border-gray-100 bg-gray-50 p-4">
-						<span class="font-semibold text-rose-500">F3</span>
+						<span class="font-semibold text-rose-600">F3</span>
 						<p class="mt-1 text-gray-700">Seats 12 people</p>
 					</div>
 
 					<div class="rounded-lg border border-gray-100 bg-gray-50 p-4">
-						<span class="font-semibold text-rose-500">F4</span>
+						<span class="font-semibold text-rose-600">F4</span>
 						<p class="mt-1 text-gray-700">Seats 10 people</p>
 					</div>
 
 					<div class="rounded-lg border border-gray-100 bg-gray-50 p-4">
-						<span class="font-semibold text-rose-500">F5</span>
+						<span class="font-semibold text-rose-600">F5</span>
 						<p class="mt-1 text-gray-700">Seats 8 people</p>
 					</div>
 				</div>
 			</section>
 
-			<section class="mt-8 rounded-lg bg-white p-8 shadow-md">
+			<section class="card mt-8">
 				<h3 class="section-subheading">Additional Information</h3>
 
-				<ul class="space-y-3 text-gray-700">
+				<ul class="space-y-4 text-gray-700">
 					<li class="mt-4 flex items-start p-3">
 						<span class="font-semibold"
 							>Nothing is set in stone at Pachas. Feel free to call in and adjust the menu to your
 							requirements!</span
 						>
 					</li>
-					<li class="flex items-start">
+					<li class="list-item">
 						<svg
-							class="mt-1 mr-2 h-5 w-5 text-rose-500"
+							class="list-item-icon"
 							fill="none"
 							stroke="currentColor"
 							viewBox="0 0 24 24"
@@ -126,9 +126,9 @@
 						<span>Prices are per person</span>
 					</li>
 
-					<li class="flex items-start">
+					<li class="list-item">
 						<svg
-							class="mt-1 mr-2 h-5 w-5 text-rose-500"
+							class="list-item-icon"
 							fill="none"
 							stroke="currentColor"
 							viewBox="0 0 24 24"
@@ -143,9 +143,9 @@
 						<span>Drinks and Service Fee Excluded</span>
 					</li>
 
-					<li class="flex items-start">
+					<li class="list-item">
 						<svg
-							class="mt-1 mr-2 h-5 w-5 text-rose-500"
+							class="list-item-icon"
 							fill="none"
 							stroke="currentColor"
 							viewBox="0 0 24 24"
@@ -160,9 +160,9 @@
 						<span>All meals served with vegetables</span>
 					</li>
 
-					<li class="flex items-start">
+					<li class="list-item">
 						<svg
-							class="mt-1 mr-2 h-5 w-5 text-rose-500"
+							class="list-item-icon"
 							fill="none"
 							stroke="currentColor"
 							viewBox="0 0 24 24"
@@ -177,9 +177,9 @@
 						<span>Table salad to be ordered separately</span>
 					</li>
 
-					<li class="mt-4 flex items-start rounded-lg border border-rose-100 bg-rose-50 p-3">
+					<li class="alert alert-warning mt-4">
 						<svg
-							class="mt-1 mr-2 h-5 w-5 text-rose-500"
+							class="list-item-icon"
 							fill="none"
 							stroke="currentColor"
 							viewBox="0 0 24 24"

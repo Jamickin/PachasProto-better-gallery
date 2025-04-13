@@ -1,6 +1,8 @@
+/* Updated app.css with consistent styling system */
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
 @import 'tailwindcss';
 
+/* Base Styles */
 * {
 	@apply box-border;
 	font-family: 'Baskervville', serif;
@@ -16,20 +18,22 @@ body {
 	@apply text-gray-700;
 }
 
+/* Common Elements */
 header {
 	@apply z-50 bg-slate-50;
 }
 
 a {
-	@apply underline transition hover:text-rose-500;
+	@apply underline transition-colors duration-200 hover:text-rose-600;
 }
 
+/* Typography System */
 h1 {
 	@apply text-5xl font-bold text-gray-800 max-md:text-3xl;
 }
 
 h2 {
-	@apply text-3xl font-semibold text-gray-800 max-md:text-2xl;
+	@apply text-3xl font-bold text-gray-800 max-md:text-2xl;
 }
 
 h3 {
@@ -40,38 +44,102 @@ p {
 	@apply text-gray-700;
 }
 
-.text-description {
+.text-small {
 	@apply text-sm text-gray-600;
 }
 
+/* Section and Card System */
 section {
-	@apply mb-4 w-full bg-slate-50;
+	@apply mb-6 w-full bg-slate-50;
 }
 
 .card {
-	@apply rounded-lg bg-white p-6 shadow-md;
+	@apply rounded-lg bg-white p-6 shadow-md transition-transform duration-300 hover:shadow-lg;
 }
 
-.not-wide {
-	@apply px-2;
+.card-highlight {
+	@apply rounded-lg border-l-4 border-rose-500 bg-white p-6 shadow-lg;
 }
 
-ul {
-	@apply list-inside;
-}
-
+/* Utility Classes */
 .section-title {
-	@apply relative mb-4 inline-block text-3xl font-semibold text-gray-800 after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500;
+	@apply relative mb-6 inline-block text-3xl font-bold text-gray-800 after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500;
 }
 
 .section-subtitle {
-	@apply text-gray-600;
+	@apply mb-8 text-gray-600;
 }
 
+.section-subheading {
+	@apply relative mb-4 text-xl font-semibold text-gray-800 after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500;
+}
+
+/* Interactive Elements */
 .hover-card {
-	@apply transition-transform hover:scale-105;
+	@apply transition-transform duration-300 hover:scale-105;
+}
+
+.btn {
+	@apply rounded-lg px-6 py-3 font-medium transition-colors duration-200;
+}
+
+.btn-primary {
+	@apply bg-rose-500 text-white shadow-md hover:bg-rose-600;
+}
+
+.btn-secondary {
+	@apply border border-gray-200 bg-white text-gray-700 shadow-md hover:bg-gray-50;
+}
+
+/* Layout Elements */
+.container-narrow {
+	@apply mx-auto max-w-4xl px-4;
 }
 
 .divider {
 	@apply my-12 h-px w-full bg-gradient-to-r from-transparent via-rose-500 to-transparent;
+}
+
+/* Icon System */
+.icon {
+	@apply h-5 w-5;
+}
+
+.icon-sm {
+	@apply h-4 w-4;
+}
+
+.icon-lg {
+	@apply h-6 w-6;
+}
+
+/* List Items */
+.list-item {
+	@apply flex items-start;
+}
+
+.list-item-icon {
+	@apply mt-1 mr-2 h-5 w-5 text-rose-500;
+}
+
+/* Custom Components */
+.notification {
+	@apply rounded-lg border border-rose-100 bg-rose-50 p-3 text-sm text-rose-800;
+}
+
+/* Alert System */
+.alert {
+	@apply my-4 flex items-start rounded-lg p-3 text-sm;
+}
+
+.alert-info {
+	@apply border border-blue-100 bg-blue-50 text-blue-800;
+}
+
+.alert-warning {
+	@apply border border-rose-100 bg-rose-50 text-rose-800;
+}
+
+.alert-success {
+	@apply border border-green-100 bg-green-50 text-green-800;
 }

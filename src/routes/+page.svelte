@@ -33,7 +33,7 @@
 			Take a Virtual Tour
 			<a
 				href="http://360sa.co.za/pretoria/pachas2/"
-				class="mx-2 font-semibold text-rose-700 transition-colors duration-200 hover:text-rose-500 hover:underline"
+				class="mx-2 font-semibold text-rose-600 transition-colors duration-200 hover:text-rose-500 hover:underline"
 				>through the restaurant</a
 			>
 			<span class="mt-2 block text-sm text-gray-700 italic"
@@ -42,47 +42,50 @@
 		</p>
 	</div>
 	<section class="rounded-lg p-6">
-		<h2 class="section-subheading">What We Offer</h2>
-		<ul class="space-y-3 text-gray-700">
-			<li class="flex items-start">
+		<h2 class="section-subheading text-center">What We Offer</h2>
+		<ul class="mt-6 space-y-4 text-gray-700">
+			<li class="list-item">
 				<svg
-					class="mt-1 mr-2 h-5 w-5 text-rose-500"
+					class="list-item-icon"
 					fill="none"
 					stroke="currentColor"
 					viewBox="0 0 24 24"
 					xmlns="http://www.w3.org/2000/svg"
-					><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"
-					></path></svg
 				>
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"
+					></path>
+				</svg>
 				<span
 					><strong class="font-medium">Menu:</strong> Upmarket Steakhouse fare, seafood & poultry.</span
 				>
 			</li>
-			<li class="flex items-start">
+			<li class="list-item">
 				<svg
-					class="mt-1 mr-2 h-5 w-5 text-rose-500"
+					class="list-item-icon"
 					fill="none"
 					stroke="currentColor"
 					viewBox="0 0 24 24"
 					xmlns="http://www.w3.org/2000/svg"
-					><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"
-					></path></svg
 				>
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"
+					></path>
+				</svg>
 				<span
 					><strong class="font-medium">Venues:</strong> Private options for functions & business meals.</span
 				>
 			</li>
-			<li class="flex items-start">
+			<li class="list-item">
 				<svg
-					class="mt-1 mr-2 h-5 w-5 text-rose-500"
+					class="list-item-icon"
 					fill="none"
 					stroke="currentColor"
 					viewBox="0 0 24 24"
 					xmlns="http://www.w3.org/2000/svg"
-					><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"
-					></path></svg
 				>
-				<span><strong class="font-medium">We are Wheelchair-Friendly</strong></span>
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"
+					></path>
+				</svg>
+				<span><strong class="font-medium">Wheelchair-friendly</strong> establishment</span>
 			</li>
 		</ul>
 	</section>

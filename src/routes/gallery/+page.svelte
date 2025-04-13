@@ -43,7 +43,7 @@
 
 		<div class="mb-24 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 			{#each drinks as img}
-				<div class="hover-card overflow-hidden rounded-lg bg-white shadow-md">
+				<div class="card hover-card overflow-hidden p-0">
 					<img src={img} alt="Elegant drink" class="h-64 w-full object-cover" />
 				</div>
 			{/each}
@@ -58,7 +58,7 @@
 
 		<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 			{#each food as img}
-				<div class="hover-card overflow-hidden rounded-lg bg-white shadow-md">
+				<div class="card hover-card overflow-hidden p-0">
 					<img src={img} alt="Gourmet dish" class="h-64 w-full object-cover" />
 				</div>
 			{/each}

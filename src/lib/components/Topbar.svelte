@@ -43,19 +43,35 @@
 
 	<nav class="mt-2 flex flex-wrap items-center justify-center">
 		<div class="flex gap-2 py-3 text-sm font-medium uppercase md:gap-4 md:text-base lg:gap-6">
-			<a href="/menu" class="border-b-2 border-transparent px-2 py-1 transition-all">À La Carte</a>
-			<a href="/facilities" class="border-b-2 border-transparent px-2 py-1 transition-all"
+			<a
+				href="/menu"
+				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
+				>À La Carte</a
+			>
+			<a
+				href="/facilities"
+				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
 				>Facilities & Functions</a
 			>
-			<a href="/gallery" class="border-b-2 border-transparent px-2 py-1 transition-all">Gallery</a>
-			<a href="/contact" class="border-b-2 border-transparent px-2 py-1 transition-all"
+			<a
+				href="/gallery"
+				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
+				>Gallery</a
+			>
+			<a
+				href="/contact"
+				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
 				>Contact & Location</a
 			>
-			<a href="/wine-menu" class="border-b-2 border-transparent px-2 py-1 transition-all"
+			<a
+				href="/wine-menu"
+				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
 				>Wine Menu</a
 			>
-			<a href="/lite-lunch" class="border-b-2 border-transparent px-2 py-1 transition-all"
-				>Lunch Special</a
+			<a
+				href="/lite-lunch"
+				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
+				>Light Lunch</a
 			>
 		</div>
 	</nav>
