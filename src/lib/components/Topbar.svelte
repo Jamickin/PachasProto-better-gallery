@@ -43,7 +43,7 @@
 
 	<nav class="mt-2 flex flex-wrap items-center justify-center">
 		<div class="flex gap-2 py-3 text-sm font-medium uppercase md:gap-4 md:text-base lg:gap-6">
-			<a href="/menu" class="border-b-2 border-transparent px-2 py-1 transition-all">A La Carte</a>
+			<a href="/menu" class="border-b-2 border-transparent px-2 py-1 transition-all">À La Carte</a>
 			<a href="/facilities" class="border-b-2 border-transparent px-2 py-1 transition-all"
 				>Facilities & Functions</a
 			>

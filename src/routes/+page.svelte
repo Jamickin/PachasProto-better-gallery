@@ -34,7 +34,7 @@
 			<a
 				href="http://360sa.co.za/pretoria/pachas2/"
 				class="mx-2 font-semibold text-rose-700 transition-colors duration-200 hover:text-rose-500 hover:underline"
-				>through the restaurant!</a
+				>through the restaurant</a
 			>
 			<span class="mt-2 block text-sm text-gray-700 italic"
 				>For reservations, call <strong>012 460 5063</strong></span
@@ -82,7 +82,7 @@
 					><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"
 					></path></svg
 				>
-				<span><strong class="font-medium">We are wheelchair-friendly</strong></span>
+				<span><strong class="font-medium">We are Wheelchair-Friendly</strong></span>
 			</li>
 		</ul>
 	</section>

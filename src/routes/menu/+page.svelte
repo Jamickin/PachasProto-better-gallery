@@ -76,7 +76,7 @@
 <section class="py-16">
 	<div class="container mx-auto px-4">
 		<div class="mb-12 text-center">
-			<h2 id="a-la-carte" class="section-title">A La Carte</h2>
+			<h2 id="a-la-carte" class="section-title">À La Carte</h2>
 			<p class="section-subtitle">Explore our exquisite selection of dishes.</p>
 		</div>
 
