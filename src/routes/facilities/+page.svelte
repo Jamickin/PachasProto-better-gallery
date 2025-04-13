@@ -25,9 +25,9 @@
 				<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 					{#each setMenuData['Set Menu Options'].menus as menu}
 						<section class="card">
-							<h3 class="section-subheading">{menu.name}</h3>
+							<h3 class=" section-subheading text-center">{menu.name}</h3>
 
-							<div class="mt-4 text-2xl font-bold text-rose-600">R{menu.price}</div>
+							<div class="mt-4 text-center text-2xl font-bold text-rose-600">R{menu.price}</div>
 
 							<div class="mt-8 space-y-6">
 								<div>
