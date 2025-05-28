@@ -32,7 +32,7 @@
 	class="fixed top-0 left-0 z-[99] flex w-full flex-col items-center justify-between px-6 py-3 transition-all duration-300 max-md:hidden md:px-12 lg:px-20"
 >
 	<div class="flex justify-center">
-		<a href="/" class="block transform transition-transform duration-300 hover:scale-105">
+		<a href="/" class="block transition duration-300 hover:scale-105">
 			<img
 				class="h-28 object-contain md:h-36"
 				src="/pachas_logo.jpg"

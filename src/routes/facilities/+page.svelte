@@ -72,8 +72,8 @@
 				<h3 class="section-subheading">Function Rooms</h3>
 
 				<p class="mb-6 text-gray-700">
-					Our restaurant features 5 spacious private rooms. Perfect for meetings, parties, and
-					corporate events.
+					Our restaurant features 5 spacious private rooms. Perfect for parties and corporate
+					events.
 				</p>
 
 				<div class="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -89,7 +89,7 @@
 
 					<div class="rounded-lg border border-gray-100 bg-gray-50 p-4">
 						<span class="font-semibold text-rose-600">F4</span>
-						<p class="mt-1 text-gray-700">Seats 10 people</p>
+						<p class="mt-1 text-gray-700">Seats 8 people</p>
 					</div>
 
 					<div class="rounded-lg border border-gray-100 bg-gray-50 p-4">
@@ -177,7 +177,7 @@
 						<span>Table salad to be ordered separately</span>
 					</li>
 
-					<li class="alert alert-warning mt-4">
+					<!-- <li class="alert alert-warning mt-4">
 						<svg
 							class="list-item-icon"
 							fill="none"
@@ -195,7 +195,7 @@
 							>Please note that, during the festive season, these menus are not available for take
 							away, group bookings or office parties</span
 						>
-					</li>
+					</li> -->
 				</ul>
 			</section>
 		</div>
