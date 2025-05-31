@@ -6,11 +6,11 @@
 	class="relative mx-auto max-w-6xl overflow-hidden rounded-lg border-l-4 border-rose-500 pt-12 shadow-xl"
 >
 	<div class="flex h-72 justify-center gap-4 overflow-hidden rounded-t-lg">
-		<img
+		<!-- <img
 			src="/resized/johny.jpg"
 			alt="Johnny"
 			class="h-full rounded-t-lg object-cover transition-transform duration-300 hover:scale-105"
-		/>
+		/> -->
 		<img
 			src="/images/food/resized/Dessert_Top.jpg"
 			alt="Dessert"
@@ -103,7 +103,7 @@
 						d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
 					/>
 				</svg>
-				<span class="text-sm font-medium tracking-wide text-rose-700 uppercase">Est. 1987</span>
+				<span class="text-sm font-medium tracking-wide text-rose-700 uppercase">Est. 1985</span>
 			</div>
 		</div>
 
@@ -122,7 +122,7 @@
 		<!-- Content -->
 		<div class="mx-auto max-w-2xl text-center">
 			<p class="mb-4 text-lg leading-relaxed text-gray-700">
-				For over <strong class="font-semibold text-rose-600">37 years</strong>, Pachas has remained
+				For over <strong class="font-semibold text-rose-600">39 years</strong>, Pachas has remained
 				a cornerstone of fine dining in Pretoria, guided by the unwavering dedication of its
 				founding partners.
 			</p>
@@ -133,14 +133,14 @@
 					<span class="text-rose-600">Andreas Henrich</span>
 				</p>
 				<p class="text-gray-600 italic">
-					Our founding owners continue to uphold the tradition of culinary excellence and warm
-					hospitality that has defined Pachas since its establishment.
+					continue to uphold the tradition of culinary excellence and warm hospitality that has
+					defined Pachas since its establishment.
 				</p>
 			</div>
 
 			<!-- Timeline accent -->
 			<div class="mt-8 flex items-center justify-center gap-4 text-sm text-gray-500">
-				<span>1987</span>
+				<span>1985</span>
 				<div
 					class="h-px max-w-32 flex-1 bg-gradient-to-r from-rose-200 via-rose-400 to-rose-200"
 				></div>
