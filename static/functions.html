@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Functions & Facilities - Pachas Restaurant</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			* {
+				box-sizing: border-box;
+				font-family: 'Baskervville', serif;
+				scroll-behavior: smooth;
+			}
+
+			body {
+				background-image: url('/resized/wooden texture.jpg');
+				background-repeat: repeat-y;
+				background-size: cover;
+				background-position: center top;
+				background-attachment: fixed;
+				color: #374151;
+				margin: 0;
+				padding: 0;
+				line-height: 1.6;
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 2rem;
+			}
+
+			.header {
+				text-align: center;
+				margin-bottom: 3rem;
+				background: #f8fafc;
+				padding: 2rem;
+				border-radius: 0.5rem;
+				box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+			}
+
+			.logo {
+				max-width: 200px;
+				margin: 0 auto 1rem;
+				display: block;
+			}
+
+			h1 {
+				color: #1f2937;
+				margin: 0 0 0.5rem 0;
+				font-size: 3rem;
+				font-weight: bold;
+			}
+
+			.subtitle {
+				color: #6b7280;
+				font-size: 1.125rem;
+				margin-bottom: 1.5rem;
+			}
+
+			.notice {
+				background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+				border: 1px solid #f59e0b;
+				padding: 1.5rem;
+				border-radius: 0.75rem;
+				margin: 2rem 0;
+				text-align: center;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			}
+
+			.btn {
+				display: inline-block;
+				background: #dc2626;
+				color: white;
+				padding: 0.75rem 1.5rem;
+				text-decoration: none;
+				border-radius: 0.5rem;
+				margin: 0.5rem;
+				font-weight: 600;
+				transition: all 0.2s;
+				box-shadow: 0 2px 4px rgba(220, 38, 38, 0.2);
+			}
+
+			.btn:hover {
+				background: #b91c1c;
+				transform: translateY(-1px);
+				box-shadow: 0 4px 8px rgba(220, 38, 38, 0.3);
+			}
+
+			.back-to-site {
+				position: fixed;
+				top: 1rem;
+				right: 1rem;
+				z-index: 1000;
+			}
+
+			.section {
+				background: white;
+				margin-bottom: 2rem;
+				border-radius: 0.75rem;
+				box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+				overflow: hidden;
+			}
+
+			.section-header {
+				background: #f8fafc;
+				padding: 1.5rem;
+				border-bottom: 3px solid #dc2626;
+			}
+
+			.section-title {
+				color: #1f2937;
+				font-size: 1.875rem;
+				font-weight: bold;
+				margin: 0;
+				text-align: center;
+				position: relative;
+			}
+
+			.section-content {
+				padding: 2rem;
+			}
+
+			.menu-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+				gap: 2rem;
+				margin-bottom: 2rem;
+			}
+
+			.menu-card {
+				background: #f8fafc;
+				border-radius: 0.75rem;
+				padding: 1.5rem;
+				border-left: 4px solid #dc2626;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+			}
+
+			.menu-title {
+				color: #1f2937;
+				font-size: 1.5rem;
+				font-weight: bold;
+				margin: 0 0 0.5rem 0;
+				text-align: center;
+			}
+
+			.menu-price {
+				color: #dc2626;
+				font-size: 2rem;
+				font-weight: bold;
+				text-align: center;
+				margin: 1rem 0;
+			}
+
+			.menu-section {
+				margin: 1.5rem 0;
+			}
+
+			.menu-section-title {
+				color: #1f2937;
+				font-size: 1.25rem;
+				font-weight: 600;
+				margin: 0 0 0.75rem 0;
+			}
+
+			.menu-item {
+				background: white;
+				padding: 0.75rem;
+				margin: 0.5rem 0;
+				border-radius: 0.25rem;
+				border-left: 2px solid #fbbf24;
+				font-size: 0.9rem;
+				color: #374151;
+			}
+
+			.facilities-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 1rem;
+				margin: 1.5rem 0;
+			}
+
+			.facility-card {
+				background: #f8fafc;
+				border: 1px solid #e5e7eb;
+				border-radius: 0.5rem;
+				padding: 1rem;
+				text-align: center;
+			}
+
+			.facility-name {
+				font-weight: 600;
+				color: #dc2626;
+				margin-bottom: 0.5rem;
+			}
+
+			.facility-description {
+				color: #6b7280;
+				font-size: 0.9rem;
+			}
+
+			.list-item {
+				display: flex;
+				align-items: flex-start;
+				margin: 0.75rem 0;
+			}
+
+			.list-icon {
+				width: 1.25rem;
+				height: 1.25rem;
+				margin-right: 0.75rem;
+				margin-top: 0.125rem;
+				color: #10b981;
+				flex-shrink: 0;
+			}
+
+			.highlight-box {
+				background: #f8fafc;
+				border: 1px solid #dc2626;
+				border-radius: 0.5rem;
+				padding: 1rem;
+				margin: 1rem 0;
+				text-align: center;
+				font-weight: 600;
+				color: #1f2937;
+			}
+
+			@media (max-width: 768px) {
+				.container {
+					padding: 1rem;
+				}
+
+				h1 {
+					font-size: 2rem;
+				}
+
+				.menu-grid {
+					grid-template-columns: 1fr;
+				}
+
+				.facilities-grid {
+					grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="back-to-site">
+			<a href="/" class="btn">← Back to Main Site</a>
+		</div>
+
+		<div class="container">
+			<div class="header">
+				<img src="/pachas_logo.jpg" alt="Pachas Restaurant" class="logo" />
+				<h1>Functions & Facilities</h1>
+				<p class="subtitle">Set Menu Options & Private Venues</p>
+			</div>
+
+			<div class="notice">
+				<strong>📱 You're viewing our legacy functions page!</strong><br />
+				<p style="margin: 1rem 0">
+					For the complete experience with detailed venue information and booking options, visit our
+					main website.
+				</p>
+				<a href="/" class="btn">Visit Full Website</a>
+				<a href="/facilities" class="btn">Complete Facilities Info</a>
+			</div>
+
+			<!-- Set Menu Options -->
+			<div class="section">
+				<div class="section-header">
+					<h2 class="section-title">🍽️ Set Menu Options</h2>
+				</div>
+				<div class="section-content">
+					<div class="highlight-box">
+						Nothing is set in stone at Pachas. Feel free to call in and adjust the menu to your
+						requirements!
+					</div>
+
+					<div class="menu-grid">
+						<!-- Menu A -->
+						<div class="menu-card">
+							<h3 class="menu-title">Menu A</h3>
+							<div class="menu-price">R475</div>
+
+							<div class="menu-section">
+								<h4 class="menu-section-title">Starter</h4>
+								<div class="menu-item">Chicken Livers Peri-Peri</div>
+								<div class="menu-item">Smoked Snoek in Phyllo Pastry with Moskonfyt</div>
+								<div class="menu-item">Deep fried Camembert Cheese with cranberry jelly</div>
+								<div class="menu-item">Smoked Springbok Carpaccio with honey vinaigrette</div>
+								<div class="menu-item">Greek Salad with avocado</div>
+							</div>
+
+							<div class="menu-section">
+								<h4 class="menu-section-title">Main Course</h4>
+								<div class="menu-item">Sole Belle Meuniere - grilled, with lemon butter</div>
+								<div class="menu-item">Chicken Schnitzel - cheese or mushroom sauce</div>
+								<div class="menu-item">Fillet haloumi - red wine berry reduction</div>
+								<div class="menu-item">Sirloin - with a mustard brandy cream sauce</div>
+								<div class="menu-item">Butter Chicken Curry</div>
+							</div>
+
+							<div class="menu-section">
+								<h4 class="menu-section-title">Dessert</h4>
+								<div class="menu-item">Vanilla Ice cream and Bar One sauce</div>
+								<div class="menu-item">Cheesecake</div>
+								<div class="menu-item">Lemon Meringue</div>
+								<div class="menu-item">Mango and Strawberry Sorbet</div>
+							</div>
+						</div>
+
+						<!-- Menu B -->
+						<div class="menu-card">
+							<h3 class="menu-title">Menu B</h3>
+							<div class="menu-price">R525</div>
+
+							<div class="menu-section">
+								<h4 class="menu-section-title">Starter</h4>
+								<div class="menu-item">Avocado and Shrimp - with piquant cocktail sauce</div>
+								<div class="menu-item">Deep fried Camembert Cheese with cranberry jelly</div>
+								<div class="menu-item">Duck Springroll with strawberry reduction</div>
+								<div class="menu-item">Traditional Garlic Snails</div>
+								<div class="menu-item">Parma Ham with melon and feta</div>
+								<div class="menu-item">Kudu Carpaccio</div>
+							</div>
+
+							<div class="menu-section">
+								<h4 class="menu-section-title">Main Course</h4>
+								<div class="menu-item">
+									Fresh linefish of the day - topped with lemon butter sauce
+								</div>
+								<div class="menu-item">Beef Shortrib</div>
+								<div class="menu-item">Sirloin - with a brandy mustard sauce</div>
+								<div class="menu-item">Fillet haloumi - red wine berry reduction</div>
+								<div class="menu-item">Duck Fuji - lychees, cherries and orange segments</div>
+								<div class="menu-item">Chicken Schnitzel - cheese or mushroom sauce</div>
+							</div>
+
+							<div class="menu-section">
+								<h4 class="menu-section-title">Dessert</h4>
+								<div class="menu-item">Apple Crumble with Amarula ice cream</div>
+								<div class="menu-item">Vanilla Ice cream and Bar One sauce</div>
+								<div class="menu-item">Cheesecake</div>
+								<div class="menu-item">Lemon Meringue</div>
+								<div class="menu-item">Caramel Crème Brulee</div>
+							</div>
+						</div>
+
+						<!-- Menu C -->
+						<div class="menu-card">
+							<h3 class="menu-title">Menu C</h3>
+							<div class="menu-price">R575</div>
+
+							<div class="menu-section">
+								<h4 class="menu-section-title">Starter</h4>
+								<div class="menu-item">Prawn Tempura</div>
+								<div class="menu-item">Creamy Garlic Snails</div>
+								<div class="menu-item">Mushroom and Biltong Soup</div>
+								<div class="menu-item">Deep fried Camembert Cheese with cranberry jelly</div>
+								<div class="menu-item">Smoked Snoek in Phyllo Pastry with Moskonfyt</div>
+								<div class="menu-item">Kudu / Springbok Carpaccio</div>
+							</div>
+
+							<div class="menu-section">
+								<h4 class="menu-section-title">Main Course</h4>
+								<div class="menu-item">Fresh linefish of the day - with lemon butter sauce</div>
+								<div class="menu-item">Grilled Calamari</div>
+								<div class="menu-item">Fillet Rossini - Topped with chicken liver and red wine</div>
+								<div class="menu-item">Sirloin Jack Daniels - with bacon marmalade</div>
+								<div class="menu-item">
+									Between the Sheets - fillet topped with shrimps, asparagus and mushrooms in a
+									pepper and cheese sauce
+								</div>
+								<div class="menu-item">Duck Fuji - lychees, cherries and orange segments</div>
+								<div class="menu-item">Lamb of the Day</div>
+							</div>
+
+							<div class="menu-section">
+								<h4 class="menu-section-title">Dessert</h4>
+								<div class="menu-item">Caramel Crème Brulee</div>
+								<div class="menu-item">Cheesecake</div>
+								<div class="menu-item">Lemon Meringue</div>
+								<div class="menu-item">Chocolate Fondant</div>
+								<div class="menu-item">Apple Crumble with Amarula ice cream</div>
+								<div class="menu-item">Chocolate Brownie with Oreo ice cream</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Function Rooms -->
+			<div class="section">
+				<div class="section-header">
+					<h2 class="section-title">🏛️ Function Rooms</h2>
+				</div>
+				<div class="section-content">
+					<p style="margin-bottom: 1.5rem; color: #6b7280; text-align: center; font-size: 1.125rem">
+						Our restaurant features 5 spacious private rooms. Perfect for parties and corporate
+						events.
+					</p>
+
+					<div class="facilities-grid">
+						<div class="facility-card">
+							<div class="facility-name">F1 & F2</div>
+							<div class="facility-description">Can be combined to seat 34 people</div>
+						</div>
+						<div class="facility-card">
+							<div class="facility-name">F3</div>
+							<div class="facility-description">Seats 12 people</div>
+						</div>
+						<div class="facility-card">
+							<div class="facility-name">F4</div>
+							<div class="facility-description">Seats 8 people</div>
+						</div>
+						<div class="facility-card">
+							<div class="facility-name">F5</div>
+							<div class="facility-description">Seats 8 people</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Additional Information -->
+			<div class="section">
+				<div class="section-header">
+					<h2 class="section-title">ℹ️ Additional Information</h2>
+				</div>
+				<div class="section-content">
+					<div class="list-item">
+						<svg class="list-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 13l4 4L19 7"
+							></path>
+						</svg>
+						<span>Prices are per person</span>
+					</div>
+
+					<div class="list-item">
+						<svg class="list-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 13l4 4L19 7"
+							></path>
+						</svg>
+						<span>Drinks and Service Fee Excluded</span>
+					</div>
+
+					<div class="list-item">
+						<svg class="list-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 13l4 4L19 7"
+							></path>
+						</svg>
+						<span>All meals served with vegetables</span>
+					</div>
+
+					<div class="list-item">
+						<svg class="list-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 13l4 4L19 7"
+							></path>
+						</svg>
+						<span>Table salad to be ordered separately</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="notice">
+				<strong>📞 Ready to Book Your Function?</strong><br />
+				<p style="margin: 1rem 0">
+					Contact us to discuss your requirements and customize your perfect dining experience.
+				</p>
+				<a href="tel:0124605063" class="btn">Call 012 460 5063</a>
+				<a href="/" class="btn">Visit Full Website</a>
+				<a href="/contact" class="btn">Contact Information</a>
+			</div>
+		</div>
+	</body>
+</html>
