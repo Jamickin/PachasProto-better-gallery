@@ -2,3 +2,23 @@
 	command = "npm run build"
 	publish = "build"
 	functions = "netlify/functions"
+
+[[redirects]]
+  from = "/menu.html"
+  to = "/menu"
+  status = 301
+
+[[redirects]]
+  from = "/contact-us.html" 
+  to = "/contact"
+  status = 301
+
+[[redirects]]
+  from = "/functions.html"
+  to = "/facilities" 
+  status = 301
+
+[[redirects]]
+  from = "/light-lunch.html"
+  to = "/lite-lunch"
+  status = 301
