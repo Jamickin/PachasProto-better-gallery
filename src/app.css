@@ -1,4 +1,4 @@
-/* Updated app.css with consistent styling system */
+/* Updated app.css with consistent styling system and mobile fixes */
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
 @import 'tailwindcss';
 
@@ -14,8 +14,16 @@ body {
 	background-repeat: repeat-y;
 	background-size: cover;
 	background-position: center top;
-	background-attachment: fixed;
+	/* Fixed: Use scroll attachment on mobile to prevent resizing issues */
+	background-attachment: scroll;
 	@apply text-gray-700;
+}
+
+/* Desktop only: Use fixed background attachment */
+@media (min-width: 768px) {
+	body {
+		background-attachment: fixed;
+	}
 }
 
 /* Common Elements */
