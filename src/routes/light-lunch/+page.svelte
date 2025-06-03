@@ -46,7 +46,7 @@
 <!-- Mobile Navigation Bar -->
 {#if lightMenuCategories.length > 0}
 	<div class="sticky top-0 z-40 border-b border-gray-200 bg-white shadow-md md:hidden">
-		<div class="px-4 py-3">
+		<div class="px-12 py-3">
 			<button
 				class="flex w-full items-center justify-between rounded-lg border border-rose-200 bg-rose-50 px-4 py-3 transition-colors hover:bg-rose-100"
 				on:click={toggleMobileNav}

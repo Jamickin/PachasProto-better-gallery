@@ -11,18 +11,32 @@
 
 body {
 	background-image: url('/resized/wooden texture.jpg');
-	background-repeat: repeat-y;
+	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center top;
-	/* Fixed: Use scroll attachment on mobile to prevent resizing issues */
-	background-attachment: scroll;
+	background-position: center center;
+	background-attachment: fixed;
 	@apply text-gray-700;
 }
 
-/* Desktop only: Use fixed background attachment */
-@media (min-width: 768px) {
+/* Mobile-specific background handling */
+@media (max-width: 767px) {
 	body {
-		background-attachment: fixed;
+		/* Use a pseudo-element approach for better mobile compatibility */
+		background: none;
+	}
+
+	body::before {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('/resized/wooden texture.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		z-index: -1;
 	}
 }
 
