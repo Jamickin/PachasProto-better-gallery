@@ -39,7 +39,7 @@
 </button>
 
 <aside
-	class="sidebar fixed top-0 left-0 z-40 flex h-screen w-64 transform flex-col gap-4 bg-slate-50 p-6 backdrop-blur-lg transition-transform duration-300"
+	class="sidebar fixed top-0 left-0 z-50 flex h-screen w-64 transform flex-col gap-4 bg-slate-50 p-6 backdrop-blur-lg transition-transform duration-300"
 	class:translate-x-[-100%]={!sidebarOpen}
 >
 	<button class="self-end text-2xl text-gray-800" onclick={toggleSidebar}>×</button>
