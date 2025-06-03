@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pachas.co.za/sitemap.xml

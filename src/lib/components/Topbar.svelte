@@ -46,12 +46,12 @@
 			<a
 				href="/menu"
 				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
-				>À La Carte</a
+				>Menu</a
 			>
 			<a
-				href="/facilities"
+				href="/private-dining"
 				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
-				>Facilities & Functions</a
+				>Private Dining & Events</a
 			>
 			<a
 				href="/gallery"
@@ -59,19 +59,19 @@
 				>Gallery</a
 			>
 			<a
-				href="/contact"
+				href="/contact-reservations"
 				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
-				>Contact & Location</a
+				>Contact & Reservations</a
 			>
 			<a
-				href="/wine-menu"
+				href="/wine-list"
 				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
-				>Wine Menu</a
+				>Wine List</a
 			>
 			<a
-				href="/lite-lunch"
+				href="/light-lunch"
 				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
-				>Light Lunch</a
+				>Light Lunch Menu</a
 			>
 		</div>
 	</nav>

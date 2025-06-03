@@ -1,3 +1,30 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Pachas Restaurant",
+  "image": "https://pachas.co.za/pachas_logo.jpg",
+  "telephone": "+27124605063",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "22 Dely Road, The Club Retail",
+    "addressLocality": "Hazelwood",
+    "addressRegion": "Gauteng",
+    "postalCode": "0181",
+    "addressCountry": "ZA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -25.778474,
+    "longitude": 28.254576
+  },
+  "url": "https://pachas.co.za",
+  "servesCuisine": ["South African", "Steakhouse", "Seafood"],
+  "priceRange": "$$$$",
+  "openingHours": "Mo-Sa 12:00-22:00"
+}
+</script>
+
 <script>
 	import Sidebar from '$lib/components/Sidebar.svelte';
 	import Topbar from '$lib/components/Topbar.svelte';
@@ -5,6 +32,8 @@
 
 	let { children } = $props();
 </script>
+
+
 
 <header class="max-md:hidden"><Topbar></Topbar></header>
 <header class="min-md:hidden">

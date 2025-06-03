@@ -51,12 +51,12 @@
 		<a
 			onclick={toggleSidebar}
 			href="/menu"
-			class="border-b border-gray-100 py-2 hover:text-rose-600">À La Carte</a
+			class="border-b border-gray-100 py-2 hover:text-rose-600">Menu</a
 		>
 		<a
 			onclick={toggleSidebar}
-			href="/facilities"
-			class="border-b border-gray-100 py-2 hover:text-rose-600">Facilities & Functions</a
+			href="/private-dining"
+			class="border-b border-gray-100 py-2 hover:text-rose-600">rivate Dining & Events</a
 		>
 		<a
 			onclick={toggleSidebar}
@@ -65,18 +65,18 @@
 		>
 		<a
 			onclick={toggleSidebar}
-			href="/contact"
-			class="border-b border-gray-100 py-2 hover:text-rose-600">Contact & Location</a
+			href="/contact-reservations"
+			class="border-b border-gray-100 py-2 hover:text-rose-600">Contact & Reservations</a
 		>
 		<a
 			onclick={toggleSidebar}
-			href="/wine-menu"
-			class="border-b border-gray-100 py-2 hover:text-rose-600">Wine Menu</a
+			href="/wine-list"
+			class="border-b border-gray-100 py-2 hover:text-rose-600">Wine List</a
 		>
 		<a
 			onclick={toggleSidebar}
-			href="/lite-lunch"
-			class="border-b border-gray-100 py-2 hover:text-rose-600">Light Lunch</a
+			href="/light-lunch"
+			class="border-b border-gray-100 py-2 hover:text-rose-600">Light Lunch Menu</a
 		>
 	</nav>
 </aside>
