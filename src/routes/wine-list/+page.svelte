@@ -71,6 +71,14 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Wine List | Pachas Restaurant | Premium South African Wines</title>
+	<meta
+		name="description"
+		content="Explore our extensive wine collection featuring the finest South African wines. From Chenin Blanc to Pinotage, perfect pairings for fine dining."
+	/>
+</svelte:head>
+
 <section class="py-16">
 	<div class="container mx-auto px-4">
 		<div class="mb-12 text-center">

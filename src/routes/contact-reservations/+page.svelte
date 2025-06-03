@@ -1,13 +1,10 @@
-<script>
-	// src/routes/+page.js
-	export const load = () => {
-		return {
-			title: 'Pachas Restaurant | Fine Dining Pretoria | Steakhouse & Seafood',
-			description:
-				'Fine dining restaurant in Pretoria offering premium steaks, fresh seafood, and South African cuisine. Private function rooms available. Est. 1985.'
-		};
-	};
-</script>
+<svelte:head>
+	<title>Contact & Reservations | Pachas Restaurant Pretoria</title>
+	<meta
+		name="description"
+		content="Make a reservation at Pachas Restaurant. Located at The Club Retail, 22 Dely Road, Hazelwood. Call 012 460 5063."
+	/>
+</svelte:head>
 
 <section class="bg-gray-100 py-16">
 	<div class="container mx-auto px-4">

@@ -1,15 +1,14 @@
 <script>
 	import Testimonials from '$lib/components/Testimonials.svelte';
-
-	// src/routes/+page.js
-	export const load = () => {
-		return {
-			title: 'Pachas Restaurant | Fine Dining Pretoria | Steakhouse & Seafood',
-			description:
-				'Fine dining restaurant in Pretoria offering premium steaks, fresh seafood, and South African cuisine. Private function rooms available. Est. 1985.'
-		};
-	};
 </script>
+
+<svelte:head>
+	<title>Pachas Restaurant | Fine Dining Pretoria | Steakhouse & Seafood</title>
+	<meta
+		name="description"
+		content="Fine dining restaurant in Pretoria offering premium steaks, fresh seafood, and South African cuisine. Private function rooms available. Est. 1985."
+	/>
+</svelte:head>
 
 <section
 	class="relative mx-auto max-w-6xl overflow-hidden rounded-lg border-l-4 border-rose-500 pt-12 shadow-xl"

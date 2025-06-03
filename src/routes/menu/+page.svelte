@@ -71,16 +71,15 @@
 			}
 		};
 	});
-
-	// src/routes/+page.js
-	export const load = () => {
-		return {
-			title: 'Pachas Restaurant | Fine Dining Pretoria | Steakhouse & Seafood',
-			description:
-				'Fine dining restaurant in Pretoria offering premium steaks, fresh seafood, and South African cuisine. Private function rooms available. Est. 1985.'
-		};
-	};
 </script>
+
+<svelte:head>
+	<title>Menu | Pachas Restaurant | À La Carte Dining Pretoria</title>
+	<meta
+		name="description"
+		content="View our à la carte menu featuring premium steaks, fresh seafood, and South African specialties. Fine dining in Pretoria since 1985."
+	/>
+</svelte:head>
 
 <section class="py-16">
 	<div class="container mx-auto px-4">
