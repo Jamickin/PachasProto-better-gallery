@@ -5,6 +5,7 @@
 	let wineCategories = [];
 	let wineData = {};
 	let loading = true;
+	let showMobileNav = false;
 
 	onMount(async () => {
 		try {
@@ -12,63 +13,26 @@
 			wineData = wineResult;
 			wineCategories = Object.keys(wineData || {});
 			loading = false;
+			console.log('Wine data loaded:', wineData); // Debug log
 		} catch (error) {
 			console.error('Error loading wine menu', error);
 			wineData = {};
+			loading = false;
 		}
-
-		// Function to get the document-relative offset of an element
-		function getDocumentOffset(element) {
-			let top = 0;
-			let el = element;
-			while (el) {
-				top += el.offsetTop + (el.offsetParent?.offsetTop || 0);
-				el = el.offsetParent;
-			}
-			return top;
-		}
-
-		// Override default scroll behavior for in-page anchor links
-		const handleAnchorClick = (event) => {
-			const target = event.target;
-			if (target.classList.contains('in-page-link')) {
-				const targetId = target.getAttribute('href');
-				if (targetId) {
-					event.preventDefault();
-
-					requestAnimationFrame(() => {
-						const targetElement = document.querySelector(targetId);
-						if (targetElement) {
-							const navHeight = document.querySelector('nav').offsetHeight;
-							const extraOffset = 20;
-							const targetPosition = getDocumentOffset(targetElement) - navHeight - extraOffset;
-
-							window.scrollTo({
-								top: Math.max(0, targetPosition),
-								behavior: 'smooth'
-							});
-						}
-					});
-				}
-			}
-		};
-
-		// Add event listeners to in-page anchor links
-		requestAnimationFrame(() => {
-			const anchorLinks = document.querySelectorAll('nav .in-page-link');
-			anchorLinks.forEach((link) => {
-				link.addEventListener('click', handleAnchorClick);
-			});
-		});
-
-		// Clean up event listeners on unmount
-		return () => {
-			const anchorLinks = document.querySelectorAll('nav .in-page-link');
-			anchorLinks.forEach((link) => {
-				link.removeEventListener('click', handleAnchorClick);
-			});
-		};
 	});
+
+	function toggleMobileNav() {
+		showMobileNav = !showMobileNav;
+	}
+
+	function scrollToCategory(category) {
+		const targetId = `#${category.toLowerCase().replace(/ /g, '-')}`;
+		const targetElement = document.querySelector(targetId);
+		if (targetElement) {
+			targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}
+		showMobileNav = false;
+	}
 </script>
 
 <svelte:head>
@@ -78,6 +42,45 @@
 		content="Explore our extensive wine collection featuring the finest South African wines. From Chenin Blanc to Pinotage, perfect pairings for fine dining."
 	/>
 </svelte:head>
+
+<!-- Mobile Navigation Bar -->
+{#if !loading && wineCategories.length > 0}
+	<div class="sticky top-0 z-40 border-b border-gray-200 bg-white shadow-md md:hidden">
+		<div class="px-4 py-3">
+			<button
+				class="flex w-full items-center justify-between rounded-lg border border-rose-200 bg-rose-50 px-4 py-3 transition-colors hover:bg-rose-100"
+				on:click={toggleMobileNav}
+			>
+				<span class="font-medium text-gray-800">Wine Categories</span>
+				<svg
+					class="h-5 w-5 text-gray-600 transition-transform duration-200"
+					class:rotate-180={showMobileNav}
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+				>
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+					></path>
+				</svg>
+			</button>
+
+			{#if showMobileNav}
+				<div
+					class="mt-3 max-h-64 overflow-y-auto rounded-lg border border-gray-200 bg-white shadow-lg"
+				>
+					{#each wineCategories as category}
+						<button
+							class="w-full border-b border-gray-100 px-4 py-3 text-left transition-colors last:border-b-0 hover:bg-rose-50"
+							on:click={() => scrollToCategory(category)}
+						>
+							{category}
+						</button>
+					{/each}
+				</div>
+			{/if}
+		</div>
+	</div>
+{/if}
 
 <section class="py-16">
 	<div class="container mx-auto px-4">
@@ -89,6 +92,10 @@
 		{#if loading}
 			<div class="flex h-64 items-center justify-center">
 				<div class="text-xl text-gray-600">Loading wine menu...</div>
+			</div>
+		{:else if Object.keys(wineData).length === 0}
+			<div class="flex h-64 items-center justify-center">
+				<div class="text-xl text-gray-600">No wine data available</div>
 			</div>
 		{:else}
 			{#each wineCategories as category}

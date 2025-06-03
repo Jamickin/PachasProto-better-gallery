@@ -94,7 +94,17 @@
 								></path></svg
 							>
 							<span
-								><strong>Tel:</strong> 012 460 5063 / 3220 (
+								><strong>Tel:</strong>
+								<a
+									href="tel:+27124605063"
+									class="font-semibold text-rose-600 underline hover:text-rose-500">012 460 5063</a
+								>
+								/
+								<a
+									href="tel:+27124603220"
+									class="font-semibold text-rose-600 underline hover:text-rose-500">3220</a
+								>
+								(
 								<span><strong class="text-rose-600">Telephonic Reservations Only</strong> )</span
 								></span
 							>

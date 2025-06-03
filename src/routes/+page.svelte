@@ -45,7 +45,10 @@
 				>through the restaurant</a
 			>
 			<span class="mt-2 block text-sm text-gray-700 italic"
-				>For reservations, call <strong>012 460 5063</strong></span
+				>For reservations, call <a
+					href="tel:+27124605063"
+					class="font-bold text-rose-600 underline hover:text-rose-500">012 460 5063</a
+				></span
 			>
 		</p>
 	</div>
@@ -146,13 +149,9 @@
 				</p>
 			</div>
 
-			<!-- Timeline accent -->
+			<!-- Updated Timeline accent - now just shows "Since 1985" -->
 			<div class="mt-8 flex items-center justify-center gap-4 text-sm text-gray-500">
-				<span>1985</span>
-				<div
-					class="h-px max-w-32 flex-1 bg-gradient-to-r from-rose-200 via-rose-400 to-rose-200"
-				></div>
-				<span class="font-semibold text-rose-600">2025</span>
+				<span class="text-lg font-semibold text-rose-600">Since 1985</span>
 			</div>
 		</div>
 	</section>

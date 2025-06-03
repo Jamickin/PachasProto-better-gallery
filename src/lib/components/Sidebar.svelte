@@ -56,7 +56,7 @@
 		<a
 			onclick={toggleSidebar}
 			href="/private-dining"
-			class="border-b border-gray-100 py-2 hover:text-rose-600">rivate Dining & Events</a
+			class="border-b border-gray-100 py-2 hover:text-rose-600">Private Dining & Events</a
 		>
 		<a
 			onclick={toggleSidebar}
