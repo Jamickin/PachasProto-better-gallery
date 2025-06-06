@@ -40,7 +40,7 @@
 		<p class="m-0 text-gray-700">
 			Take a Virtual Tour
 			<a
-				href="http://360sa.co.za/pretoria/pachas2/"
+				href="https://www.360sa.co.za/virtualtour/pachas-restaurant-pretoria/"
 				class="mx-2 font-semibold text-rose-600 transition-colors duration-200 hover:text-rose-500 hover:underline"
 				>through the restaurant</a
 			>
@@ -133,7 +133,7 @@
 		<!-- Content -->
 		<div class="mx-auto max-w-2xl text-center">
 			<p class="mb-4 text-lg leading-relaxed text-gray-700">
-				For over <strong class="font-semibold text-rose-600">39 years</strong>, Pachas has remained
+				For over <strong class="font-semibold text-rose-600">40 years</strong>, Pachas has remained
 				a cornerstone of fine dining in Pretoria, guided by the unwavering dedication of its
 				founding partners.
 			</p>
