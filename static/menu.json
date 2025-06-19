@@ -135,42 +135,42 @@
 			{
 				"name": "Rump (300g)",
 				"description": "A classic cut of beef, known for its robust flavor and tender texture, perfectly grilled to your preference.",
-				"price": "R250"
+				"price": "R270"
 			},
 			{
 				"name": "Sirloin (300g)",
 				"description": "A premium beef cut that offers a balance of tenderness and rich, meaty flavor, expertly prepared on the grill.",
-				"price": "R250"
+				"price": "R270"
 			},
 			{
 				"name": "Sirloin on the Bone (500g)",
 				"description": "A substantial sirloin steak cooked with the bone in, enhancing its natural flavors and juiciness.",
-				"price": "R350"
+				"price": "R395"
 			},
 			{
 				"name": "Fillet (200g)",
 				"description": "The most tender cut of beef, known for its buttery texture and mild flavor, carefully grilled to preserve its delicate nature.",
-				"price": "R240"
+				"price": "R260"
 			},
 			{
 				"name": "Fillet (250g)",
 				"description": "A slightly larger portion of the most tender beef cut, perfect for those with a heartier appetite.",
-				"price": "R280"
+				"price": "R310"
 			},
 			{
 				"name": "T-Bone (800g)",
 				"description": "A substantial steak featuring both tenderloin and strip steak, offering two distinct textures and flavors in one impressive cut.",
-				"price": "R395"
+				"price": "R450"
 			},
 			{
 				"name": "Spare Ribs",
 				"description": "Succulent pork spare ribs, slow-cooked to fall-off-the-bone tenderness.",
-				"price": "R310"
+				"price": "R330"
 			},
 			{
 				"name": "Ladies Spare Ribs",
 				"description": "A smaller portion of our succulent pork spare ribs, slow-cooked to fall-off-the-bone tenderness.",
-				"price": "R270"
+				"price": "R290"
 			}
 		]
 	},
@@ -228,17 +228,17 @@
 			{
 				"name": "European Wild Boar with Wholegrain Mustard Cream Sauce",
 				"description": "Succulent wild boar meat paired with a creamy wholegrain mustard sauce, offering a rustic and flavorful dining experience.",
-				"price": "R280"
+				"price": "R290"
 			},
 			{
 				"name": "Gemsbok Schnitzel",
 				"description": "Crumbed loin of gemsbok (oryx) served with a rich red wine, bacon, and mushroom sauce, showcasing a unique South African game meat.",
-				"price": "R260"
+				"price": "R280"
 			},
 			{
 				"name": "Eland Stew",
 				"description": "A hearty stew featuring tender eland meat, slow-cooked to perfection with a blend of herbs and spices.",
-				"price": "R260"
+				"price": "R280"
 			}
 		]
 	},
@@ -247,12 +247,12 @@
 			{
 				"name": "Sirloin Togetherness",
 				"description": "A well-matured sirloin served with a creamy red wine, bacon, and mushroom sauce, perfect for sharing.",
-				"price": "R285"
+				"price": "R305"
 			},
 			{
 				"name": "Sirloin Jack Daniels",
 				"description": "Sirloin steak prepared with a distinctive Jack Daniels whiskey-infused bacon marmalade, offering a bold and unique flavor profile.",
-				"price": "R285"
+				"price": "R305"
 			},
 			{
 				"name": "Fillet Atlantis",
@@ -262,17 +262,17 @@
 			{
 				"name": "Fillet Rossini",
 				"description": "Classic fillet topped with rich chicken liver and red wine sauce, inspired by the famous French culinary tradition.",
-				"price": "R320"
+				"price": "R340"
 			},
 			{
 				"name": "Between the Sheets",
 				"description": "A decadent fillet topped with shrimps, asparagus, mushrooms, and a creamy pepper and Fontina cheese sauce.",
-				"price": "R340"
+				"price": "R360"
 			},
 			{
 				"name": "Fillet Haloumi",
 				"description": "Fillet served with haloumi cheese and a mixed berry and red wine reduction, offering a perfect balance of flavors.",
-				"price": "R295"
+				"price": "R320"
 			},
 			{
 				"name": "Lamb of the Day",
@@ -282,17 +282,17 @@
 			{
 				"name": "Lamb Curry",
 				"description": "A mild and fragrant lamb curry, featuring tender meat in a well-balanced, aromatic sauce.",
-				"price": "R295"
+				"price": "R310"
 			},
 			{
 				"name": "Oxtail",
 				"description": "Slow-cooked oxtail braised in red wine, flavored with herbs and gremolata, offering a rich and comforting dish.",
-				"price": "R295"
+				"price": "R310"
 			},
 			{
 				"name": "Veal Schnitzel",
 				"description": "Tender veal coated in crispy breadcrumbs, served with your choice of cheese or mushroom sauce for a classic European dish.",
-				"price": "R270"
+				"price": "R285"
 			}
 		]
 	},

@@ -42,7 +42,7 @@ body {
 
 /* Common Elements */
 header {
-	@apply z-50 bg-slate-50;
+	@apply z-50 bg-white;
 }
 
 a {
