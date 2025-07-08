@@ -35,6 +35,11 @@
 				"name": "J.C Le Roux La Fleurette Non Alcoholic",
 				"price": "R230",
 				"description": "It has all the finesse and gentle sweetness of JC le Roux la Fleurette. Its mouth-filling sweetness and clean finish will enliven any occasion!"
+			},
+			{
+				"name": " Valdo Garda",
+				"price": "R340",
+				"description": "Intense and fragrant with delicate floral and white-fleshed fruit hints. Pleasantly dry and savoury taste, harmonious and with a long and persistent finish."
 			}
 		]
 	},
@@ -103,9 +108,9 @@
 	"Chardonnay": {
 		"items": [
 			{
-				"name": "Glen Carlou Petite",
+				"name": "Diemersdal Chardonnay",
 				"price": "R240",
-				"description": "Smoke overlays, black cherry fruit."
+				"description": "This Unwooded Chardonnay is a concentrated wine with fresh fruit aromas."
 			},
 			{
 				"name": "Allée Bleue Blue Owl",
