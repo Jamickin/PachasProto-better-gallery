@@ -1,45 +1,41 @@
 {
 	"By the glass": {
 		"items": [
-			{ "name": "J.C Le Roux La Fleurette / Le Domaine", "price": "R55" },
-			{ "name": "Pongrácz Brut / Rosé", "price": "R70" },
-			{ "name": "Allée Bleue Blue Owl Chardonnay", "price": "R85" },
-			{ "name": "Secateurs Chenin Blanc", "price": "R90" },
-			{ "name": "Du Toitskloof Sauvignon Blanc", "price": "R65" },
-			{ "name": "Diemersdal Sauvignon Blanc", "price": "R88" },
-			{ "name": "The Emily Chardonnay Pinot Noir", "price": "R88" },
-			{ "name": "Nederburg Rosé", "price": "R70" },
-			{ "name": "L'Avenir Horizon Rosé", "price": "R90" },
-			{ "name": "Ken Forrester Natural Sweet", "price": "R65" },
-			{ "name": "Du Toitskloof Merlot", "price": "R80" },
-			{ "name": "Hartenberg Doorkeeper Shiraz", "price": "R99" },
-			{ "name": "Beyerskloof Pinotage", "price": "R88" },
-			{ "name": "Secateurs Red Blend", "price": "R105" },
-			{ "name": "Lourensford The Dome Pinot Noir", "price": "R120" },
-			{ "name": "Muratie Amber Forever Dessert Wine", "price": "R45" }
+			{ "name": "J.C Le Roux La Fleurette / Le Domaine", "price": "R60" },
+			{ "name": "Valdo Garda Doc", "price": "R60" },
+			{ "name": "Pongrácz Brut / Rosé", "price": "R75" },
+			{ "name": "Allée Bleue Blue Owl Chardonnay", "price": "R90" },
+			{ "name": "Secateurs Chenin Blanc", "price": "R95" },
+			{ "name": "Du Toitskloof Sauvignon Blanc", "price": "R70" },
+			{ "name": "Diemersdal Sauvignon Blanc", "price": "R90" },
+			{ "name": "The Emily Chardonnay Pinot Noir", "price": "R90" },
+			{ "name": "Nederburg Rosé", "price": "R75" },
+			{ "name": "L'Avenir Horizon Rosé", "price": "R95" },
+			{ "name": "Ken Forrester Natural Sweet", "price": "R70" },
+			{ "name": "Du Toitskloof Merlot", "price": "R85" },
+			{ "name": "Hartenberg Doorkeeper Shiraz", "price": "R105" },
+			{ "name": "Beyerskloof Pinotage", "price": "R95" },
+			{ "name": "Secateurs Red Blend", "price": "R110" },
+			{ "name": "Lourensford The Dome Pinot Noir", "price": "R125" },
+			{ "name": "Muratie Amber Forever Dessert Wine", "price": "R50" }
 		]
 	},
 	"Sparkling Wine": {
 		"items": [
 			{
 				"name": "J.C Le Roux Le Domaine",
-				"price": "R230",
+				"price": "R260",
 				"description": "Spicy Turkish delight blend of Sauvignon Blanc, Chenin Blanc and Muscat. Sweet but focused finish."
 			},
 			{
 				"name": "J.C Le Roux La Fleurette",
-				"price": "R230",
+				"price": "R260",
 				"description": "Sweet, floral multi-variety fizz."
 			},
 			{
 				"name": "J.C Le Roux La Fleurette Non Alcoholic",
-				"price": "R230",
+				"price": "R260",
 				"description": "It has all the finesse and gentle sweetness of JC le Roux la Fleurette. Its mouth-filling sweetness and clean finish will enliven any occasion!"
-			},
-			{
-				"name": " Valdo Garda",
-				"price": "R340",
-				"description": "Intense and fragrant with delicate floral and white-fleshed fruit hints. Pleasantly dry and savoury taste, harmonious and with a long and persistent finish."
 			}
 		]
 	},
@@ -47,27 +43,27 @@
 		"items": [
 			{
 				"name": "Pongrácz Brut",
-				"price": "R420",
+				"price": "R480",
 				"description": "Delicate yeasty tones, layered with toast and ripe fruit. Firm mousse. Big, foamy mouthful, black fruit flavours with good length."
 			},
 			{
 				"name": "Pongrácz Rosé",
-				"price": "R420",
+				"price": "R480",
 				"description": "Blush and savoury tang, dry, light and bright."
 			},
 			{
 				"name": "Graham Beck Rosé",
-				"price": "R470",
+				"price": "R540",
 				"description": "Fresh berry fruit and oatmeal cookie undertones."
 			},
 			{
 				"name": "Steenberg Brut Chardonnay",
-				"price": "R495",
+				"price": "R580",
 				"description": "Baked apple nuances, tightly wound, very fresh."
 			},
 			{
 				"name": "Kleine Zalze Cape Nectar Rosé",
-				"price": "R360",
+				"price": "R420",
 				"description": "Aromas of strawberries and red berries followed by tropical fruit."
 			}
 		]
@@ -75,8 +71,13 @@
 	"Prosecco": {
 		"items": [
 			{
+				"name": " Valdo Garda Doc",
+				"price": "R340",
+				"description": "Intense and fragrant with delicate floral and white-fleshed fruit hints. Pleasantly dry and savoury taste, harmonious and with a long and persistent finish."
+			},
+			{
 				"name": "Valdo Extra Dry",
-				"price": "R540",
+				"price": "R640",
 				"description": "Made from a unique blend of Glera and Nerello grapes with notes of red berries and crisp apple aroma"
 			}
 		]
@@ -85,22 +86,22 @@
 		"items": [
 			{
 				"name": "Moët & Chandon Brut",
-				"price": "R1900",
+				"price": "R2100",
 				"description": "Mellow and harmonious with well-developed flavours and a persistent mousse."
 			},
 			{
 				"name": "Moët & Chandon Nectar Imperial",
-				"price": "R2100",
+				"price": "R2300",
 				"description": "Velvety creamy butter citrus notes delicate bubbles light yeasty aromas pears litchi."
 			},
 			{
 				"name": "Moët & Chandon Brut Rosé",
-				"price": "R2300",
+				"price": "R2500",
 				"description": "A style distinguished by its bright fruitiness, its seductive palate and its elegant maturity."
 			},
 			{
 				"name": "Veuve Clicquot",
-				"price": "R2100",
+				"price": "R2400",
 				"description": "Initial notes of fruit are followed by more discreet aromas of brioche and vanilla."
 			}
 		]
@@ -108,18 +109,18 @@
 	"Chardonnay": {
 		"items": [
 			{
-				"name": "Diemersdal Chardonnay",
-				"price": "R240",
+				"name": "Diemersdal Chardonnay (Unwooded)",
+				"price": "R250",
 				"description": "This fashionable wine balances concentrated spicy aromas with fresh fruit flavours."
 			},
 			{
 				"name": "Allée Bleue Blue Owl",
-				"price": "R255",
+				"price": "R260",
 				"description": "Fresh and zesty, packed with winter melons, apricot and citrus aftertaste."
 			},
 			{
 				"name": "Eikendal Janina",
-				"price": "R290",
+				"price": "R330",
 				"description": "Wealth of pickled lime, intense citrus zest."
 			},
 			{
@@ -129,7 +130,7 @@
 			},
 			{
 				"name": "Allée Bleue Isabeau (Wooded)",
-				"price": "R450",
+				"price": "R520",
 				"description": "Stone Fruit, citrus and an underlying hint of oatmeal."
 			}
 		]
@@ -138,22 +139,22 @@
 		"items": [
 			{
 				"name": "Kleine Zalze Cellar Selection",
-				"price": "R230",
+				"price": "R240",
 				"description": "Luscious quince and tropical fruit with vanilla oak."
 			},
 			{
 				"name": "Secatuers",
-				"price": "R260",
+				"price": "R280",
 				"description": "Delicious honey textures with underlying minerality."
 			},
 			{
 				"name": "Mulderbosch Steen op Hout",
-				"price": "R275",
+				"price": "R290",
 				"description": "Smooth, clean and lemony with ripe apple notes."
 			},
 			{
 				"name": "L'Avenir Provenance",
-				"price": "R330",
+				"price": "R350",
 				"description": "Precise and intense fruit aromas of white peach and melon, accented by subtle notes of honey and toasted almonds."
 			}
 		]
@@ -162,12 +163,12 @@
 		"items": [
 			{
 				"name": "Ken Forrester Petit Natural Sweet",
-				"price": "R195",
+				"price": "R210",
 				"description": "Ripe pineapple and honey, countered by lively acids."
 			},
 			{
 				"name": "Paul Cluver Riesling",
-				"price": "R295",
+				"price": "R310",
 				"description": "Blossom fragrance and gentle sweetness and minerality."
 			}
 		]
@@ -176,17 +177,17 @@
 		"items": [
 			{
 				"name": "Buitenverwachting Buiten Blanc",
-				"price": "R200",
+				"price": "R220",
 				"description": "Mainly sauvignon blanc with dabs of chenin, semillon and gewürztraminer."
 			},
 			{
 				"name": "Saronsberg Earth in Motion",
-				"price": "R220",
+				"price": "R240",
 				"description": "Prominent tropical aromas with typical Chenin and Sauvignon Blanc notes."
 			},
 			{
 				"name": "The Emily Chardonnay Pinot Noir",
-				"price": "R265",
+				"price": "R285",
 				"description": "Aromas of ripe guava, pineapple, kiwi and fresh citrus with green apple."
 			}
 		]
@@ -195,42 +196,42 @@
 		"items": [
 			{
 				"name": "Du Toitskloof",
-				"price": "R210",
+				"price": "R220",
 				"description": "Herbs and fynbos, piquant gooseberry core."
 			},
 			{
 				"name": "Le Bonheur",
-				"price": "R230",
+				"price": "R260",
 				"description": "Generous notes of green figs, gooseberries and crispy lime. Sauvignon Blanc flavours with elegance and classic Le Bonheur finesse."
 			},
 			{
 				"name": "Diemersdal",
-				"price": "R265",
+				"price": "R275",
 				"description": "Aromas of citrus, green herbs, hints of asparagus and a touch of sweetness. Excellent natural acidity, a fine structure and a pleasant, clean finish."
 			},
 			{
-				"name": "Fryer's Cove",
-				"price": "R320",
-				"description": "Concentrated Coastal aromas of guava, paw paw, green fig and lime, bursting with vibrant citrus fruit and a wonderful saline savouriness."
-			},
-			{
 				"name": "The Valley",
-				"price": "R330",
+				"price": "R350",
 				"description": "Very fresh with ripe figs, gooseberry and grassy notes."
 			},
 			{
+				"name": "Fryer's Cove",
+				"price": "R360",
+				"description": "Concentrated Coastal aromas of guava, paw paw, green fig and lime, bursting with vibrant citrus fruit and a wonderful saline savouriness."
+			},
+			{
 				"name": "Springfield \"Life from Stone\"",
-				"price": "R350",
+				"price": "R385",
 				"description": "Crispy assertive passionfruit oomph to please its many admirers."
 			},
 			{
 				"name": "Hermanuspietersfontein Kaalvoet Meisie",
-				"price": "R380",
+				"price": "R395",
 				"description": "Green, crisp, grassiness and a harmonious balance and a finesse that will engage."
 			},
 			{
 				"name": "Strandveld Pofadder Bos",
-				"price": "R395",
+				"price": "R450",
 				"description": "Ripe but fresh palate with blackcurrant tones."
 			}
 		]
@@ -239,47 +240,47 @@
 		"items": [
 			{
 				"name": "Nederburg Rosé",
-				"price": "R210",
+				"price": "R220",
 				"description": "Clean, fruity and refreshing flavours with a good acid structure."
 			},
 			{
 				"name": "Glen Carlou Pinot Rosé",
-				"price": "R250",
+				"price": "R275",
 				"description": "Pronounced aromas of strawberry, citrus and passionfruit."
 			},
 			{
 				"name": "L'Avenir Horizon Rosé",
-				"price": "R270",
+				"price": "R285",
 				"description": "An elegant and delicate expression of Pinotage rose, with notes of raspberries and pomegranates and a crisp touch of lime."
 			},
 			{
 				"name": "Hermanuspietersfontein Bloos",
-				"price": "R300",
+				"price": "R320",
 				"description": "Hermanuspietersfontein Bloos is a unique Bordeaux-style blush wine, packed with red berries and a whiff of oak."
 			}
 		]
 	},
 	"Merlot": {
 		"items": [
-			{ "name": "Du Toitskloof", "price": "R230", "description": "Mulberries with tones of mint." },
+			{ "name": "Du Toitskloof", "price": "R245", "description": "Mulberries with tones of mint." },
 			{
 				"name": "Kleine Zalze Cellar Selection",
-				"price": "R275",
+				"price": "R285",
 				"description": "Plum compote with winter spice."
 			},
 			{
 				"name": "Hermanuspietersfontein 1855 Postmeester",
-				"price": "R310",
+				"price": "R320",
 				"description": "A pleasant everyday drinking experience."
 			},
 			{
 				"name": "Le Bonheur",
-				"price": "R350",
+				"price": "R360",
 				"description": "Elegant notes of ripe cherries, blackcurrant and cedarwood, with subtle hints of Potpourri and dark chocolate."
 			},
 			{
 				"name": "Glen Carlou",
-				"price": "R395",
+				"price": "R450",
 				"description": "Blackberry fruit, medium bodied and soft."
 			}
 		]
@@ -288,22 +289,22 @@
 		"items": [
 			{
 				"name": "Hartenberg Doorkeeper",
-				"price": "R295",
+				"price": "R320",
 				"description": "Estate's younger vineyard, old oak aged."
 			},
 			{
 				"name": "Saronsberg Provenance",
-				"price": "R360",
+				"price": "R370",
 				"description": "Scrumptious, savoury with well-balanced acidity."
 			},
 			{
 				"name": "First Sighting",
-				"price": "R380",
+				"price": "R390",
 				"description": "Freshly ground pepper and mocha aromas layered with vibrant berries."
 			},
 			{
 				"name": "La Motte",
-				"price": "R400",
+				"price": "R450",
 				"description": "Pepper and herb ease to rich plum fruit."
 			}
 		]
@@ -312,23 +313,23 @@
 		"items": [
 			{
 				"name": "Warwick 'The First Lady'",
-				"price": "R320",
+				"price": "R340",
 				"description": "The nose reveals lots of red berries and sweet black currents."
 			},
 			{
 				"name": "Le Bonheur",
-				"price": "R350",
+				"price": "R375",
 				"description": "Classic notes of dense blackcurrant, cedarwood and hints of dark chocolate."
-			},
-			{
-				"name": "Kleine Zalze Vineyard Selection",
-				"price": "R425",
-				"description": "Herbal notes and intense dark fruit, with fine tannins and integrated oak."
 			},
 			{
 				"name": "Springfield Wholeberry",
 				"price": "R470",
 				"description": "Elegantly fruit filled, dusted with spice."
+			},
+			{
+				"name": "Kleine Zalze Vineyard Selection",
+				"price": "R490",
+				"description": "Herbal notes and intense dark fruit, with fine tannins and integrated oak."
 			}
 		]
 	},
@@ -336,22 +337,22 @@
 		"items": [
 			{
 				"name": "Beyerskloof",
-				"price": "R265",
+				"price": "R285",
 				"description": "Spicy wood notes against rich plum and berry fruit."
 			},
 			{
 				"name": "Allée Bleue Blue Owl",
-				"price": "R280",
+				"price": "R295",
 				"description": "Abundant strawberry and ripe cherry notes, with lush plummy fruit aromas."
 			},
 			{
 				"name": "Doolhof Dark Lady",
-				"price": "R320",
+				"price": "R330",
 				"description": "Lovely fruit and wood balance, well integrated tannins."
 			},
 			{
 				"name": "Kanonkop Kadette",
-				"price": "R330",
+				"price": "R360",
 				"description": "Pure mulberry and banana scents, subtle oak."
 			}
 		]
@@ -365,32 +366,32 @@
 			},
 			{
 				"name": "Kanonkop Kadette",
-				"price": "R330",
+				"price": "R350",
 				"description": "Deep ruby, red colour. It shows ripe raspberries, black current and mocha flavours on the nose and has dark chocolate and blackberry fruit."
 			},
 			{
 				"name": "Beyerskloof Synergy",
-				"price": "R350",
+				"price": "R370",
 				"description": "Juicy, fruity and rounded."
 			},
 			{
 				"name": "Saronsberg Seismic",
-				"price": "R460",
+				"price": "R480",
 				"description": "Bordeaux with all five varietals."
 			},
 			{
 				"name": "Hermanuspietersfontein Kleinboet",
-				"price": "R470",
+				"price": "R520",
 				"description": "Generous length, rounded tannins, medium body."
 			},
 			{
 				"name": "Rupert & Rothschild Classique",
-				"price": "R510",
+				"price": "R540",
 				"description": "Vibrant flavours of young berries, plums, liquorice and cassis with a hint of coriander and white pepper and a fresh, long finish."
 			},
 			{
 				"name": "Anthonij Rupert Optima",
-				"price": "R560",
+				"price": "R610",
 				"description": "Packed with red and black fruit, lead pencil finish."
 			}
 		]
@@ -399,12 +400,12 @@
 		"items": [
 			{
 				"name": "Lourensford The Dome",
-				"price": "R360",
+				"price": "R375",
 				"description": "Vibrant red berry, fruit cradled by silky oak."
 			},
 			{
 				"name": "The Valley",
-				"price": "R385",
+				"price": "R450",
 				"description": "Ripe berry, flavours of maraschino cherry, vibrant strawberry and raspberry notes."
 			},
 			{
@@ -443,7 +444,7 @@
 			},
 			{
 				"name": "Meerlust Rubicon",
-				"price": "R1350",
+				"price": "R1450",
 				"description": "Most elegant of the reds, refined and intense."
 			},
 			{
@@ -458,22 +459,22 @@
 			},
 			{
 				"name": "Beyerskloof Faith (Blend)",
-				"price": "R2150",
+				"price": "R2500",
 				"description": "Dense forest fruits with subtle mocha."
 			},
 			{
 				"name": "Beyerskloof Diesel",
-				"price": "R2150",
+				"price": "R2700",
 				"description": "Inspired by Beyers Truter's beloved canine companion."
 			},
 			{
 				"name": "Hartenberg The Stork Shiraz",
-				"price": "R2300",
+				"price": "R2500",
 				"description": "Lovely fruit purity from clay rich soils."
 			},
 			{
 				"name": "Kanonkop Paul Sauer",
-				"price": "R2300",
+				"price": "R2500",
 				"description": "Richly regarded as S.A's finest Bordeaux Style Blend."
 			}
 		]
@@ -482,7 +483,7 @@
 		"items": [
 			{
 				"name": "Doolhof Single Varietal",
-				"price": "R500",
+				"price": "R590",
 				"description": "Vibrant aromas of violets, cocoa and black pepper."
 			}
 		]
