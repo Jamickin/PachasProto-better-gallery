@@ -1,0 +1,508 @@
+{
+	"Method Cap Classique": {
+		"description": "South Africa's premium sparkling wine made using the traditional French method (Méthode Champenoise). Established in 1971, MCC represents the pinnacle of South African sparkling wine production, aged on lees for at least 12 months.",
+		"characteristics": {
+			"body": "Light to Medium",
+			"acidity": "High",
+			"tannins": "None",
+			"alcohol": "11-13%",
+			"color": "Pale straw to golden",
+			"aromas": "Citrus, apple, bread, yeast, floral, brioche"
+		},
+		"foodPairings": [
+			"Oysters and fresh seafood",
+			"Sushi and sashimi",
+			"Light appetizers and canapés",
+			"Soft cheeses and charcuterie",
+			"Fresh fruit and light desserts",
+			"Fried foods and tempura"
+		],
+		"servingTemp": "4-6°C",
+		"ageingPotential": "3-10 years for vintage examples",
+		"regions": "Western Cape, Stellenbosch, Robertson, Franschhoek",
+		"winemaking": "Traditional method with secondary fermentation in bottle, riddling, and disgorgement. Made primarily from Chardonnay and Pinot Noir, similar to Champagne but with South African terroir influence."
+	},
+	"Champagne": {
+		"description": "The world's most prestigious sparkling wine, exclusively from the Champagne region of France. Made using the traditional Méthode Champenoise with extended aging on lees, creating unparalleled complexity and elegance.",
+		"characteristics": {
+			"body": "Light to Medium",
+			"acidity": "High",
+			"tannins": "None",
+			"alcohol": "12-13%",
+			"color": "Pale gold to deep golden",
+			"aromas": "Citrus, brioche, toasted nuts, honey, mineral, cream"
+		},
+		"foodPairings": [
+			"Caviar and luxury appetizers",
+			"Oysters and fine seafood",
+			"Aged cheeses and truffles",
+			"Light fish and poultry dishes",
+			"Fresh strawberries and pastries",
+			"Celebration foods and canapés"
+		],
+		"servingTemp": "4-6°C",
+		"ageingPotential": "3-20+ years for vintage Champagnes",
+		"regions": "Champagne region: Reims, Épernay, Montagne de Reims, Vallée de la Marne",
+		"winemaking": "Minimum 15 months aging on lees, often much longer. Primary grapes are Chardonnay, Pinot Noir, and Pinot Meunier. The prestige and complexity come from the chalky terroir and centuries of refinement."
+	},
+	"Prosecco": {
+		"description": "Italy's beloved sparkling wine from Veneto and Friuli-Venezia Giulia regions. Made primarily from Glera grapes using the Charmat method, creating a fresh, fruity, and approachable sparkling wine perfect for everyday celebration.",
+		"characteristics": {
+			"body": "Light",
+			"acidity": "Medium to High",
+			"tannins": "None",
+			"alcohol": "10.5-11.5%",
+			"color": "Pale straw with green tints",
+			"aromas": "Green apple, pear, white peach, floral, citrus"
+		},
+		"foodPairings": [
+			"Antipasti and charcuterie",
+			"Light seafood and sushi",
+			"Fresh salads and vegetables",
+			"Soft cheeses and fruit",
+			"Asian cuisine and spicy dishes",
+			"Light desserts and fruit tarts"
+		],
+		"servingTemp": "6-8°C",
+		"ageingPotential": "1-3 years, best enjoyed young",
+		"regions": "Veneto: Conegliano, Valdobbiadene (DOCG), Friuli-Venezia Giulia",
+		"winemaking": "Charmat method with secondary fermentation in tanks, preserving fresh fruit flavors. DOCG areas produce superior quality wines with more complexity and aging potential."
+	},
+	"Sparkling Wine": {
+		"description": "A diverse category of effervescent wines made worldwide using various methods. From budget-friendly options to premium bottles, sparkling wines offer bubbles for every occasion and palate preference.",
+		"characteristics": {
+			"body": "Light to Medium",
+			"acidity": "Medium to High",
+			"tannins": "None",
+			"alcohol": "10-13%",
+			"color": "Pale straw to golden",
+			"aromas": "Citrus, apple, floral, bread, yeast (varies by style)"
+		},
+		"foodPairings": [
+			"Celebration foods and canapés",
+			"Fried foods and fish & chips",
+			"Soft cheeses and nuts",
+			"Light appetizers and snacks",
+			"Fruit-based desserts",
+			"Brunch and breakfast dishes"
+		],
+		"servingTemp": "4-8°C",
+		"ageingPotential": "1-5 years depending on quality and method",
+		"regions": "Worldwide: France, Italy, Spain, South Africa, Australia, California",
+		"winemaking": "Various methods including Charmat, Traditional, and Tank method. Quality and complexity vary significantly based on production method and grape quality."
+	},
+	"Chardonnay": {
+		"description": "The world's most popular white wine grape, capable of producing wines ranging from crisp and mineral to rich and buttery. Known as the 'winemaker's grape' due to its versatility and response to different winemaking techniques.",
+		"characteristics": {
+			"body": "Medium to Full",
+			"acidity": "Medium to High",
+			"tannins": "None",
+			"alcohol": "12-14%",
+			"color": "Pale gold to deep yellow",
+			"aromas": "Apple, pear, citrus, vanilla, butter, tropical fruits"
+		},
+		"foodPairings": [
+			"Grilled seafood and lobster",
+			"Roasted chicken and turkey",
+			"Creamy pasta dishes",
+			"Soft cheeses (Brie, Camembert)",
+			"Mushroom risotto",
+			"Rich fish dishes with sauce"
+		],
+		"servingTemp": "8-12°C",
+		"ageingPotential": "2-8 years for premium examples",
+		"regions": "Burgundy, California, Australia, South Africa, Chile",
+		"winemaking": "Can be unoaked for crisp, mineral styles or oak-aged for rich, creamy textures. Malolactic fermentation adds buttery notes. Premium examples often use French oak and lees stirring."
+	},
+	"Chenin Blanc": {
+		"description": "South Africa's signature white grape and one of the world's most versatile varieties. Known for its incredible range from bone-dry to lusciously sweet, with high natural acidity that provides excellent aging potential and food pairing versatility.",
+		"characteristics": {
+			"body": "Light to Medium",
+			"acidity": "High",
+			"tannins": "None",
+			"alcohol": "11-13%",
+			"color": "Pale straw to golden",
+			"aromas": "Green apple, quince, honey, floral, mineral, chamomile"
+		},
+		"foodPairings": [
+			"Spicy Asian and Indian cuisine",
+			"Fresh seafood and oysters",
+			"Goat cheese and soft cheeses",
+			"Light poultry and pork dishes",
+			"Fruit-based desserts",
+			"South African braai and bobotie"
+		],
+		"servingTemp": "8-10°C",
+		"ageingPotential": "3-15 years for premium examples",
+		"regions": "South Africa (75% of world's plantings), Loire Valley, California",
+		"winemaking": "Often made in stainless steel to preserve freshness, but premium examples may use oak aging. Natural high acidity makes it excellent for both dry and sweet styles."
+	},
+	"Sauvignon Blanc": {
+		"description": "A crisp, aromatic white wine known for its bright acidity and distinctive herbaceous character. Originated in Bordeaux but found its modern expression in the Loire Valley and New Zealand, offering refreshing wines perfect for warm weather.",
+		"characteristics": {
+			"body": "Light to Medium",
+			"acidity": "High",
+			"tannins": "None",
+			"alcohol": "11.5-13%",
+			"color": "Pale straw with green tints",
+			"aromas": "Grass, gooseberry, passion fruit, lime, bell pepper, herbs"
+		},
+		"foodPairings": [
+			"Oysters and shellfish",
+			"Goat cheese salads",
+			"Grilled vegetables",
+			"Fresh herbs and green dishes",
+			"Light fish preparations",
+			"Vietnamese and Thai cuisine"
+		],
+		"servingTemp": "6-8°C",
+		"ageingPotential": "1-3 years, best enjoyed young",
+		"regions": "Loire Valley, New Zealand, South Africa, Chile, California",
+		"winemaking": "Typically made in stainless steel to preserve crisp acidity and fresh flavors. Some producers use oak for added complexity, but the majority emphasize pure fruit expression."
+	},
+	"Semi-Sweet": {
+		"description": "Wines with noticeable sweetness that balances acidity, offering approachable styles perfect for those new to wine or those who prefer fruit-forward expressions. These wines often pair beautifully with spicy cuisine and fruit-based desserts.",
+		"characteristics": {
+			"body": "Light to Medium",
+			"acidity": "Medium to High",
+			"tannins": "None to Low",
+			"alcohol": "9-12%",
+			"color": "Pale straw to golden",
+			"aromas": "Ripe fruit, floral, honey, stone fruits"
+		},
+		"foodPairings": [
+			"Spicy Asian and Indian dishes",
+			"Fruit tarts and light desserts",
+			"Soft cheeses and fresh fruit",
+			"Foie gras and pâté",
+			"Thai and Vietnamese cuisine",
+			"Fresh seafood with fruit salsas"
+		],
+		"servingTemp": "6-10°C",
+		"ageingPotential": "1-5 years depending on style",
+		"regions": "Germany, Alsace, South Africa, Washington State",
+		"winemaking": "Sweetness achieved through stopping fermentation early or blending with sweet reserve wines. Riesling is the classic grape for semi-sweet styles."
+	},
+	"White Blends": {
+		"description": "Creative combinations of white grape varieties that offer complexity and balance unattainable from single varietals. These blends allow winemakers to craft unique flavor profiles while showcasing regional terroir and winemaking artistry.",
+		"characteristics": {
+			"body": "Light to Medium",
+			"acidity": "Medium to High",
+			"tannins": "None",
+			"alcohol": "11-13%",
+			"color": "Pale straw to golden",
+			"aromas": "Varied - citrus, stone fruits, tropical fruits, floral"
+		},
+		"foodPairings": [
+			"Seafood paella and mixed seafood",
+			"Chicken and light poultry dishes",
+			"Mediterranean cuisine",
+			"Soft cheeses and charcuterie",
+			"Grilled vegetables",
+			"Fusion cuisine and tapas"
+		],
+		"servingTemp": "8-10°C",
+		"ageingPotential": "2-6 years for premium blends",
+		"regions": "South Africa, Rhône Valley, Australia, Languedoc",
+		"winemaking": "Combines complementary varieties like Sauvignon Blanc for acidity, Chardonnay for body, and Chenin Blanc for freshness. Each variety contributes specific characteristics to the final blend."
+	},
+	"Merlot": {
+		"description": "A smooth, approachable red wine known for its soft tannins and rich fruit flavors. Often called the 'people's wine' for its easy-drinking nature, Merlot offers immediate pleasure while premium examples can age gracefully for decades.",
+		"characteristics": {
+			"body": "Medium to Full",
+			"acidity": "Medium",
+			"tannins": "Medium",
+			"alcohol": "13-15%",
+			"color": "Deep ruby to purple",
+			"aromas": "Plum, blackberry, chocolate, vanilla, herbs, cherry"
+		},
+		"foodPairings": [
+			"Roasted lamb and beef",
+			"Grilled mushrooms and vegetables",
+			"Pasta with tomato-based sauces",
+			"Medium-aged cheeses",
+			"Duck and game birds",
+			"Herb-crusted dishes and Mediterranean cuisine"
+		],
+		"servingTemp": "16-18°C",
+		"ageingPotential": "3-15 years depending on quality",
+		"regions": "Bordeaux, California, Washington, Chile, South Africa",
+		"winemaking": "Often blended with Cabernet Sauvignon in Bordeaux style. Can be made in early-drinking styles or serious, age-worthy wines with extended oak aging."
+	},
+	"Shiraz": {
+		"description": "A bold, full-bodied red wine known for its dark fruit flavors, spice, and often smoky characteristics. The same grape as Syrah but typically refers to warmer climate expressions, particularly from Australia and South Africa.",
+		"characteristics": {
+			"body": "Medium to Full",
+			"acidity": "Medium to High",
+			"tannins": "Medium to High",
+			"alcohol": "13-16%",
+			"color": "Deep purple to almost black",
+			"aromas": "Blackberry, pepper, smoke, spice, chocolate, eucalyptus"
+		},
+		"foodPairings": [
+			"Grilled and barbecued meats",
+			"Spicy cuisine and curries",
+			"Game meats and venison",
+			"Strong cheeses",
+			"Dark chocolate desserts",
+			"South African boerewors and sosaties"
+		],
+		"servingTemp": "16-18°C",
+		"ageingPotential": "5-20 years for premium examples",
+		"regions": "Australia, South Africa, Rhône Valley, California",
+		"winemaking": "Often single varietal but may be blended with Grenache and Mourvèdre in Rhône style. Benefits from oak aging which adds vanilla and spice complexity."
+	},
+	"Cabernet Sauvignon": {
+		"description": "The king of red grapes, producing full-bodied wines with excellent aging potential and classic structure. Known for its distinctive cassis flavors and firm tannins, Cabernet Sauvignon represents the pinnacle of red wine sophistication.",
+		"characteristics": {
+			"body": "Full",
+			"acidity": "Medium to High",
+			"tannins": "High",
+			"alcohol": "13-15%",
+			"color": "Deep ruby to purple-black",
+			"aromas": "Blackcurrant, cedar, tobacco, vanilla, herbs, pencil lead"
+		},
+		"foodPairings": [
+			"Prime cuts of beef and steak",
+			"Lamb and game meats",
+			"Hard aged cheeses",
+			"Dark chocolate",
+			"Hearty pasta dishes",
+			"Roasted vegetables and mushrooms"
+		],
+		"servingTemp": "16-18°C",
+		"ageingPotential": "5-25+ years for top examples",
+		"regions": "Bordeaux, Napa Valley, Stellenbosch, Coonawarra, Chile",
+		"winemaking": "Often blended with Merlot and Cabernet Franc in Bordeaux style. Extended oak aging is common, and the best examples benefit from years of bottle aging."
+	},
+	"Pinotage": {
+		"description": "South Africa's signature red grape, a unique cross between Pinot Noir and Cinsaut created in 1925. Offers distinctive smoky, earthy flavors that capture the essence of South African terroir and winemaking innovation.",
+		"characteristics": {
+			"body": "Medium to Full",
+			"acidity": "Medium to High",
+			"tannins": "Medium to High",
+			"alcohol": "13-15%",
+			"color": "Deep ruby with purple hints",
+			"aromas": "Plum, smoke, earth, banana, coffee, spice, tar"
+		},
+		"foodPairings": [
+			"Braai (barbecue) and grilled meats",
+			"Game meats and ostrich",
+			"Spicy African cuisine",
+			"Smoked meats and biltong",
+			"Mature cheeses",
+			"Traditional South African dishes"
+		],
+		"servingTemp": "16-18°C",
+		"ageingPotential": "3-12 years",
+		"regions": "South Africa (primarily Western Cape)",
+		"winemaking": "Uniquely South African grape that expresses terroir beautifully. Modern winemaking has refined the style, moving away from overly rustic expressions to elegant, food-friendly wines."
+	},
+	"Pinot Noir": {
+		"description": "The 'heartbreak grape' - notoriously difficult to grow but capable of producing wines of unparalleled elegance and complexity. Known for its transparency to terroir and ability to age gracefully while maintaining finesse.",
+		"characteristics": {
+			"body": "Light to Medium",
+			"acidity": "High",
+			"tannins": "Low to Medium",
+			"alcohol": "11.5-14%",
+			"color": "Light to medium ruby",
+			"aromas": "Cherry, raspberry, earth, mushroom, spice, rose petals"
+		},
+		"foodPairings": [
+			"Salmon and tuna",
+			"Duck and game birds",
+			"Mushroom dishes",
+			"Soft cheeses",
+			"Roasted chicken",
+			"Earthy vegetarian dishes"
+		],
+		"servingTemp": "14-16°C",
+		"ageingPotential": "3-15 years for quality examples",
+		"regions": "Burgundy, Oregon, California, New Zealand, South Africa",
+		"winemaking": "Requires careful handling and often uses indigenous yeasts. Oak usage is restrained to preserve delicate fruit flavors. The best expressions show remarkable complexity and aging potential."
+	},
+	"Red Blends": {
+		"description": "Artful combinations of red grape varieties that create complexity and balance beyond what single varietals can achieve. From Bordeaux-style blends to innovative New World combinations, these wines showcase winemaker creativity and regional character.",
+		"characteristics": {
+			"body": "Medium to Full",
+			"acidity": "Medium to High",
+			"tannins": "Medium to High",
+			"alcohol": "13-15%",
+			"color": "Deep ruby to purple",
+			"aromas": "Complex mix of dark fruits, spice, oak, herbs"
+		},
+		"foodPairings": [
+			"Roasted meats and game",
+			"Aged cheeses and charcuterie",
+			"Hearty stews and casseroles",
+			"Grilled vegetables",
+			"Rich pasta dishes",
+			"International fusion cuisine"
+		],
+		"servingTemp": "16-18°C",
+		"ageingPotential": "5-20 years for premium blends",
+		"regions": "Bordeaux, Super Tuscans, South Africa, California, Australia",
+		"winemaking": "Classic blends include Bordeaux (Cabernet Sauvignon, Merlot, Cabernet Franc) and Rhône (Syrah, Grenache, Mourvèdre). Each variety contributes specific characteristics to create harmony and complexity."
+	},
+	"Malbec": {
+		"description": "Originally from France but now Argentina's flagship grape, producing deep, inky wines with intense fruit flavors and smooth tannins. Known as 'Black Wine' for its dark color, Malbec offers immediate pleasure with potential for aging.",
+		"characteristics": {
+			"body": "Medium to Full",
+			"acidity": "Medium to High",
+			"tannins": "Medium to High",
+			"alcohol": "13-15%",
+			"color": "Deep purple to almost black",
+			"aromas": "Blackberry, plum, violet, chocolate, tobacco, spice"
+		},
+		"foodPairings": [
+			"Grilled steaks and red meat",
+			"Argentine asado and barbecue",
+			"Spicy cuisine and chorizo",
+			"Blue cheese and strong cheeses",
+			"Dark chocolate desserts",
+			"Hearty meat dishes"
+		],
+		"servingTemp": "16-18°C",
+		"ageingPotential": "3-15 years for quality examples",
+		"regions": "Argentina (Mendoza), France (Cahors), Chile, South Africa",
+		"winemaking": "Thrives at high altitudes where cool nights preserve acidity. Argentine expressions are fruit-forward and approachable, while French Cahors versions are more structured and tannic."
+	},
+	"Rosé": {
+		"description": "The perfect warm-weather wine that combines red grape character with white wine freshness. Made through limited skin contact, rosé offers versatility, food-friendliness, and immediate drinking pleasure with sophisticated complexity.",
+		"characteristics": {
+			"body": "Light to Medium",
+			"acidity": "Medium to High",
+			"tannins": "Very Low",
+			"alcohol": "11-13%",
+			"color": "Pale pink to salmon to deep rose",
+			"aromas": "Strawberry, raspberry, citrus, floral, herbs, minerals"
+		},
+		"foodPairings": [
+			"Salads and light appetizers",
+			"Seafood and sushi",
+			"Grilled vegetables",
+			"Soft cheeses and charcuterie",
+			"Mediterranean and Provençal cuisine",
+			"Spicy Asian dishes"
+		],
+		"servingTemp": "6-8°C",
+		"ageingPotential": "1-3 years, best enjoyed young",
+		"regions": "Provence, Spain, California, South Africa, Loire Valley",
+		"winemaking": "Made through brief skin contact (saignée method) or by blending red and white wines. The best rosés are made intentionally, not as afterthoughts, with careful attention to color and flavor balance."
+	},
+	"Dessert Wine": {
+		"description": "Sweet wines crafted to complement or replace dessert, ranging from light and fresh to rich and concentrated. These wines showcase the magic of nature and winemaking, often requiring special conditions or techniques to achieve perfect sweetness balance.",
+		"characteristics": {
+			"body": "Medium to Full",
+			"acidity": "Medium to High",
+			"tannins": "None to Low",
+			"alcohol": "8-15%",
+			"color": "Golden to deep amber",
+			"aromas": "Honey, dried fruits, caramel, nuts, spice, orange peel"
+		},
+		"foodPairings": [
+			"Fruit tarts and pastries",
+			"Blue cheese and Roquefort",
+			"Nuts and dried fruits",
+			"Foie gras and rich pâtés",
+			"Crème brûlée and custards",
+			"Dark chocolate desserts"
+		],
+		"servingTemp": "6-10°C",
+		"ageingPotential": "5-50+ years for premium examples",
+		"regions": "Sauternes, Germany, Hungary, South Africa, Australia",
+		"winemaking": "Made through various methods including noble rot (Botrytis), late harvest, ice wine, or fortification. The best examples balance intense sweetness with vibrant acidity."
+	},
+	"De-Alcoholised": {
+		"description": "Wines that have had alcohol removed while preserving flavor and character. Advanced techniques now allow for wines that maintain varietal character and enjoyment without the alcohol, perfect for designated drivers and health-conscious consumers.",
+		"characteristics": {
+			"body": "Light to Medium",
+			"acidity": "Medium to High",
+			"tannins": "None to Low",
+			"alcohol": "0.5% or less",
+			"color": "Varies by style",
+			"aromas": "Fruit-forward, varietal character preserved"
+		},
+		"foodPairings": [
+			"Light lunch dishes",
+			"Seafood and salads",
+			"Soft cheeses",
+			"Fruit-based dishes",
+			"Casual dining",
+			"Health-conscious meals"
+		],
+		"servingTemp": "6-12°C depending on style",
+		"ageingPotential": "1-2 years, best enjoyed fresh",
+		"regions": "Germany, Australia, South Africa, California",
+		"winemaking": "Alcohol removed through reverse osmosis, vacuum distillation, or spinning cone technology. Modern techniques preserve more character than earlier methods."
+	},
+	"Magnums": {
+		"description": "Large format bottles holding 1.5 liters (equivalent to two standard bottles). Magnums are considered the optimal format for aging wine due to ideal liquid-to-air ratio, slower oxidation, and enhanced complexity development over time.",
+		"characteristics": {
+			"body": "Varies by wine style",
+			"acidity": "Enhanced by slower aging",
+			"tannins": "Better integration through slow aging",
+			"alcohol": "Same as standard bottles",
+			"color": "Often more intense due to slower evolution",
+			"aromas": "More complex due to optimal aging conditions"
+		},
+		"foodPairings": [
+			"Special occasion dining",
+			"Large dinner parties",
+			"Celebration meals",
+			"Premium food pairings",
+			"Fine dining experiences",
+			"Holiday gatherings"
+		],
+		"servingTemp": "Same as wine style",
+		"ageingPotential": "Enhanced - ages more slowly and gracefully",
+		"regions": "Premium wines from all major wine regions worldwide",
+		"benefits": "The larger volume creates ideal aging conditions with less oxygen exposure per unit of wine. This results in slower, more graceful aging and often superior complexity compared to standard bottles. Perfect for special occasions and gifting."
+	},
+	"Limited Reserve Wines": {
+		"description": "Exceptional wines representing the pinnacle of winemaking artistry and vineyard expression. These rare bottles showcase the best of specific vintages, vineyards, or winemaking techniques, often with extremely limited production and exceptional aging potential.",
+		"characteristics": {
+			"body": "Full and complex",
+			"acidity": "Well-balanced and structured",
+			"tannins": "Refined and integrated",
+			"alcohol": "Harmoniously balanced",
+			"color": "Intense and vibrant",
+			"aromas": "Exceptional complexity and depth"
+		},
+		"foodPairings": [
+			"Finest cuts of meat and game",
+			"Truffle and luxury ingredients",
+			"Aged artisanal cheeses",
+			"Special occasion dining",
+			"Michelin-starred cuisine",
+			"Wine collector tastings"
+		],
+		"servingTemp": "Optimal for each wine style",
+		"ageingPotential": "Exceptional - often 10-50+ years",
+		"regions": "Premier wine regions worldwide",
+		"significance": "These wines represent the intersection of perfect vintage conditions, exceptional terroir, and masterful winemaking. Often from single vineyards or special selections, they showcase what's possible when everything aligns perfectly. Investment-grade wines with both drinking and collecting value."
+	},
+	"By the Glass": {
+		"description": "Carefully selected wines available by the glass, offering guests the opportunity to explore different styles without committing to full bottles. These selections represent quality and value, perfect for discovering new favorites or pairing with individual courses.",
+		"characteristics": {
+			"body": "Varies by selection",
+			"acidity": "Balanced for food pairing",
+			"tannins": "Appropriate for style",
+			"alcohol": "Moderate and balanced",
+			"color": "Representative of style",
+			"aromas": "Fresh and expressive"
+		},
+		"foodPairings": [
+			"Appetizers and small plates",
+			"Individual course pairings",
+			"Casual dining",
+			"Wine exploration",
+			"Business lunches",
+			"Quick tastings"
+		],
+		"servingTemp": "Optimal for each style",
+		"ageingPotential": "Selected for current drinking",
+		"regions": "Representative selection from major wine regions",
+		"purpose": "Designed for immediate enjoyment and food pairing. These wines are chosen for their balance, food-friendliness, and representation of their respective styles. Perfect for guests wanting to explore different wine styles or match wines to specific dishes."
+	}
+}

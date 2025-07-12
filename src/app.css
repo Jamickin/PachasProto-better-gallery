@@ -165,3 +165,144 @@ section {
 .alert-success {
 	@apply border border-green-100 bg-green-50 text-green-800;
 }
+
+/* Add to src/app.css for enhanced modal styling */
+
+/* Modal backdrop animation */
+.modal-backdrop {
+	backdrop-filter: blur(4px);
+	animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Modal content animation */
+.modal-backdrop > div {
+	animation: slideInScale 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes slideInScale {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -50px, 0) scale(0.95);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0) scale(1);
+	}
+}
+
+/* Smooth scrolling for modal content */
+.modal-content {
+	scroll-behavior: smooth;
+}
+
+/* Enhanced button hover effects */
+.learn-more-btn {
+	position: relative;
+	overflow: hidden;
+}
+
+.learn-more-btn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+	transition: left 0.5s;
+}
+
+.learn-more-btn:hover::before {
+	left: 100%;
+}
+
+/* Wine characteristic pills styling */
+.wine-characteristic {
+	position: relative;
+	overflow: hidden;
+}
+
+.wine-characteristic::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #f43f5e, transparent);
+	transform: translateX(-100%);
+	transition: transform 0.3s ease;
+}
+
+.wine-characteristic:hover::before {
+	transform: translateX(0);
+}
+
+/* Food pairing card hover effects */
+.food-pairing-card {
+	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.food-pairing-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive modal adjustments */
+@media (max-width: 768px) {
+	.modal-backdrop > div {
+		margin: 1rem;
+		max-height: calc(100vh - 2rem);
+	}
+
+	.modal-content {
+		max-height: calc(100vh - 160px);
+	}
+}
+
+/* Custom scrollbar for modal */
+.modal-content::-webkit-scrollbar {
+	width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+	background: #f1f5f9;
+	border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+	background: #cbd5e1;
+	border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+	background: #94a3b8;
+}
+
+/* Focus styles for accessibility */
+.modal-backdrop button:focus-visible {
+	outline: 2px solid #f43f5e;
+	outline-offset: 2px;
+}
+
+/* Wine category button styles */
+.wine-category-btn {
+	background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%);
+	box-shadow: 0 4px 15px rgba(244, 63, 94, 0.3);
+	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wine-category-btn:hover {
+	background: linear-gradient(135deg, #e11d48 0%, #be185d 100%);
+	box-shadow: 0 6px 20px rgba(244, 63, 94, 0.4);
+	transform: translateY(-1px);
+}
