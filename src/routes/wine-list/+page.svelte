@@ -125,30 +125,6 @@
 	function shouldShowLearnButton(category) {
 		return educationalCategories.includes(category);
 	}
-
-	function getCategoryIcon(category) {
-		const icons = {
-			'Method Cap Classique': '🥂',
-			Champagne: '🍾',
-			Prosecco: '✨',
-			'Sparkling Wine': '💫',
-			Chardonnay: '🍇',
-			'Chenin Blanc': '🌟',
-			'Sauvignon Blanc': '🌿',
-			Merlot: '🍷',
-			Shiraz: '🔥',
-			'Cabernet Sauvignon': '👑',
-			Pinotage: '🇿🇦',
-			'Pinot Noir': '🌹',
-			Malbec: '🖤',
-			Rosé: '🌸',
-			'Dessert Wine': '🍯',
-			Magnums: '🏆',
-			'Limited Reserve Wines': '💎',
-			'By the Glass': '🥃'
-		};
-		return icons[category] || '🍷';
-	}
 </script>
 
 <svelte:head>
@@ -189,7 +165,6 @@
 							class="w-full border-b border-gray-100 px-4 py-3 text-left transition-colors last:border-b-0 hover:bg-rose-50"
 							on:click={() => scrollToCategory(category)}
 						>
-							{getCategoryIcon(category)}
 							{category}
 						</button>
 					{/each}
@@ -283,7 +258,6 @@
 				<section id={category.toLowerCase().replace(/ /g, '-')} class="mb-16">
 					<div class="mb-8 text-center">
 						<h3 class="category-title relative mb-4 text-2xl font-semibold text-gray-800">
-							{getCategoryIcon(category)}
 							{category}
 						</h3>
 
@@ -361,7 +335,6 @@
 			>
 				<div class="flex items-center justify-between">
 					<div class="flex items-center gap-3">
-						<span class="text-2xl">{getCategoryIcon(selectedCategory)}</span>
 						<span id="modal-title" class="text-xl font-semibold">{selectedCategory}</span>
 					</div>
 					<button
