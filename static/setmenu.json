@@ -3,7 +3,7 @@
 		"menus": [
 			{
 				"name": "Menu A",
-				"price": 475,
+				"price": 500,
 				"starter": [
 					"Chicken Livers Peri-Peri",
 					"Smoked Snoek in Phyllo Pastry with Moskonfyt",
@@ -27,7 +27,7 @@
 			},
 			{
 				"name": "Menu B",
-				"price": 525,
+				"price": 550,
 				"starter": [
 					"Avocado and Shrimp - with piquant cocktail sauce",
 					"Deep fried Camembert Cheese with cranberry jelly",
@@ -54,7 +54,7 @@
 			},
 			{
 				"name": "Menu C",
-				"price": 575,
+				"price": 600,
 				"starter": [
 					"Prawn Tempura",
 					"Creamy Garlic Snails",
