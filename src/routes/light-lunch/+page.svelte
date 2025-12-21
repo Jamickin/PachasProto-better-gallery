@@ -91,7 +91,7 @@
 <!-- Availability Banner -->
 <div class="bg-white py-6">
 	<div class="container mx-auto px-4">
-		<div class="alert alert-warning mx-auto max-w-3xl">
+		<div class="alert alert-warning mx-auto max-w-3xl justify-center">
 			<svg
 				class="list-item-icon mt-1 mr-3 h-6 w-6 flex-shrink-0"
 				fill="none"
