@@ -88,6 +88,15 @@
 	</div>
 {/if}
 
+<!-- Availability Banner -->
+<div class="bg-rose-500 py-4 text-center">
+	<div class="container mx-auto px-4">
+		<p class="text-lg font-semibold text-white md:text-xl">
+			Available Monday to Saturday 12:00 – 14:30
+		</p>
+	</div>
+</div>
+
 <section class="py-16">
 	<div class="container mx-auto px-4">
 		<div class="mb-12 text-center">
