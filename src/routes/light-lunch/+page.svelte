@@ -89,11 +89,27 @@
 {/if}
 
 <!-- Availability Banner -->
-<div class="bg-rose-500 py-4 text-center">
+<div class="bg-white py-6">
 	<div class="container mx-auto px-4">
-		<p class="text-lg font-semibold text-white md:text-xl">
-			Available Monday to Saturday 12:00 – 14:30
-		</p>
+		<div class="alert alert-warning mx-auto max-w-3xl">
+			<svg
+				class="list-item-icon mt-1 mr-3 h-6 w-6 flex-shrink-0"
+				fill="none"
+				stroke="currentColor"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+				></path>
+			</svg>
+			<span class="text-base font-semibold md:text-lg">
+				Available Monday to Saturday 12:00 – 14:30
+			</span>
+		</div>
 	</div>
 </div>
 
