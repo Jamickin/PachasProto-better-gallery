@@ -161,7 +161,7 @@
 									d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
 								></path>
 							</svg>
-							<span>Light Lunch R220 p/p</span>
+							<span>Light Lunch R240 p/p</span>
 						</li>
 						<li class="list-item">
 							<svg
