@@ -3,7 +3,7 @@
 		"menus": [
 			{
 				"name": "Menu A",
-				"price": 500,
+				"price": 530,
 				"starter": [
 					"Chicken Livers Peri-Peri",
 					"Smoked Snoek in Phyllo Pastry with Moskonfyt",
@@ -12,7 +12,7 @@
 					"Greek Salad with avocado"
 				],
 				"mainCourse": [
-					"Sole Belle Meuniere - grilled, with lemon butter",
+					"Fresh Linefish - grilled, with lemon butter",
 					"Chicken Schnitzel - cheese or mushroom sauce",
 					"Fillet haloumi - red wine berry reduction",
 					"Sirloin - with a mustard brandy cream sauce",
@@ -22,12 +22,12 @@
 					"Vanilla Ice cream and Bar One sauce",
 					"Cheesecake",
 					"Lemon Meringue",
-					"Mango and Strawberry Sorbet"
+					"Crème Brulee"
 				]
 			},
 			{
 				"name": "Menu B",
-				"price": 550,
+				"price": 580,
 				"starter": [
 					"Avocado and Shrimp - with piquant cocktail sauce",
 					"Deep fried Camembert Cheese with cranberry jelly",
@@ -38,6 +38,7 @@
 				],
 				"mainCourse": [
 					"Fresh linefish of the day - topped with lemon butter sauce",
+					"Sole Pachas - asparagus and shrimps in creamy mushrooms sauce",
 					"Beef Shortrib",
 					"Sirloin - with a brandy mustard sauce",
 					"Fillet haloumi - red wine berry reduction",
@@ -54,7 +55,7 @@
 			},
 			{
 				"name": "Menu C",
-				"price": 600,
+				"price": 630,
 				"starter": [
 					"Prawn Tempura",
 					"Creamy Garlic Snails",
@@ -65,6 +66,7 @@
 				],
 				"mainCourse": [
 					"Fresh linefish of the day - with lemon butter sauce",
+					"Sole Pachas - asparagus and shrimps in creamy mushrooms sauce",
 					"Fillet Rossini - Topped with chicken liver and red wine",
 					"Sirloin Jack Daniels - with bacon marmalade",
 					"Between the Sheets - fillet topped with shrimps, asparagus and mushrooms in a pepper and cheese sauce",
