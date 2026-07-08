@@ -51,23 +51,21 @@
 
 {#if !isAdmin}
 	<header class="max-md:hidden"><Topbar></Topbar></header>
-	<header class="min-md:hidden">
-		<a href="/">
-			<div class="flex justify-center bg-slate-50 pt-8">
-				<img
-					class="max-h-48"
-					src="/pachas_logo.jpg"
-					alt="logo"
-					width="1000"
-					height="397"
-					fetchpriority="high"
-				/>
-			</div>
+	<header class="fixed top-0 left-0 z-30 w-full bg-slate-50 py-3 shadow-sm min-md:hidden">
+		<a href="/" class="block text-center transition-transform duration-300 hover:scale-105">
+			<img
+				class="mx-auto h-14 object-contain"
+				src="/pachas_logo.jpg"
+				alt="logo"
+				width="1000"
+				height="397"
+				fetchpriority="high"
+			/>
 		</a>
-		<Sidebar></Sidebar>
 	</header>
+	<div class="min-md:hidden"><Sidebar></Sidebar></div>
 
-	<main class="mt-68 mb-24 max-md:{'mt-12'} max-md:{'px-6'} px-8">
+	<main class="mt-68 mb-24 px-8 max-md:mt-24 max-md:px-6">
 		{@render children()}
 	</main>
 {:else}

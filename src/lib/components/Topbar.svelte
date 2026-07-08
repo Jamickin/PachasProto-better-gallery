@@ -2,12 +2,25 @@
 	import { onMount, onDestroy } from 'svelte';
 	import { browser } from '$app/environment';
 
+	const SCROLL_DELTA_THRESHOLD = 5;
+
 	let hideTitle = $state(false);
 	let isScrolled = $state(false);
+	let lastScrollY = 0;
 
 	const handleScroll = () => {
-		hideTitle = window.scrollY > 50;
-		isScrolled = window.scrollY > 10;
+		const currentScrollY = window.scrollY;
+		isScrolled = currentScrollY > 10;
+
+		if (currentScrollY <= 50) {
+			hideTitle = false;
+		} else if (currentScrollY - lastScrollY > SCROLL_DELTA_THRESHOLD) {
+			hideTitle = true;
+		} else if (lastScrollY - currentScrollY > SCROLL_DELTA_THRESHOLD) {
+			hideTitle = false;
+		}
+
+		lastScrollY = currentScrollY;
 	};
 
 	onMount(() => {
@@ -28,8 +41,9 @@
 	class:shadow-md={isScrolled}
 	class:bg-white={isScrolled}
 	class:bg-opacity-95={isScrolled}
-	class:-translate-y-36={hideTitle}
-	class="fixed top-0 left-0 z-[99] flex w-full flex-col items-center justify-between px-6 py-3 transition-all duration-300 max-md:hidden md:px-12 lg:px-20"
+	class="fixed top-0 left-0 z-[99] flex w-full flex-col items-center justify-between px-6 py-3 transition-all duration-300 max-md:hidden md:px-12 lg:px-20 {hideTitle
+		? '-translate-y-36'
+		: ''}"
 >
 	<div class="flex justify-center">
 		<a href="/" class="block transition duration-300 hover:scale-105">
@@ -47,32 +61,32 @@
 		<div class="flex gap-2 py-3 text-sm font-medium uppercase md:gap-4 md:text-base lg:gap-6">
 			<a
 				href="/menu"
-				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
+				class="border-b-2 border-transparent px-2 py-1 no-underline transition-all hover:border-rose-500 hover:text-rose-600"
 				>Menu</a
 			>
 			<a
 				href="/private-dining"
-				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
+				class="border-b-2 border-transparent px-2 py-1 no-underline transition-all hover:border-rose-500 hover:text-rose-600"
 				>Private Dining & Events</a
 			>
 			<a
 				href="/gallery"
-				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
+				class="border-b-2 border-transparent px-2 py-1 no-underline transition-all hover:border-rose-500 hover:text-rose-600"
 				>Gallery</a
 			>
 			<a
 				href="/contact-reservations"
-				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
+				class="border-b-2 border-transparent px-2 py-1 no-underline transition-all hover:border-rose-500 hover:text-rose-600"
 				>Contact & Reservations</a
 			>
 			<a
 				href="/wine-list"
-				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
+				class="border-b-2 border-transparent px-2 py-1 no-underline transition-all hover:border-rose-500 hover:text-rose-600"
 				>Wine List</a
 			>
 			<a
 				href="/light-lunch"
-				class="border-b-2 border-transparent px-2 py-1 transition-all hover:border-rose-500 hover:text-rose-600"
+				class="border-b-2 border-transparent px-2 py-1 no-underline transition-all hover:border-rose-500 hover:text-rose-600"
 				>Light Lunch Menu</a
 			>
 		</div>

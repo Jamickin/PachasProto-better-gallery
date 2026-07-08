@@ -81,8 +81,9 @@
 
 <!-- Updated Sidebar with responsive width -->
 <aside
-	class="sidebar fixed top-0 left-0 z-50 flex h-screen w-full transform flex-col bg-slate-50 shadow-2xl transition-transform duration-300 ease-in-out md:w-80"
-	class:translate-x-[-100%]={!sidebarOpen}
+	class="sidebar fixed top-0 left-0 z-50 flex h-screen w-full transform flex-col bg-slate-50 shadow-2xl transition-transform duration-300 ease-in-out md:w-80 {!sidebarOpen
+		? 'translate-x-[-100%]'
+		: ''}"
 >
 	<!-- Header Section -->
 	<div class="border-b border-gray-200 bg-white p-6 shadow-sm">
@@ -105,30 +106,13 @@
 		</div>
 	</div>
 
-	<!-- Logo Section -->
-	<div class="bg-white px-6 py-4 shadow-sm">
-		<a
-			on:click={closeSidebar}
-			href="/"
-			class="block transition-transform duration-300 hover:scale-105"
-		>
-			<img
-				class="mx-auto w-full max-w-48"
-				src="/pachas_logo.jpg"
-				alt="Pachas Restaurant Logo"
-				width="1000"
-				height="397"
-			/>
-		</a>
-	</div>
-
 	<!-- Navigation Section -->
 	<nav class="flex-1 overflow-y-auto bg-slate-50 p-6">
 		<div class="space-y-2">
 			<a
 				on:click={closeSidebar}
 				href="/"
-				class="group flex items-center justify-center rounded-lg px-4 py-3 text-gray-700 transition-all duration-200 hover:bg-white hover:text-rose-600 hover:shadow-md"
+				class="group flex items-center justify-center rounded-lg px-4 py-3 text-gray-700 no-underline transition-all duration-200 hover:bg-white hover:text-rose-600 hover:shadow-md"
 			>
 				<div class="flex items-center">
 					<svg
@@ -151,7 +135,7 @@
 			<a
 				on:click={closeSidebar}
 				href="/menu"
-				class="group flex items-center justify-center rounded-lg px-4 py-3 text-gray-700 transition-all duration-200 hover:bg-white hover:text-rose-600 hover:shadow-md"
+				class="group flex items-center justify-center rounded-lg px-4 py-3 text-gray-700 no-underline transition-all duration-200 hover:bg-white hover:text-rose-600 hover:shadow-md"
 			>
 				<div class="flex items-center">
 					<svg
@@ -174,7 +158,7 @@
 			<a
 				on:click={closeSidebar}
 				href="/light-lunch"
-				class="group flex items-center justify-center rounded-lg px-4 py-3 text-gray-700 transition-all duration-200 hover:bg-white hover:text-rose-600 hover:shadow-md"
+				class="group flex items-center justify-center rounded-lg px-4 py-3 text-gray-700 no-underline transition-all duration-200 hover:bg-white hover:text-rose-600 hover:shadow-md"
 			>
 				<div class="flex items-center">
 					<svg
@@ -197,7 +181,7 @@
 			<a
 				on:click={closeSidebar}
 				href="/wine-list"
-				class="group flex items-center justify-center rounded-lg px-4 py-3 text-gray-700 transition-all duration-200 hover:bg-white hover:text-rose-600 hover:shadow-md"
+				class="group flex items-center justify-center rounded-lg px-4 py-3 text-gray-700 no-underline transition-all duration-200 hover:bg-white hover:text-rose-600 hover:shadow-md"
 			>
 				<div class="flex items-center">
 					<svg
@@ -223,7 +207,7 @@
 			<a
 				on:click={closeSidebar}
 				href="/private-dining"
-				class="group flex items-center justify-center rounded-lg px-4 py-3 text-gray-700 transition-all duration-200 hover:bg-white hover:text-rose-600 hover:shadow-md"
+				class="group flex items-center justify-center rounded-lg px-4 py-3 text-gray-700 no-underline transition-all duration-200 hover:bg-white hover:text-rose-600 hover:shadow-md"
 			>
 				<div class="flex items-center">
 					<svg
@@ -246,7 +230,7 @@
 			<a
 				on:click={closeSidebar}
 				href="/gallery"
-				class="group flex items-center justify-center rounded-lg px-4 py-3 text-gray-700 transition-all duration-200 hover:bg-white hover:text-rose-600 hover:shadow-md"
+				class="group flex items-center justify-center rounded-lg px-4 py-3 text-gray-700 no-underline transition-all duration-200 hover:bg-white hover:text-rose-600 hover:shadow-md"
 			>
 				<div class="flex items-center">
 					<svg
@@ -269,7 +253,7 @@
 			<a
 				on:click={closeSidebar}
 				href="/contact-reservations"
-				class="group flex items-center justify-center rounded-lg px-4 py-3 text-gray-700 transition-all duration-200 hover:bg-white hover:text-rose-600 hover:shadow-md"
+				class="group flex items-center justify-center rounded-lg px-4 py-3 text-gray-700 no-underline transition-all duration-200 hover:bg-white hover:text-rose-600 hover:shadow-md"
 			>
 				<div class="flex items-center">
 					<svg
