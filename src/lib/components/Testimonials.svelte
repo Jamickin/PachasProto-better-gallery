@@ -111,7 +111,7 @@
 		<div class="mb-16 text-center">
 			<div class="mb-4 flex justify-center">
 				<div
-					class="inline-flex items-center gap-1 rounded-full bg-rose-100 px-4 py-1 text-sm font-medium tracking-wide text-rose-600 uppercase"
+					class="inline-flex items-center gap-1 rounded-full bg-rose-100 px-4 py-1 text-sm font-medium tracking-wide text-rose-700 uppercase"
 				>
 					<svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
 						<path
@@ -384,7 +384,7 @@
 					</button>
 
 					<div class="text-center text-sm text-gray-600">
-						<span class="font-medium text-rose-600">{currentIndex + 1}</span> of
+						<span class="font-medium text-rose-700">{currentIndex + 1}</span> of
 						<span>{testimonials.length}</span>
 					</div>
 

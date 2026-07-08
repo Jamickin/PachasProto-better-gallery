@@ -4,12 +4,13 @@
 		name="description"
 		content="Make a reservation at Pachas Restaurant. Located at The Club Retail, 22 Dely Road, Hazelwood. Call 012 460 5063."
 	/>
+	<link rel="canonical" href="https://pachas.co.za/contact-reservations" />
 </svelte:head>
 
 <section class="bg-gray-100 py-16">
 	<div class="container mx-auto px-4">
 		<div class="mb-12 text-center">
-			<h2 class="section-title">Visit Pachas Restaurant</h2>
+			<h1 class="section-title">Visit Pachas Restaurant</h1>
 			<p class="section-subtitle">Find us and plan your visit.</p>
 		</div>
 
@@ -27,7 +28,7 @@
 				</div>
 
 				<div class="mb-4">
-					<h3 class="mb-2 text-lg font-semibold text-gray-800">Address:</h3>
+					<h2 class="mb-2 text-lg font-semibold text-gray-800">Address:</h2>
 					<p class="text-gray-700">
 						Pachas Restaurant, The Club Retail, <br />
 						22 Dely Road, Hazelwood, <br />
@@ -37,7 +38,7 @@
 				</div>
 
 				<div>
-					<h3 class="mb-3 text-lg font-semibold text-gray-800">Parking & Access:</h3>
+					<h2 class="mb-3 text-lg font-semibold text-gray-800">Parking & Access:</h2>
 					<ul class="space-y-4 text-gray-700">
 						<li class="list-item">
 							<svg
@@ -97,15 +98,15 @@
 								><strong>Tel:</strong>
 								<a
 									href="tel:+27124605063"
-									class="font-semibold text-rose-600 underline hover:text-rose-500">012 460 5063</a
+									class="font-semibold text-rose-700 underline hover:text-rose-500">012 460 5063</a
 								>
 								/
 								<a
 									href="tel:+27124603220"
-									class="font-semibold text-rose-600 underline hover:text-rose-500">3220</a
+									class="font-semibold text-rose-700 underline hover:text-rose-500">3220</a
 								>
 								(
-								<span><strong class="text-rose-600">Telephonic Reservations Only</strong> )</span
+								<span><strong class="text-rose-700">Telephonic Reservations Only</strong> )</span
 								></span
 							>
 						</li>
@@ -142,7 +143,7 @@
 							>
 							<span>
 								<strong>Email:</strong>
-								<a href="mailto:mail@pachas.co.za" class="text-rose-600 hover:text-rose-500"
+								<a href="mailto:mail@pachas.co.za" class="text-rose-700 hover:text-rose-500"
 									>mail@pachas.co.za</a
 								>
 							</span>

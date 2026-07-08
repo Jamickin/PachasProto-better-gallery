@@ -58,7 +58,6 @@
 			}
 
 			loading = false;
-			console.log('Wine data loaded:', wineData);
 		} catch (error) {
 			console.error('Error loading wine menu', error);
 			wineData = {};
@@ -133,6 +132,7 @@
 		name="description"
 		content="Explore our comprehensive wine collection with detailed education about each wine style. From Method Cap Classique to Limited Reserves, learn about characteristics, food pairings, and serving suggestions."
 	/>
+	<link rel="canonical" href="https://pachas.co.za/wine-list" />
 </svelte:head>
 
 <!-- Mobile Navigation Bar -->
@@ -178,7 +178,7 @@
 	<div class="container mx-auto px-4">
 		<!-- Enhanced Header Section -->
 		<div class="mb-16 text-center">
-			<h2 class="section-title">Wine Collection</h2>
+			<h1 class="section-title">Wine Collection</h1>
 			<p class="section-subtitle text-lg">Discover our curated selection</p>
 
 			<!-- Educational Notice -->
@@ -200,7 +200,7 @@
 								d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
 							></path>
 						</svg>
-						<h3 class="text-xl font-semibold text-blue-800">Note:</h3>
+						<h2 class="text-xl font-semibold text-blue-800">Note:</h2>
 					</div>
 					<p class="leading-relaxed text-blue-700">
 						Each wine category features detailed educational information including tasting
@@ -257,9 +257,9 @@
 			{#each wineCategories as category}
 				<section id={category.toLowerCase().replace(/ /g, '-')} class="mb-16">
 					<div class="mb-8 text-center">
-						<h3 class="category-title relative mb-4 text-2xl font-semibold text-gray-800">
+						<h2 class="category-title relative mb-4 text-2xl font-semibold text-gray-800">
 							{category}
-						</h3>
+						</h2>
 
 						{#if shouldShowLearnButton(category)}
 							<div class="mt-4 flex flex-col items-center gap-3">
@@ -296,7 +296,7 @@
 										{typeof wine === 'string' ? wine : wine.name || wine}
 									</div>
 									{#if typeof wine === 'object' && wine.price}
-										<div class="text-sm font-bold text-rose-600">{wine.price}</div>
+										<div class="text-sm font-bold text-rose-700">{wine.price}</div>
 									{/if}
 								</div>
 								{#if typeof wine === 'object' && wine.description}
@@ -368,7 +368,7 @@
 						<!-- Characteristics -->
 						{#if info.characteristics}
 							<div class="rounded-xl bg-gray-50 p-6">
-								<h3 class="mb-4 flex items-center gap-2 text-xl font-semibold text-gray-800">
+								<h2 class="mb-4 flex items-center gap-2 text-xl font-semibold text-gray-800">
 									<svg
 										class="h-5 w-5 text-rose-500"
 										fill="none"
@@ -383,7 +383,7 @@
 										></path>
 									</svg>
 									Wine Characteristics
-								</h3>
+								</h2>
 								<div class="space-y-3">
 									{#each Object.entries(info.characteristics) as [key, value]}
 										<div
@@ -401,7 +401,7 @@
 
 						<!-- Serving Info -->
 						<div class="rounded-xl bg-blue-50 p-6">
-							<h3 class="mb-4 flex items-center gap-2 text-xl font-semibold text-gray-800">
+							<h2 class="mb-4 flex items-center gap-2 text-xl font-semibold text-gray-800">
 								<svg
 									class="h-5 w-5 text-blue-500"
 									fill="none"
@@ -416,7 +416,7 @@
 									></path>
 								</svg>
 								Serving Guide
-							</h3>
+							</h2>
 							<div class="space-y-3">
 								{#if info.servingTemp}
 									<div class="flex justify-between border-b border-blue-200 pb-2">
@@ -443,7 +443,7 @@
 					<!-- Food Pairings -->
 					{#if info.foodPairings && info.foodPairings.length > 0}
 						<div class="mt-8 rounded-xl bg-green-50 p-6">
-							<h3 class="mb-4 flex items-center gap-2 text-xl font-semibold text-gray-800">
+							<h2 class="mb-4 flex items-center gap-2 text-xl font-semibold text-gray-800">
 								<svg
 									class="h-5 w-5 text-green-500"
 									fill="none"
@@ -458,7 +458,7 @@
 									></path>
 								</svg>
 								Perfect Food Pairings
-							</h3>
+							</h2>
 							<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
 								{#each info.foodPairings as pairing}
 									<div
@@ -475,7 +475,7 @@
 					<!-- Additional Information (if available) -->
 					{#if info.winemaking || info.benefits || info.purpose || info.significance}
 						<div class="mt-8 rounded-xl bg-purple-50 p-6">
-							<h3 class="mb-4 flex items-center gap-2 text-xl font-semibold text-gray-800">
+							<h2 class="mb-4 flex items-center gap-2 text-xl font-semibold text-gray-800">
 								<svg
 									class="h-5 w-5 text-purple-500"
 									fill="none"
@@ -490,28 +490,28 @@
 									></path>
 								</svg>
 								Expert Knowledge
-							</h3>
+							</h2>
 							{#if info.winemaking}
 								<div class="mb-4">
-									<h4 class="mb-2 font-semibold text-gray-800">Winemaking:</h4>
+									<h3 class="mb-2 font-semibold text-gray-800">Winemaking:</h3>
 									<p class="text-gray-700">{info.winemaking}</p>
 								</div>
 							{/if}
 							{#if info.benefits}
 								<div class="mb-4">
-									<h4 class="mb-2 font-semibold text-gray-800">Special Benefits:</h4>
+									<h3 class="mb-2 font-semibold text-gray-800">Special Benefits:</h3>
 									<p class="text-gray-700">{info.benefits}</p>
 								</div>
 							{/if}
 							{#if info.purpose}
 								<div class="mb-4">
-									<h4 class="mb-2 font-semibold text-gray-800">Purpose & Selection:</h4>
+									<h3 class="mb-2 font-semibold text-gray-800">Purpose & Selection:</h3>
 									<p class="text-gray-700">{info.purpose}</p>
 								</div>
 							{/if}
 							{#if info.significance}
 								<div>
-									<h4 class="mb-2 font-semibold text-gray-800">Significance:</h4>
+									<h3 class="mb-2 font-semibold text-gray-800">Significance:</h3>
 									<p class="text-gray-700">{info.significance}</p>
 								</div>
 							{/if}
@@ -521,7 +521,7 @@
 					<!-- Professional Tips -->
 					{#if info.characteristics}
 						<div class="mt-8 rounded-xl bg-yellow-50 p-6">
-							<h3 class="mb-4 flex items-center gap-2 text-xl font-semibold text-gray-800">
+							<h2 class="mb-4 flex items-center gap-2 text-xl font-semibold text-gray-800">
 								<svg
 									class="h-5 w-5 text-yellow-500"
 									fill="none"
@@ -536,10 +536,10 @@
 									></path>
 								</svg>
 								Service Tips
-							</h3>
+							</h2>
 							<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
 								<div class="rounded-lg bg-white p-4 shadow-sm">
-									<h4 class="mb-2 font-semibold text-gray-800">For Guests:</h4>
+									<h3 class="mb-2 font-semibold text-gray-800">For Guests:</h3>
 									<p class="text-sm text-gray-600">
 										Recommend this wine for diners who enjoy {info.characteristics.body?.toLowerCase() ||
 											'medium'}
@@ -547,7 +547,7 @@
 									</p>
 								</div>
 								<div class="rounded-lg bg-white p-4 shadow-sm">
-									<h4 class="mb-2 font-semibold text-gray-800">Menu Pairing:</h4>
+									<h3 class="mb-2 font-semibold text-gray-800">Menu Pairing:</h3>
 									<p class="text-sm text-gray-600">
 										{#if info.foodPairings && info.foodPairings.length > 0}
 											Suggest pairing with our {info.foodPairings[0].toLowerCase()} dishes for the perfect

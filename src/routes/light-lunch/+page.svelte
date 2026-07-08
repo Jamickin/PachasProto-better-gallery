@@ -11,7 +11,6 @@
 			const lightMenuResult = await fetchLiteMenu();
 			lightMenuData = lightMenuResult;
 			lightMenuCategories = Object.keys(lightMenuData || {});
-			console.log('Light menu data loaded:', lightMenuData); // Debug log
 		} catch (error) {
 			console.error('Error loading light menu', error);
 			lightMenuData = {};
@@ -41,6 +40,7 @@
 		name="description"
 		content="Enjoy our delightful light lunch menu at Pachas Restaurant. Available Monday to Saturday 12:00-14:30. Premium dishes at great value."
 	/>
+	<link rel="canonical" href="https://pachas.co.za/light-lunch" />
 </svelte:head>
 
 <!-- Mobile Navigation Bar -->
@@ -116,7 +116,7 @@
 <section class="py-16">
 	<div class="container mx-auto px-4">
 		<div class="mb-12 text-center">
-			<h2 id="light-lunch" class="section-title">Light Lunch</h2>
+			<h1 id="light-lunch" class="section-title">Light Lunch</h1>
 			<p class="section-subtitle">Enjoy our delightful light lunch options.</p>
 		</div>
 
@@ -128,11 +128,11 @@
 			<section class="grid grid-cols-1 gap-6 text-center md:grid-cols-2">
 				{#each Object.keys(lightMenuData) as cuisine}
 					<div class="card" id={cuisine.toLowerCase().replace(/ /g, '-')}>
-						<h3
+						<h2
 							class="relative mb-6 text-xl font-semibold text-gray-800 after:absolute after:bottom-[-10px] after:left-1/2 after:h-[3px] after:w-12 after:-translate-x-1/2 after:bg-rose-500"
 						>
 							{cuisine}
-						</h3>
+						</h2>
 						<ul class="mt-4 list-inside list-disc text-gray-700">
 							{#each lightMenuData[cuisine]?.items || [] as item}
 								<li class="mb-2">{item}</li>
@@ -144,7 +144,7 @@
 
 			<div class="mx-auto mt-16 max-w-3xl">
 				<section id="additional-info" class="card">
-					<h3 class="mb-6 text-center text-2xl font-semibold text-gray-800">Additional Info</h3>
+					<h2 class="mb-6 text-center text-2xl font-semibold text-gray-800">Additional Info</h2>
 					<ul class="space-y-4 text-gray-700">
 						<li class="list-item">
 							<svg

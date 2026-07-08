@@ -8,30 +8,29 @@
 		name="description"
 		content="Fine dining restaurant in Pretoria offering premium steaks, fresh seafood, and South African cuisine. Private function rooms available. Est. 1985."
 	/>
+	<link rel="canonical" href="https://pachas.co.za/" />
 </svelte:head>
+
+<h1 class="sr-only">Pachas Restaurant | Fine Dining Steakhouse & Seafood in Pretoria</h1>
 
 <section
 	class="relative mx-auto max-w-6xl overflow-hidden rounded-lg border-l-4 border-rose-500 pt-12 shadow-xl"
 >
 	<div class="flex h-72 justify-center gap-4 overflow-hidden rounded-t-lg">
-		<!-- <img
-			src="/resized/johny.jpg"
-			alt="Johnny"
-			class="h-full rounded-t-lg object-cover transition-transform duration-300 hover:scale-105"
-		/> -->
-		<img
-			src="/images/food/resized/Dessert_Top.jpg"
-			alt="Dessert"
+		<enhanced:img
+			src="../lib/images/food/Dessert_Top.jpg"
+			alt="Assorted desserts at Pachas Restaurant"
 			class="h-full rounded-t-lg object-cover transition-transform duration-300 hover:scale-105 max-md:hidden"
 		/>
-		<img
-			src="/images/food/resized/steak.JPG"
-			alt="Steak"
+		<enhanced:img
+			src="../lib/images/food/steak.jpg"
+			alt="Grilled steak at Pachas Restaurant"
+			fetchpriority="high"
 			class="h-full rounded-t-lg object-cover transition-transform duration-300 hover:scale-105"
 		/>
-		<img
-			src="/images/food/resized/Biltong_Filo.jpg"
-			alt="Biltong Filo"
+		<enhanced:img
+			src="../lib/images/food/Biltong_Filo.jpg"
+			alt="Biltong in phyllo pastry at Pachas Restaurant"
 			class="h-full rounded-t-lg object-cover transition-transform duration-300 hover:scale-105 max-md:hidden"
 		/>
 	</div>
@@ -41,58 +40,56 @@
 			Take a Virtual Tour
 			<a
 				href="https://www.360sa.co.za/virtualtour/pachas-restaurant-pretoria/"
-				class="mx-2 font-semibold text-rose-600 transition-colors duration-200 hover:text-rose-500 hover:underline"
+				class="mx-2 font-semibold text-rose-700 transition-colors duration-200 hover:text-rose-500 hover:underline"
 				>through the restaurant</a
 			>
 			<span class="mt-2 block text-sm text-gray-700 italic"
 				>For reservations, call <a
 					href="tel:+27124605063"
-					class="font-bold text-rose-600 underline hover:text-rose-500">012 460 5063</a
+					class="font-bold text-rose-700 underline hover:text-rose-500">012 460 5063</a
 				></span
 			>
 		</p>
 	</div>
 
 	<!-- Award Announcement Banner -->
-	<section class="mx-auto my-8 max-w-6xl rounded-lg bg-gradient-to-r from-rose-50 to-pink-50 p-8 shadow-lg ring-1 ring-rose-100">
+	<section
+		class="mx-auto my-8 max-w-6xl rounded-lg bg-gradient-to-r from-rose-50 to-pink-50 p-8 ring-1 shadow-lg ring-rose-100"
+	>
 		<div class="text-center">
 			<!-- Decorative top accent -->
 			<div class="mb-4 flex justify-center">
 				<div class="flex items-center gap-2">
 					<div class="h-px w-12 bg-rose-300"></div>
 					<svg class="h-6 w-6 text-rose-500" fill="currentColor" viewBox="0 0 20 20">
-						<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+						<path
+							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+						/>
 					</svg>
 					<div class="h-px w-12 bg-rose-300"></div>
 				</div>
 			</div>
 
 			<!-- Main message -->
-			<h3 class="mb-2 text-2xl font-semibold text-gray-800">
-				Pretoria, You Hopeless Romantics
-			</h3>
-			<p class="mb-4 text-xl text-gray-700">
-				You've done it again! 🥂
-			</p>
+			<h2 class="mb-2 text-2xl font-semibold text-gray-800">Pretoria, You Hopeless Romantics</h2>
+			<p class="mb-4 text-xl text-gray-700">You've done it again! 🥂</p>
 
 			<!-- Award badges -->
 			<div class="mt-6 flex flex-wrap justify-center gap-4">
-				<div class="rounded-full bg-white px-6 py-3 shadow-md ring-1 ring-rose-200">
-					<p class="text-sm font-semibold text-rose-600 uppercase tracking-wide">
+				<div class="rounded-full bg-white px-6 py-3 ring-1 shadow-md ring-rose-200">
+					<p class="text-sm font-semibold tracking-wide text-rose-700 uppercase">
 						Best Fine Dining
 					</p>
 				</div>
-				<div class="rounded-full bg-white px-6 py-3 shadow-md ring-1 ring-rose-200">
-					<p class="text-sm font-semibold text-rose-600 uppercase tracking-wide">
+				<div class="rounded-full bg-white px-6 py-3 ring-1 shadow-md ring-rose-200">
+					<p class="text-sm font-semibold tracking-wide text-rose-700 uppercase">
 						Best Romantic Restaurant
 					</p>
 				</div>
 			</div>
 
 			<!-- Thank you message -->
-			<p class="mt-6 text-lg text-gray-700">
-				Thank you for voting us your favourites ❤️
-			</p>
+			<p class="mt-6 text-lg text-gray-700">Thank you for voting us your favourites ❤️</p>
 		</div>
 	</section>
 
@@ -162,15 +159,15 @@
 		<!-- Content -->
 		<div class="mx-auto max-w-2xl text-center">
 			<p class="mb-4 text-lg leading-relaxed text-gray-700">
-				For over <strong class="font-semibold text-rose-600">40 years</strong>, Pachas has remained
+				For over <strong class="font-semibold text-rose-700">40 years</strong>, Pachas has remained
 				a cornerstone of fine dining in Pretoria, guided by the unwavering dedication of its
 				founding partners.
 			</p>
 
 			<div class="mt-6 rounded-lg bg-gray-50 p-6">
 				<p class="mb-2 font-medium text-gray-800">
-					<span class="text-rose-600">Jan Willem Pont</span> and
-					<span class="text-rose-600">Andreas Henrich</span>
+					<span class="text-rose-700">Jan Willem Pont</span> and
+					<span class="text-rose-700">Andreas Henrich</span>
 				</p>
 				<p class="text-gray-600 italic">
 					continue to uphold the tradition of culinary excellence and warm hospitality that has
@@ -183,7 +180,7 @@
 				<div
 					class="inline-flex items-center gap-2 rounded-full bg-rose-50 px-6 py-2 ring-1 ring-rose-100"
 				>
-					<svg class="h-5 w-5 text-rose-600" fill="currentColor" viewBox="0 0 20 20">
+					<svg class="h-5 w-5 text-rose-700" fill="currentColor" viewBox="0 0 20 20">
 						<path
 							d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
 						/>

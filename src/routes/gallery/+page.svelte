@@ -2,46 +2,54 @@
 	import { onMount, onDestroy } from 'svelte';
 	import { browser } from '$app/environment';
 
-	// Drink images
-	let drinks = [
-		'/images/drinks/resized/anothercocktail.JPG',
-		'/images/drinks/resized/chamonix.JPG',
-		'/images/drinks/resized/daquiry.jpg',
-		'/images/drinks/resized/lavenir.JPG',
-		'/images/drinks/resized/lebonheur.JPG',
-		'/images/drinks/resized/margherita.JPG',
-		'/images/drinks/resized/milkshake.jpg'
-	];
+	const drinks = [
+		{ base: 'anothercocktail.JPG', alt: 'Signature cocktail at Pachas' },
+		{ base: 'chamonix.JPG', alt: 'Chamonix cocktail' },
+		{ base: 'daquiry.jpg', alt: 'Daiquiri cocktail' },
+		{ base: 'lavenir.JPG', alt: "L'Avenir cocktail" },
+		{ base: 'lebonheur.JPG', alt: 'Le Bonheur cocktail' },
+		{ base: 'margherita.JPG', alt: 'Margarita cocktail' },
+		{ base: 'milkshake.jpg', alt: 'Milkshake' }
+	].map((d) => toPaths(d, 'drinks'));
 
-	// Food images
-	let food = [
-		'/images/food/resized/beautifulsoup.jpg',
-		'/images/food/resized/Biltong_Filo.jpg',
-		'/images/food/resized/biltongmushroom.jpg',
-		'/images/food/resized/blmeringue.jpg',
-		'/images/food/resized/brownie.JPG',
-		'/images/food/resized/carpaccio.jpg',
-		'/images/food/resized/Citrus.jpg',
-		'/images/food/resized/crumble.JPG',
-		'/images/food/resized/cupcake.JPG',
-		'/images/food/resized/Dessert_Top.jpg',
-		'/images/food/resized/filostarter2.JPG',
-		'/images/food/resized/fondant.jpg',
-		'/images/food/resized/greensoup.jpg',
-		'/images/food/resized/IMG_3245.jpg',
-		'/images/food/resized/IMG_5381.JPG',
-		'/images/food/resized/meringue.JPG',
-		'/images/food/resized/pretty.jpg',
-		'/images/food/resized/steak.JPG',
-		'/images/food/resized/tempuraprawn.jpg'
-	];
+	const food = [
+		{ base: 'beautifulsoup.jpg', alt: 'Soup starter' },
+		{ base: 'Biltong_Filo.jpg', alt: 'Biltong in phyllo pastry' },
+		{ base: 'biltongmushroom.jpg', alt: 'Biltong and mushroom soup' },
+		{ base: 'blmeringue.jpg', alt: 'Lemon meringue dessert, close up' },
+		{ base: 'brownie.JPG', alt: 'Chocolate brownie dessert' },
+		{ base: 'carpaccio.jpg', alt: 'Carpaccio starter' },
+		{ base: 'Citrus.jpg', alt: 'Citrus dessert plate' },
+		{ base: 'crumble.JPG', alt: 'Apple crumble dessert' },
+		{ base: 'cupcake.JPG', alt: 'Cupcake dessert' },
+		{ base: 'Dessert_Top.jpg', alt: 'Assorted desserts' },
+		{ base: 'filostarter2.JPG', alt: 'Phyllo pastry starter' },
+		{ base: 'fondant.jpg', alt: 'Chocolate fondant dessert' },
+		{ base: 'greensoup.jpg', alt: 'Green soup starter' },
+		{ base: 'IMG_3245.jpg', alt: 'Plated dish at Pachas' },
+		{ base: 'IMG_5381.JPG', alt: 'Plated dish at Pachas' },
+		{ base: 'meringue.JPG', alt: 'Lemon meringue dessert' },
+		{ base: 'pretty.jpg', alt: 'Beautifully plated dish' },
+		{ base: 'steak.JPG', alt: 'Grilled steak' },
+		{ base: 'tempuraprawn.jpg', alt: 'Tempura prawn starter' }
+	].map((d) => toPaths(d, 'food'));
+
+	function toPaths({ base, alt }, category) {
+		const dot = base.lastIndexOf('.');
+		const stem = base.slice(0, dot);
+		return {
+			jpg: `/images/${category}/${base}`,
+			webp: `/images/${category}/${stem}.webp`,
+			alt
+		};
+	}
 
 	let modalOpen = $state(false);
-	let selectedImage = $state('');
+	let selectedImage = $state(null);
 	let selectedAlt = $state('');
 
-	function openModal(src, alt) {
-		selectedImage = src;
+	function openModal(image, alt) {
+		selectedImage = image;
 		selectedAlt = alt;
 		modalOpen = true;
 		if (browser) {
@@ -51,7 +59,7 @@
 
 	function closeModal() {
 		modalOpen = false;
-		selectedImage = '';
+		selectedImage = null;
 		selectedAlt = '';
 		if (browser) {
 			document.body.style.overflow = 'auto';
@@ -84,26 +92,34 @@
 		name="description"
 		content="Explore our gallery showcasing exquisite dishes and signature drinks from Pachas Restaurant. Fine dining photography from Pretoria's premier steakhouse."
 	/>
+	<link rel="canonical" href="https://pachas.co.za/gallery" />
 </svelte:head>
 
 <section class="bg-gray-100 py-16">
 	<div class="container mx-auto px-4">
 		<div class="mb-12 text-center">
-			<h2 class="section-title">Signature Drinks</h2>
+			<h1 class="section-title">Signature Drinks</h1>
 			<p class="section-subtitle">Explore our unique and refreshing drink creations.</p>
 		</div>
 
 		<div class="mb-24 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-			{#each drinks as img}
+			{#each drinks as { jpg, webp, alt }}
 				<div
 					class="card hover-card cursor-pointer overflow-hidden p-0"
-					onclick={() => openModal(img, 'Elegant drink')}
+					onclick={() => openModal(jpg, alt)}
 				>
-					<img
-						src={img}
-						alt="Elegant drink"
-						class="h-64 w-full object-cover transition-transform duration-300 hover:scale-105"
-					/>
+					<picture>
+						<source srcset={webp} type="image/webp" />
+						<img
+							src={jpg}
+							{alt}
+							loading="lazy"
+							decoding="async"
+							width="512"
+							height="256"
+							class="h-64 w-full object-cover transition-transform duration-300 hover:scale-105"
+						/>
+					</picture>
 				</div>
 			{/each}
 		</div>
@@ -116,16 +132,23 @@
 		</div>
 
 		<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-			{#each food as img}
+			{#each food as { jpg, webp, alt }}
 				<div
 					class="card hover-card cursor-pointer overflow-hidden p-0"
-					onclick={() => openModal(img, 'Gourmet dish')}
+					onclick={() => openModal(jpg, alt)}
 				>
-					<img
-						src={img}
-						alt="Gourmet dish"
-						class="h-64 w-full object-cover transition-transform duration-300 hover:scale-105"
-					/>
+					<picture>
+						<source srcset={webp} type="image/webp" />
+						<img
+							src={jpg}
+							{alt}
+							loading="lazy"
+							decoding="async"
+							width="512"
+							height="256"
+							class="h-64 w-full object-cover transition-transform duration-300 hover:scale-105"
+						/>
+					</picture>
 				</div>
 			{/each}
 		</div>

@@ -37,6 +37,8 @@
 				class="h-28 object-contain md:h-36"
 				src="/pachas_logo.jpg"
 				alt="Pachas Restaurant Logo"
+				width="1000"
+				height="397"
 			/>
 		</a>
 	</div>

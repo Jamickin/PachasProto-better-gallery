@@ -1,6 +1,21 @@
 /* Updated app.css with consistent styling system and mobile fixes */
-@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
 @import 'tailwindcss';
+
+@font-face {
+	font-family: 'Baskervville';
+	font-style: normal;
+	font-weight: 400;
+	font-display: optional;
+	src: url('/fonts/baskervville-normal.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Baskervville';
+	font-style: italic;
+	font-weight: 400;
+	font-display: optional;
+	src: url('/fonts/baskervville-italic.woff2') format('woff2');
+}
 
 /* Base Styles */
 * {
@@ -106,7 +121,7 @@ section {
 }
 
 .btn-primary {
-	@apply bg-rose-500 text-white shadow-md hover:bg-rose-600;
+	@apply bg-rose-600 text-white shadow-md hover:bg-rose-700;
 }
 
 .btn-secondary {

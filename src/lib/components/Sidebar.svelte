@@ -91,6 +91,7 @@
 			<button
 				class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-gray-600 transition-colors hover:bg-rose-100 hover:text-rose-600"
 				on:click={closeSidebar}
+				aria-label="Close menu"
 			>
 				<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 					<path
@@ -111,7 +112,13 @@
 			href="/"
 			class="block transition-transform duration-300 hover:scale-105"
 		>
-			<img class="mx-auto w-full max-w-48" src="/pachas_logo.jpg" alt="Pachas Restaurant Logo" />
+			<img
+				class="mx-auto w-full max-w-48"
+				src="/pachas_logo.jpg"
+				alt="Pachas Restaurant Logo"
+				width="1000"
+				height="397"
+			/>
 		</a>
 	</div>
 
@@ -290,7 +297,11 @@
 			<p class="text-sm text-gray-600">Est. 1985</p>
 			<p class="mt-1 text-xs text-gray-500">Fine Dining • Pretoria</p>
 			<div class="mt-3 flex justify-center space-x-4">
-				<a href="tel:+27124605063" class="text-rose-600 hover:text-rose-700">
+				<a
+					href="tel:+27124605063"
+					class="text-rose-700 hover:text-rose-800"
+					aria-label="Call Pachas Restaurant"
+				>
 					<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path
 							stroke-linecap="round"
@@ -300,7 +311,11 @@
 						></path>
 					</svg>
 				</a>
-				<a href="mailto:mail@pachas.co.za" class="text-rose-600 hover:text-rose-700">
+				<a
+					href="mailto:mail@pachas.co.za"
+					class="text-rose-700 hover:text-rose-800"
+					aria-label="Email Pachas Restaurant"
+				>
 					<svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path
 							stroke-linecap="round"

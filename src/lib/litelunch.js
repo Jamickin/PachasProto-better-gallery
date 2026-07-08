@@ -11,9 +11,7 @@ export async function fetchLiteMenu() {
 				`Failed to load light lunch data. Status: ${response.status} ${response.statusText}`
 			);
 		}
-		const data = await response.json();
-		console.log('fetchLiteMenu() data:', data); // Log the data here
-		return data;
+		return await response.json();
 	} catch (error) {
 		console.error('Error fetching light lunch menu:', error);
 		return {}; // Return empty object on error, but log the error
