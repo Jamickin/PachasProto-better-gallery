@@ -12,7 +12,7 @@
 					"Greek Salad with avocado"
 				],
 				"mainCourse": [
-					"Fresh Linefish - grilled, with lemon butter",
+					"Sole Belle Meuniere - grilled, with lemon butter",
 					"Chicken Schnitzel - cheese or mushroom sauce",
 					"Fillet haloumi - red wine berry reduction",
 					"Sirloin - with a mustard brandy cream sauce",
@@ -37,7 +37,7 @@
 					"Kudu Carpaccio"
 				],
 				"mainCourse": [
-					"Fresh linefish of the day - topped with lemon butter sauce",
+					"Sole Belle Meuniere - grilled, with lemon butter",
 					"Sole Pachas - asparagus and shrimps in creamy mushrooms sauce",
 					"Beef Shortrib",
 					"Sirloin - with a brandy mustard sauce",
@@ -46,11 +46,11 @@
 					"Chicken Schnitzel - cheese or mushroom sauce"
 				],
 				"dessert": [
-					"Apple Crumble with Amarula ice cream",
 					"Vanilla Ice cream and Bar One sauce",
 					"Cheesecake",
 					"Lemon Meringue",
-					"Caramel Crème Brulee"
+					"Caramel Crème Brulee",
+					"Dessert of the Day"
 				]
 			},
 			{
@@ -67,7 +67,7 @@
 				"mainCourse": [
 					"Fresh linefish of the day - with lemon butter sauce",
 					"Sole Pachas - asparagus and shrimps in creamy mushrooms sauce",
-					"Fillet Rossini - Topped with chicken liver and red wine",
+					"Sirloin Bordelaise - with roasted marrow bones",
 					"Sirloin Jack Daniels - with bacon marmalade",
 					"Between the Sheets - fillet topped with shrimps, asparagus and mushrooms in a pepper and cheese sauce",
 					"Duck Fuji - lychees, cherries and orange segments",
@@ -78,7 +78,6 @@
 					"Cheesecake",
 					"Lemon Meringue",
 					"Chocolate Fondant",
-					"Apple Crumble with Amarula ice cream",
 					"Chocolate Brownie with Oreo ice cream"
 				]
 			}
