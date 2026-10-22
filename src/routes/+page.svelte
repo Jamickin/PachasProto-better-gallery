@@ -78,12 +78,12 @@
 			<div class="mt-6 flex flex-wrap justify-center gap-4">
 				<div class="rounded-full bg-white px-6 py-3 ring-1 shadow-md ring-rose-200">
 					<p class="text-sm font-semibold tracking-wide text-rose-700 uppercase">
-						Best Fine Dining
+						Best Fine Dining 2026
 					</p>
 				</div>
 				<div class="rounded-full bg-white px-6 py-3 ring-1 shadow-md ring-rose-200">
 					<p class="text-sm font-semibold tracking-wide text-rose-700 uppercase">
-						Best Romantic Restaurant
+						Best Romantic 2026
 					</p>
 				</div>
 			</div>
